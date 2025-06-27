@@ -1483,7 +1483,7 @@ wheels = [
 ]
 
 [[package]]
-name = "rectangle-paper"
+name = "rectangle_paper"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
