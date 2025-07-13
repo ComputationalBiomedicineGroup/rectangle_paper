@@ -4,6 +4,7 @@ from scipy.stats import pearsonr
 import seaborn as sns
 import numpy as np
 
+
 def match_dfs2(df1, df2):
     df1 = df1.loc[:, df2.columns]
     df1 = df1.loc[df1.index.isin(df2.index)]
@@ -54,6 +55,7 @@ def evaluate_by_cell_type(gold_std, estimated):
     return rsmes, p_values, r_values
 
 def create_scatter_plot_total(df, rsme, p_value, r_value, title="Total", y_axis_label="Estimated Fractions", x_axis_label="True Fractions", save_path=None, hue="Cell type", size=None):
+    sns.set_style("white")
     cell_palette = {
         'Brca': '#66C2A5',
         'Luad': '#FC8D62',
@@ -82,6 +84,7 @@ def create_scatter_plot_total(df, rsme, p_value, r_value, title="Total", y_axis_
     g = sns.scatterplot(x="True Fractions", y="Estimated Fractions",hue=hue, data=df, palette=cell_palette)
 
     sns.regplot(x="True Fractions", y="Estimated Fractions", data=df, scatter=False, color='#444444', ci=None)
+    g.grid(False)
     text = f"r = {round(r_value, 3)}, p = {round(p_value, 10)} \nRMSE = {round(rsme, 3)}\nn = {len(df)}"
 
 
