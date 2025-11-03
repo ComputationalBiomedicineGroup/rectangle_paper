@@ -1443,6 +1443,18 @@ wheels = [
 ]
 
 [[package]]
+name = "matplotlib-scalebar"
+version = "0.9.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "matplotlib" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c5/3d/e76e0e48c96e43b656446c35990824f20136de21940a7436020ab757a54d/matplotlib_scalebar-0.9.0.tar.gz", hash = "sha256:f91adc5e4e67ac920a8fa98a55f904d56e5c2da4d56286748c31ec62146362be", size = 1180588 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a8/c0/2dfab7b319dabe23f5a7b515a797c74b501d15c72e7a03837cf0cf779b9e/matplotlib_scalebar-0.9.0-py3-none-any.whl", hash = "sha256:5140525cd4e0c60bcade541b86571dabaf446fa69192530bd82d60b54601aa79", size = 16411 },
+]
+
+[[package]]
 name = "mdurl"
 version = "0.1.2"
 source = { registry = "https://pypi.org/simple" }
@@ -2323,6 +2335,10 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/44/fa/a4adff12113de0e6ed0a172e29becf4abd9e7eed9ac99b8e8a21c7a013dc/pyreadr-0.5.3-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:6a54168a089b694b529ec4c9660094aa34d17e3d90d11aaf70ac296e398344e3", size = 414992 },
     { url = "https://files.pythonhosted.org/packages/1c/bc/ba1b11ebce2e88639720b85376e7dd11d9eb5daeee0f65c9ebdf47c9c661/pyreadr-0.5.3-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:651c69396c4f15040d72b07c5751048972451191ec4101f6d3a392d1c2f20863", size = 418340 },
     { url = "https://files.pythonhosted.org/packages/78/aa/8ef7045b2f320d00be0ce63c3e2b6442dd195a7efb3a1892a06686c5c5e1/pyreadr-0.5.3-cp313-cp313-win_amd64.whl", hash = "sha256:e73699867a668e1f3b32f1aacf5c9019a8619a62e1aa0484f726687b61243763", size = 1372799 },
+    { url = "https://files.pythonhosted.org/packages/92/c6/c86e2adabb5b3040427dc89a8d57caac75c391ff7b01c601ca48c205308a/pyreadr-0.5.3-cp314-cp314-macosx_10_15_x86_64.whl", hash = "sha256:2a836848e7b9f7e0ad81094d75bec562fbd8913e06a554e828f9538901a1ef34", size = 317496 },
+    { url = "https://files.pythonhosted.org/packages/ed/91/44e45b7234b10954ebf2c14c491d83b15c3b11db2ad6743cf1352374265f/pyreadr-0.5.3-cp314-cp314-macosx_11_0_arm64.whl", hash = "sha256:79edc296e760771b84fcfaad09f04045b13ab7df32745d94390bffb628ca8cb0", size = 314964 },
+    { url = "https://files.pythonhosted.org/packages/a7/68/643cef14a1d332ebce7d22cf051724d3c83b076c278caca6b484c339794e/pyreadr-0.5.3-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:eca0ff7d6ecbac3e08bf126f67336102129df773a25d5d76c1bad1dc6ff42e0f", size = 440836 },
+    { url = "https://files.pythonhosted.org/packages/e3/bf/aa5640d52230376a0f83e40251807b3133744ff6dbcb547c18a20e6f9a0b/pyreadr-0.5.3-cp314-cp314-win_amd64.whl", hash = "sha256:77b273f9ffa32fa4dda8db8fae7a949c1c095d52dda26d50f7c49f43aa6e3ac0", size = 1371942 },
 ]
 
 [[package]]
@@ -2477,6 +2493,7 @@ dependencies = [
     { name = "rectanglepy" },
     { name = "seaborn" },
     { name = "spatialdata-io" },
+    { name = "spatialdata-plot" },
 ]
 
 [package.metadata]
@@ -2490,6 +2507,7 @@ requires-dist = [
     { name = "rectanglepy", specifier = ">=0.5.4" },
     { name = "seaborn", specifier = ">=0.13.2" },
     { name = "spatialdata-io", specifier = ">=0.2.0" },
+    { name = "spatialdata-plot", specifier = "==0.2.13" },
 ]
 
 [[package]]
@@ -2973,6 +2991,22 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/98/fb/7154946fa6eea75930c7737445bf38add7463165919fd17fcfe1d50fd36c/spatialdata_io-0.2.0.tar.gz", hash = "sha256:9f4d89974271731653fe0ffbb407e02784055ff9bcf24dc6c68a5b9cda4ab9e0", size = 80975 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/67/56/5f0790668cefb8fec0860e5324fccb2ebb94d041cc45b98fa27ed7402fc8/spatialdata_io-0.2.0-py3-none-any.whl", hash = "sha256:76ab752045b4144b78c38462d85eab34b9c9d53d104c5e624078a191f1ef2201", size = 85708 },
+]
+
+[[package]]
+name = "spatialdata-plot"
+version = "0.2.13"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "matplotlib" },
+    { name = "matplotlib-scalebar" },
+    { name = "scanpy" },
+    { name = "scikit-learn" },
+    { name = "spatialdata" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a2/02/d93fbf0e31a441e17ba03f7e2cada47bff3b4d686e969444c754579e364f/spatialdata_plot-0.2.13.tar.gz", hash = "sha256:d243bfebcd47ee58b2e16d3c82eeebe62be06665314134b1721a3dbba7a7f71c", size = 9261333 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0e/92/4d9f07a97fba85d2db59bde27621d7c243efbe95250498c9aa2efdbf1cf3/spatialdata_plot-0.2.13-py3-none-any.whl", hash = "sha256:ffa8fdba1225945224bc4ad95b4ab92daf2ea37f8cf231832a78ef100b11acf4", size = 54533 },
 ]
 
 [[package]]
