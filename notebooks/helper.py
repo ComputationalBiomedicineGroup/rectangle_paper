@@ -68,6 +68,7 @@ def create_scatter_plot_total(df, rsme, p_value, r_value, title="Total", y_axis_
         'NK cells': '#DDD700',
         'T cells': '#FFD92F',
         'T cells CD4 conv': '#B3B3B3',
+        'T cells CD4': '#B3B3B3',
         'T cells CD4 Total': '#B3B3B3',
         'T cells CD8': '#A6D854',
         'Tregs': '#E5C494',
@@ -76,6 +77,7 @@ def create_scatter_plot_total(df, rsme, p_value, r_value, title="Total", y_axis_
         'Stromal cells': '#66C2A5',
         'Plasma cells': '#FC8D62',
         'ILC': '#8DA0CB',
+        'Lymphocytes': '#8DA0CB',
         'Platelet': '#E78AC3'  # Assuming you want to keep this color as it was not provided in the new list
     }
     if size:
