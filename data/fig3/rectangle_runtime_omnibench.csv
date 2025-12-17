@@ -1,36 +1,103 @@
 method,subset_value,bulk_samples,elapsed_minutes,process,sc_name,sc_norm,bulk_name,bulk_norm,replicate,user.self,sys.self,elapsed
-Rectangle,1000,5,62.32391666666667,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,1000,25,58.95231666666667,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,1000,50,62.88453333333333,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,1000,100,35.20028333333334,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,1000,200,104.96816666666668,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,3000,5,42.931033333333325,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,3000,25,57.88555,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,3000,50,69.08735,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,3000,100,68.99336666666666,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,3000,200,87.46294999999999,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,5000,5,63.25155,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,5000,25,24.50248333333333,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,5000,50,34.642266666666664,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,5000,100,76.74575,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,5000,200,54.467333333333336,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,10000,5,21.048566666666666,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,10000,25,24.184216666666668,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,10000,50,81.33721666666666,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,10000,100,58.99366666666667,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,10000,200,50.594750000000005,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,25000,5,70.9336,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,25000,25,66.65075,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,25000,50,27.682650000000002,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,25000,100,56.78553333333334,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,25000,200,48.08671666666667,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,50000,5,57.55918333333334,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,50000,25,67.22006666666667,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,50000,50,27.601866666666663,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,50000,100,76.31121666666667,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,50000,200,70.33136666666668,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,100000,5,45.65903333333334,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,100000,25,59.111916666666666,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,100000,50,51.10241666666666,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,100000,100,52.30663333333334,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
-Rectangle,100000,200,69.97253333333333,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA,NA
+Rectangle,1000,5,1,15.559750000000001,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,1000,5,2,15.635783333333334,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,1000,5,3,11.76795,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,1000,5,4,14.8222,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,1000,5,5,15.05625,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,3000,5,1,15.54785,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,3000,5,2,14.589883333333335,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,3000,5,3,15.2243,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,3000,5,4,14.974433333333334,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,3000,5,5,15.467133333333333,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,5000,5,1,15.765183333333335,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,5000,5,2,15.276533333333333,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,5000,5,3,15.274783333333335,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,5000,5,4,19.160400000000003,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,5000,5,5,13.947416666666667,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,10000,5,1,16.204683333333335,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,10000,5,2,16.001216666666668,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,10000,5,3,16.321716666666667,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,10000,5,4,15.553366666666667,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,10000,5,5,15.080766666666667,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,25000,5,1,18.1555,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,25000,5,2,15.952816666666667,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,25000,5,3,17.197316666666666,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,25000,5,4,16.495433333333335,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,25000,5,5,15.45491666666667,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,50000,5,1,15.445533333333335,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,50000,5,2,15.352683333333335,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,50000,5,3,16.332533333333334,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,50000,5,4,14.971833333333334,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,50000,5,5,16.051000000000002,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,100000,5,2,14.943733333333334,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,100000,5,3,16.364666666666665,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,100000,5,4,14.8455,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,100000,5,5,17.47961666666667,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
+Rectangle,1000,5,1,0,SIGNATURE,HaoCleaned-sampled_perc1000_rep1,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0,0,0
+Rectangle,1000,5,1,15.559750000000001,DECONVOLUTION,HaoCleaned-sampled_perc1000_rep1,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,238.225,98.386,933.585
+Rectangle,1000,5,2,0,SIGNATURE,HaoCleaned-sampled_perc1000_rep2,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0,0,0
+Rectangle,1000,5,2,15.635783333333334,DECONVOLUTION,HaoCleaned-sampled_perc1000_rep2,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,240.171,99.876,938.147
+Rectangle,1000,5,3,0,SIGNATURE,HaoCleaned-sampled_perc1000_rep3,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0,0,0
+Rectangle,1000,5,3,11.76795,DECONVOLUTION,HaoCleaned-sampled_perc1000_rep3,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,228.612,98.97,706.077
+Rectangle,1000,5,4,0,SIGNATURE,HaoCleaned-sampled_perc1000_rep4,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0,0,0
+Rectangle,1000,5,4,14.8222,DECONVOLUTION,HaoCleaned-sampled_perc1000_rep4,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,238.055,98.44099999999999,889.332
+Rectangle,1000,5,5,0,SIGNATURE,HaoCleaned-sampled_perc1000_rep5,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0,0,0
+Rectangle,1000,5,5,15.05625,DECONVOLUTION,HaoCleaned-sampled_perc1000_rep5,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,257.593,98.988,903.375
+Rectangle,10000,5,1,0,SIGNATURE,HaoCleaned-sampled_perc10000_rep1,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0,0,0
+Rectangle,10000,5,1,16.204683333333335,DECONVOLUTION,HaoCleaned-sampled_perc10000_rep1,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,254.66099999999997,100.04400000000001,972.2810000000001
+Rectangle,10000,5,2,0,SIGNATURE,HaoCleaned-sampled_perc10000_rep2,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,9.999999999994458e-4,0,0
+Rectangle,10000,5,2,16.001216666666668,DECONVOLUTION,HaoCleaned-sampled_perc10000_rep2,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,252.64999999999998,99.53899999999999,960.073
+Rectangle,10000,5,3,1.6666666666627823e-5,SIGNATURE,HaoCleaned-sampled_perc10000_rep3,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0,0,9.999999999976694e-4
+Rectangle,10000,5,3,16.3217,DECONVOLUTION,HaoCleaned-sampled_perc10000_rep3,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,256.587,100.35000000000001,979.302
+Rectangle,10000,5,4,1.6666666666687037e-5,SIGNATURE,HaoCleaned-sampled_perc10000_rep4,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0,0,0.0010000000000012221
+Rectangle,10000,5,4,15.55335,DECONVOLUTION,HaoCleaned-sampled_perc10000_rep4,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,261.618,107.413,933.201
+Rectangle,10000,5,5,1.6666666666627823e-5,SIGNATURE,HaoCleaned-sampled_perc10000_rep5,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0,0,9.999999999976694e-4
+Rectangle,10000,5,5,15.08075,DECONVOLUTION,HaoCleaned-sampled_perc10000_rep5,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,245.107,111.709,904.845
+Rectangle,100000,5,2,0,SIGNATURE,HaoCleaned-sampled_perc100000_rep2,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0,0,0
+Rectangle,100000,5,2,14.943733333333334,DECONVOLUTION,HaoCleaned-sampled_perc100000_rep2,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,254.999,101.917,896.624
+Rectangle,100000,5,3,1.6666666666687037e-5,SIGNATURE,HaoCleaned-sampled_perc100000_rep3,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,9.999999999994458e-4,0,0.0010000000000012221
+Rectangle,100000,5,3,16.364649999999997,DECONVOLUTION,HaoCleaned-sampled_perc100000_rep3,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,261.069,124.988,981.8789999999999
+Rectangle,100000,5,4,0,SIGNATURE,HaoCleaned-sampled_perc100000_rep4,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0,0,0
+Rectangle,100000,5,4,14.8455,DECONVOLUTION,HaoCleaned-sampled_perc100000_rep4,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,250.78000000000003,101.81,890.73
+Rectangle,100000,5,5,0,SIGNATURE,HaoCleaned-sampled_perc100000_rep5,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,9.999999999994458e-4,0,0
+Rectangle,100000,5,5,17.47961666666667,DECONVOLUTION,HaoCleaned-sampled_perc100000_rep5,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,260.042,106.419,1048.777
+Rectangle,25000,5,1,0,SIGNATURE,HaoCleaned-sampled_perc25000_rep1,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0,0,0
+Rectangle,25000,5,1,18.1555,DECONVOLUTION,HaoCleaned-sampled_perc25000_rep1,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,246.897,105.06700000000001,1089.33
+Rectangle,25000,5,2,0,SIGNATURE,HaoCleaned-sampled_perc25000_rep2,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0,0,0
+Rectangle,25000,5,2,15.952816666666667,DECONVOLUTION,HaoCleaned-sampled_perc25000_rep2,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,252.87199999999999,103.188,957.169
+Rectangle,25000,5,3,0,SIGNATURE,HaoCleaned-sampled_perc25000_rep3,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0,0,0
+Rectangle,25000,5,3,17.197316666666666,DECONVOLUTION,HaoCleaned-sampled_perc25000_rep3,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,248.15400000000002,106.631,1031.839
+Rectangle,25000,5,4,0,SIGNATURE,HaoCleaned-sampled_perc25000_rep4,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0,0,0
+Rectangle,25000,5,4,16.495433333333335,DECONVOLUTION,HaoCleaned-sampled_perc25000_rep4,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,258.516,104.09800000000001,989.726
+Rectangle,25000,5,5,1.6666666666687037e-5,SIGNATURE,HaoCleaned-sampled_perc25000_rep5,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,9.999999999994458e-4,0,0.0010000000000012221
+Rectangle,25000,5,5,15.454900000000002,DECONVOLUTION,HaoCleaned-sampled_perc25000_rep5,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,254.44699999999997,103.591,927.2940000000001
+Rectangle,3000,5,1,0,SIGNATURE,HaoCleaned-sampled_perc3000_rep1,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0,0,0
+Rectangle,3000,5,1,15.54785,DECONVOLUTION,HaoCleaned-sampled_perc3000_rep1,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,249.36899999999997,99.84,932.871
+Rectangle,3000,5,2,0,SIGNATURE,HaoCleaned-sampled_perc3000_rep2,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0,0,0
+Rectangle,3000,5,2,14.589883333333335,DECONVOLUTION,HaoCleaned-sampled_perc3000_rep2,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,248.43900000000002,100.314,875.393
+Rectangle,3000,5,3,0,SIGNATURE,HaoCleaned-sampled_perc3000_rep3,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0.001000000000000334,0,0
+Rectangle,3000,5,3,15.2243,DECONVOLUTION,HaoCleaned-sampled_perc3000_rep3,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,255.46700000000004,100.295,913.458
+Rectangle,3000,5,4,0,SIGNATURE,HaoCleaned-sampled_perc3000_rep4,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0,0,0
+Rectangle,3000,5,4,14.974433333333334,DECONVOLUTION,HaoCleaned-sampled_perc3000_rep4,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,248.487,99.009,898.466
+Rectangle,3000,5,5,0,SIGNATURE,HaoCleaned-sampled_perc3000_rep5,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0.001000000000000334,0,0
+Rectangle,3000,5,5,15.467133333333333,DECONVOLUTION,HaoCleaned-sampled_perc3000_rep5,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,248.42299999999997,101.216,928.028
+Rectangle,5000,5,1,0,SIGNATURE,HaoCleaned-sampled_perc5000_rep1,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0,0,0
+Rectangle,5000,5,1,15.765183333333335,DECONVOLUTION,HaoCleaned-sampled_perc5000_rep1,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,245.837,103.223,945.9110000000001
+Rectangle,5000,5,2,0,SIGNATURE,HaoCleaned-sampled_perc5000_rep2,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0,0,0
+Rectangle,5000,5,2,15.276533333333333,DECONVOLUTION,HaoCleaned-sampled_perc5000_rep2,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,246.008,100.346,916.592
+Rectangle,5000,5,3,0,SIGNATURE,HaoCleaned-sampled_perc5000_rep3,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0,0,0
+Rectangle,5000,5,3,15.274783333333335,DECONVOLUTION,HaoCleaned-sampled_perc5000_rep3,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,256.887,105.267,916.4870000000001
+Rectangle,5000,5,4,1.6666666666657428e-5,SIGNATURE,HaoCleaned-sampled_perc5000_rep4,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0,0,9.999999999994458e-4
+Rectangle,5000,5,4,19.160383333333336,DECONVOLUTION,HaoCleaned-sampled_perc5000_rep4,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,266.602,104.814,1149.623
+Rectangle,5000,5,5,0,SIGNATURE,HaoCleaned-sampled_perc5000_rep5,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0,0,0
+Rectangle,5000,5,5,13.947416666666667,DECONVOLUTION,HaoCleaned-sampled_perc5000_rep5,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,244.75400000000002,100.878,836.845
+Rectangle,50000,5,1,0,SIGNATURE,HaoCleaned-sampled_perc50000_rep1,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0,0,0
+Rectangle,50000,5,1,15.445533333333335,DECONVOLUTION,HaoCleaned-sampled_perc50000_rep1,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,256.639,104.457,926.7320000000001
+Rectangle,50000,5,2,0,SIGNATURE,HaoCleaned-sampled_perc50000_rep2,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,9.999999999994458e-4,0,0
+Rectangle,50000,5,2,15.352683333333335,DECONVOLUTION,HaoCleaned-sampled_perc50000_rep2,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,247.34599999999998,109.018,921.1610000000001
+Rectangle,50000,5,3,1.6666666666627823e-5,SIGNATURE,HaoCleaned-sampled_perc50000_rep3,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0.0010000000000012221,0,9.999999999976694e-4
+Rectangle,50000,5,3,16.332516666666667,DECONVOLUTION,HaoCleaned-sampled_perc50000_rep3,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,247.443,101.935,979.951
+Rectangle,50000,5,4,0,SIGNATURE,HaoCleaned-sampled_perc50000_rep4,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,0,0,0
+Rectangle,50000,5,4,14.971833333333334,DECONVOLUTION,HaoCleaned-sampled_perc50000_rep4,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,255.459,104.474,898.3100000000001
+Rectangle,50000,5,5,1.6666666666627823e-5,SIGNATURE,HaoCleaned-sampled_perc50000_rep5,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,9.999999999994458e-4,0,9.999999999976694e-4
+Rectangle,50000,5,5,16.050983333333335,DECONVOLUTION,HaoCleaned-sampled_perc50000_rep5,counts,HaoCleaned-ncells10000-nsamples5-random-expressed_genes-simulation,tpm,248.611,103.655,963.0590000000001
