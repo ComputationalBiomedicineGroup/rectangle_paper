@@ -1,0 +1,1993 @@
+sample,celltype,proportion.estimated,proportion.purified,method,bulk_ds,purified_celltype
+GSM1576391,B cells,0.9827016192092256,1,rectangle,hoek_purified,B cells
+GSM1576391,ILC,3.8298048848534126e-4,0,rectangle,hoek_purified,B cells
+GSM1576391,Monocytes,0,0,rectangle,hoek_purified,B cells
+GSM1576391,NK cells,0,0,rectangle,hoek_purified,B cells
+GSM1576391,Plasma cells,0.016794001161355942,0,rectangle,hoek_purified,B cells
+GSM1576391,Platelet,0,0,rectangle,hoek_purified,B cells
+GSM1576391,CD4 T cells,0,0,rectangle,hoek_purified,B cells
+GSM1576391,CD8 T cells,0,0,rectangle,hoek_purified,B cells
+GSM1576391,Tregs,3.955294136265504e-17,0,rectangle,hoek_purified,B cells
+GSM1576391,mDC,1.0217868571561513e-18,0,rectangle,hoek_purified,B cells
+GSM1576391,pDC,1.2139914093310498e-4,0,rectangle,hoek_purified,B cells
+GSM1576391,Unknown,0,0,rectangle,hoek_purified,B cells
+GSM1576391,T cells,3.955294136265504e-17,0,rectangle,hoek_purified,B cells
+GSM1576392,B cells,0.9755253001342417,1,rectangle,hoek_purified,B cells
+GSM1576392,ILC,2.3273660772390236e-4,0,rectangle,hoek_purified,B cells
+GSM1576392,Monocytes,5.540158447376159e-20,0,rectangle,hoek_purified,B cells
+GSM1576392,NK cells,0,0,rectangle,hoek_purified,B cells
+GSM1576392,Plasma cells,0.024055951100918918,0,rectangle,hoek_purified,B cells
+GSM1576392,Platelet,0,0,rectangle,hoek_purified,B cells
+GSM1576392,CD4 T cells,3.803400900168601e-18,0,rectangle,hoek_purified,B cells
+GSM1576392,CD8 T cells,2.078589069838971e-17,0,rectangle,hoek_purified,B cells
+GSM1576392,Tregs,0,0,rectangle,hoek_purified,B cells
+GSM1576392,mDC,1.0509520254203171e-18,0,rectangle,hoek_purified,B cells
+GSM1576392,pDC,1.8601215711545784e-4,0,rectangle,hoek_purified,B cells
+GSM1576392,Unknown,0,0,rectangle,hoek_purified,B cells
+GSM1576392,T cells,2.4589291598558312e-17,0,rectangle,hoek_purified,B cells
+GSM1576393,B cells,0.9680483586504692,1,rectangle,hoek_purified,B cells
+GSM1576393,ILC,3.2291322191237083e-4,0,rectangle,hoek_purified,B cells
+GSM1576393,Monocytes,0,0,rectangle,hoek_purified,B cells
+GSM1576393,NK cells,0,0,rectangle,hoek_purified,B cells
+GSM1576393,Plasma cells,0.031628728127618334,0,rectangle,hoek_purified,B cells
+GSM1576393,Platelet,0,0,rectangle,hoek_purified,B cells
+GSM1576393,CD4 T cells,0,0,rectangle,hoek_purified,B cells
+GSM1576393,CD8 T cells,0,0,rectangle,hoek_purified,B cells
+GSM1576393,Tregs,0,0,rectangle,hoek_purified,B cells
+GSM1576393,mDC,9.771948308206935e-19,0,rectangle,hoek_purified,B cells
+GSM1576393,pDC,0,0,rectangle,hoek_purified,B cells
+GSM1576393,Unknown,0,0,rectangle,hoek_purified,B cells
+GSM1576393,T cells,0,0,rectangle,hoek_purified,B cells
+GSM1576394,B cells,0.9636082610098431,1,rectangle,hoek_purified,B cells
+GSM1576394,ILC,6.093914016273476e-17,0,rectangle,hoek_purified,B cells
+GSM1576394,Monocytes,1.3820225778503266e-19,0,rectangle,hoek_purified,B cells
+GSM1576394,NK cells,0,0,rectangle,hoek_purified,B cells
+GSM1576394,Plasma cells,0.03293756281008425,0,rectangle,hoek_purified,B cells
+GSM1576394,Platelet,0,0,rectangle,hoek_purified,B cells
+GSM1576394,CD4 T cells,1.3987691625332235e-17,0,rectangle,hoek_purified,B cells
+GSM1576394,CD8 T cells,3.060343022298577e-17,0,rectangle,hoek_purified,B cells
+GSM1576394,Tregs,0,0,rectangle,hoek_purified,B cells
+GSM1576394,mDC,1.0392688952869234e-18,0,rectangle,hoek_purified,B cells
+GSM1576394,pDC,0.0034541761800725096,0,rectangle,hoek_purified,B cells
+GSM1576394,Unknown,0,0,rectangle,hoek_purified,B cells
+GSM1576394,T cells,4.459112184831801e-17,0,rectangle,hoek_purified,B cells
+GSM1576395,B cells,0.009466124889976177,0,rectangle,hoek_purified,mDC
+GSM1576395,ILC,0.006671919554886476,0,rectangle,hoek_purified,mDC
+GSM1576395,Monocytes,0.3187604601180554,0,rectangle,hoek_purified,mDC
+GSM1576395,NK cells,0.05318945012444842,0,rectangle,hoek_purified,mDC
+GSM1576395,Plasma cells,0,0,rectangle,hoek_purified,mDC
+GSM1576395,Platelet,0.002585683618834146,0,rectangle,hoek_purified,mDC
+GSM1576395,CD4 T cells,0.04379341518586086,0,rectangle,hoek_purified,mDC
+GSM1576395,CD8 T cells,4.7464658476726455e-19,0,rectangle,hoek_purified,mDC
+GSM1576395,Tregs,0.0621422634153092,0,rectangle,hoek_purified,mDC
+GSM1576395,mDC,0.42367333601918267,1,rectangle,hoek_purified,mDC
+GSM1576395,pDC,0.07207028902810973,0,rectangle,hoek_purified,mDC
+GSM1576395,Unknown,0.007647058045336769,0,rectangle,hoek_purified,mDC
+GSM1576395,T cells,0.10593567860117006,0,rectangle,hoek_purified,mDC
+GSM1576396,B cells,0.003286068309160398,0,rectangle,hoek_purified,mDC
+GSM1576396,ILC,8.30360078917619e-4,0,rectangle,hoek_purified,mDC
+GSM1576396,Monocytes,0.6793560063988998,0,rectangle,hoek_purified,mDC
+GSM1576396,NK cells,0.048541797670715654,0,rectangle,hoek_purified,mDC
+GSM1576396,Plasma cells,0,0,rectangle,hoek_purified,mDC
+GSM1576396,Platelet,0.0015550958598871656,0,rectangle,hoek_purified,mDC
+GSM1576396,CD4 T cells,0,0,rectangle,hoek_purified,mDC
+GSM1576396,CD8 T cells,5.493061130997633e-19,0,rectangle,hoek_purified,mDC
+GSM1576396,Tregs,0,0,rectangle,hoek_purified,mDC
+GSM1576396,mDC,0.17645846276838342,1,rectangle,hoek_purified,mDC
+GSM1576396,pDC,0.06295650594856095,0,rectangle,hoek_purified,mDC
+GSM1576396,Unknown,0.027015702965475015,0,rectangle,hoek_purified,mDC
+GSM1576396,T cells,5.493061130997633e-19,0,rectangle,hoek_purified,mDC
+GSM1576397,B cells,0.016909732638310054,0,rectangle,hoek_purified,mDC
+GSM1576397,ILC,0.006627709253388284,0,rectangle,hoek_purified,mDC
+GSM1576397,Monocytes,0.6912291613727944,0,rectangle,hoek_purified,mDC
+GSM1576397,NK cells,0.05840510077756503,0,rectangle,hoek_purified,mDC
+GSM1576397,Plasma cells,1.130848387418042e-19,0,rectangle,hoek_purified,mDC
+GSM1576397,Platelet,8.466666653649159e-4,0,rectangle,hoek_purified,mDC
+GSM1576397,CD4 T cells,0.07018455187459031,0,rectangle,hoek_purified,mDC
+GSM1576397,CD8 T cells,1.768607639555223e-18,0,rectangle,hoek_purified,mDC
+GSM1576397,Tregs,0.05950865927520611,0,rectangle,hoek_purified,mDC
+GSM1576397,mDC,0.03675454948256637,1,rectangle,hoek_purified,mDC
+GSM1576397,pDC,0.05953386866021459,0,rectangle,hoek_purified,mDC
+GSM1576397,Unknown,0,0,rectangle,hoek_purified,mDC
+GSM1576397,T cells,0.12969321114979643,0,rectangle,hoek_purified,mDC
+GSM1576398,B cells,0.002036549708077109,0,rectangle,hoek_purified,mDC
+GSM1576398,ILC,0.0031557239310100764,0,rectangle,hoek_purified,mDC
+GSM1576398,Monocytes,0.7351656746289981,0,rectangle,hoek_purified,mDC
+GSM1576398,NK cells,0.04604683243179672,0,rectangle,hoek_purified,mDC
+GSM1576398,Plasma cells,5.982013546047027e-20,0,rectangle,hoek_purified,mDC
+GSM1576398,Platelet,0.001082813416688238,0,rectangle,hoek_purified,mDC
+GSM1576398,CD4 T cells,5.573251845056901e-6,0,rectangle,hoek_purified,mDC
+GSM1576398,CD8 T cells,0,0,rectangle,hoek_purified,mDC
+GSM1576398,Tregs,0,0,rectangle,hoek_purified,mDC
+GSM1576398,mDC,0.17668109027695095,1,rectangle,hoek_purified,mDC
+GSM1576398,pDC,0.035825742354633885,0,rectangle,hoek_purified,mDC
+GSM1576398,Unknown,0,0,rectangle,hoek_purified,mDC
+GSM1576398,T cells,5.573251845056901e-6,0,rectangle,hoek_purified,mDC
+GSM1576399,B cells,6.637825678417062e-19,0,rectangle,hoek_purified,Monocytes
+GSM1576399,ILC,3.5813805195945846e-17,0,rectangle,hoek_purified,Monocytes
+GSM1576399,Monocytes,0.9990194475460346,1,rectangle,hoek_purified,Monocytes
+GSM1576399,NK cells,1.6798223355950818e-18,0,rectangle,hoek_purified,Monocytes
+GSM1576399,Plasma cells,0,0,rectangle,hoek_purified,Monocytes
+GSM1576399,Platelet,0,0,rectangle,hoek_purified,Monocytes
+GSM1576399,CD4 T cells,7.388067831334369e-17,0,rectangle,hoek_purified,Monocytes
+GSM1576399,CD8 T cells,2.571095138020352e-17,0,rectangle,hoek_purified,Monocytes
+GSM1576399,Tregs,5.2950633236118145e-17,0,rectangle,hoek_purified,Monocytes
+GSM1576399,mDC,9.805524539651573e-4,0,rectangle,hoek_purified,Monocytes
+GSM1576399,pDC,5.375542884987381e-19,0,rectangle,hoek_purified,Monocytes
+GSM1576399,Unknown,0,0,rectangle,hoek_purified,Monocytes
+GSM1576399,T cells,1.5254226292966537e-16,0,rectangle,hoek_purified,Monocytes
+GSM1576400,B cells,0,0,rectangle,hoek_purified,Monocytes
+GSM1576400,ILC,5.734200167572813e-17,0,rectangle,hoek_purified,Monocytes
+GSM1576400,Monocytes,1,1,rectangle,hoek_purified,Monocytes
+GSM1576400,NK cells,6.000550793434702e-20,0,rectangle,hoek_purified,Monocytes
+GSM1576400,Plasma cells,0,0,rectangle,hoek_purified,Monocytes
+GSM1576400,Platelet,0,0,rectangle,hoek_purified,Monocytes
+GSM1576400,CD4 T cells,0,0,rectangle,hoek_purified,Monocytes
+GSM1576400,CD8 T cells,7.743743764249928e-17,0,rectangle,hoek_purified,Monocytes
+GSM1576400,Tregs,2.3842824923887155e-17,0,rectangle,hoek_purified,Monocytes
+GSM1576400,mDC,2.6743867704179144e-18,0,rectangle,hoek_purified,Monocytes
+GSM1576400,pDC,5.522418193564807e-19,0,rectangle,hoek_purified,Monocytes
+GSM1576400,Unknown,0,0,rectangle,hoek_purified,Monocytes
+GSM1576400,T cells,1.0128026256638643e-16,0,rectangle,hoek_purified,Monocytes
+GSM1576401,B cells,6.983471069450148e-19,0,rectangle,hoek_purified,Monocytes
+GSM1576401,ILC,4.623013859515567e-17,0,rectangle,hoek_purified,Monocytes
+GSM1576401,Monocytes,0.9999999999999998,1,rectangle,hoek_purified,Monocytes
+GSM1576401,NK cells,0,0,rectangle,hoek_purified,Monocytes
+GSM1576401,Plasma cells,0,0,rectangle,hoek_purified,Monocytes
+GSM1576401,Platelet,0,0,rectangle,hoek_purified,Monocytes
+GSM1576401,CD4 T cells,1.0312160829182348e-16,0,rectangle,hoek_purified,Monocytes
+GSM1576401,CD8 T cells,3.848096466665784e-17,0,rectangle,hoek_purified,Monocytes
+GSM1576401,Tregs,5.666008412818958e-17,0,rectangle,hoek_purified,Monocytes
+GSM1576401,mDC,2.1771615798332904e-18,0,rectangle,hoek_purified,Monocytes
+GSM1576401,pDC,5.889949469798816e-19,0,rectangle,hoek_purified,Monocytes
+GSM1576401,Unknown,0,0,rectangle,hoek_purified,Monocytes
+GSM1576401,T cells,1.982626570866709e-16,0,rectangle,hoek_purified,Monocytes
+GSM1576402,B cells,8.167808934817799e-19,0,rectangle,hoek_purified,Monocytes
+GSM1576402,ILC,4.6709867239319414e-17,0,rectangle,hoek_purified,Monocytes
+GSM1576402,Monocytes,0.9999999999999998,1,rectangle,hoek_purified,Monocytes
+GSM1576402,NK cells,2.1724520331759908e-18,0,rectangle,hoek_purified,Monocytes
+GSM1576402,Plasma cells,0,0,rectangle,hoek_purified,Monocytes
+GSM1576402,Platelet,0,0,rectangle,hoek_purified,Monocytes
+GSM1576402,CD4 T cells,1.7874090849120657e-16,0,rectangle,hoek_purified,Monocytes
+GSM1576402,CD8 T cells,4.7124799209570556e-17,0,rectangle,hoek_purified,Monocytes
+GSM1576402,Tregs,4.193608355317805e-17,0,rectangle,hoek_purified,Monocytes
+GSM1576402,mDC,3.1051737870488046e-18,0,rectangle,hoek_purified,Monocytes
+GSM1576402,pDC,7.121129241800818e-19,0,rectangle,hoek_purified,Monocytes
+GSM1576402,Unknown,0,0,rectangle,hoek_purified,Monocytes
+GSM1576402,T cells,2.6780179125395516e-16,0,rectangle,hoek_purified,Monocytes
+GSM1576403,B cells,0.008615809264832817,0,rectangle,hoek_purified,NA
+GSM1576403,ILC,1.6079363110180444e-19,0,rectangle,hoek_purified,NA
+GSM1576403,Monocytes,0.9706625712619817,0,rectangle,hoek_purified,NA
+GSM1576403,NK cells,0.0030840260320782707,0,rectangle,hoek_purified,NA
+GSM1576403,Plasma cells,0,0,rectangle,hoek_purified,NA
+GSM1576403,Platelet,1.5582587937803244e-18,0,rectangle,hoek_purified,NA
+GSM1576403,CD4 T cells,0,0,rectangle,hoek_purified,NA
+GSM1576403,CD8 T cells,0.008664990762272864,0,rectangle,hoek_purified,NA
+GSM1576403,Tregs,0.008615809264833596,0,rectangle,hoek_purified,NA
+GSM1576403,mDC,0,0,rectangle,hoek_purified,NA
+GSM1576403,pDC,3.567934140006235e-4,0,rectangle,hoek_purified,NA
+GSM1576403,Unknown,0,0,rectangle,hoek_purified,NA
+GSM1576403,T cells,0.017280800027106462,0,rectangle,hoek_purified,NA
+GSM1576404,B cells,0.00855830456089969,0,rectangle,hoek_purified,NA
+GSM1576404,ILC,0.0037099480645741553,0,rectangle,hoek_purified,NA
+GSM1576404,Monocytes,0.9674640661551892,0,rectangle,hoek_purified,NA
+GSM1576404,NK cells,0.003128028146483716,0,rectangle,hoek_purified,NA
+GSM1576404,Plasma cells,1.0701919380527588e-22,0,rectangle,hoek_purified,NA
+GSM1576404,Platelet,0,0,rectangle,hoek_purified,NA
+GSM1576404,CD4 T cells,0,0,rectangle,hoek_purified,NA
+GSM1576404,CD8 T cells,0.008581348511952872,0,rectangle,hoek_purified,NA
+GSM1576404,Tregs,0.008558304560900521,0,rectangle,hoek_purified,NA
+GSM1576404,mDC,0,0,rectangle,hoek_purified,NA
+GSM1576404,pDC,4.0236545077748655e-19,0,rectangle,hoek_purified,NA
+GSM1576404,Unknown,0,0,rectangle,hoek_purified,NA
+GSM1576404,T cells,0.017139653072853395,0,rectangle,hoek_purified,NA
+GSM1576405,B cells,0.007880320629246639,0,rectangle,hoek_purified,NA
+GSM1576405,ILC,0.007880320629246639,0,rectangle,hoek_purified,NA
+GSM1576405,Monocytes,0.9657291978979254,0,rectangle,hoek_purified,NA
+GSM1576405,NK cells,0.002733796624344907,0,rectangle,hoek_purified,NA
+GSM1576405,Plasma cells,0,0,rectangle,hoek_purified,NA
+GSM1576405,Platelet,7.398641292988518e-19,0,rectangle,hoek_purified,NA
+GSM1576405,CD4 T cells,0,0,rectangle,hoek_purified,NA
+GSM1576405,CD8 T cells,0.00789604358998913,0,rectangle,hoek_purified,NA
+GSM1576405,Tregs,0.0078803206292474,0,rectangle,hoek_purified,NA
+GSM1576405,mDC,0,0,rectangle,hoek_purified,NA
+GSM1576405,pDC,3.986167558626632e-19,0,rectangle,hoek_purified,NA
+GSM1576405,Unknown,0,0,rectangle,hoek_purified,NA
+GSM1576405,T cells,0.015776364219236533,0,rectangle,hoek_purified,NA
+GSM1576406,B cells,0.009037196345934358,0,rectangle,hoek_purified,NA
+GSM1576406,ILC,3.070472628043577e-4,0,rectangle,hoek_purified,NA
+GSM1576406,Monocytes,0.9690321631653046,0,rectangle,hoek_purified,NA
+GSM1576406,NK cells,0.0017400618838605754,0,rectangle,hoek_purified,NA
+GSM1576406,Plasma cells,0,0,rectangle,hoek_purified,NA
+GSM1576406,Platelet,0,0,rectangle,hoek_purified,NA
+GSM1576406,CD4 T cells,0,0,rectangle,hoek_purified,NA
+GSM1576406,CD8 T cells,0.008899117022643486,0,rectangle,hoek_purified,NA
+GSM1576406,Tregs,0.009037196345934369,0,rectangle,hoek_purified,NA
+GSM1576406,mDC,0,0,rectangle,hoek_purified,NA
+GSM1576406,pDC,0.0019472179735182415,0,rectangle,hoek_purified,NA
+GSM1576406,Unknown,0,0,rectangle,hoek_purified,NA
+GSM1576406,T cells,0.017936313368577855,0,rectangle,hoek_purified,NA
+GSM1576407,B cells,0,0,rectangle,hoek_purified,NK cells
+GSM1576407,ILC,0.009341511236905466,0,rectangle,hoek_purified,NK cells
+GSM1576407,Monocytes,0.0019355566731066012,0,rectangle,hoek_purified,NK cells
+GSM1576407,NK cells,0.9474852688041719,1,rectangle,hoek_purified,NK cells
+GSM1576407,Plasma cells,2.2429473568298226e-23,0,rectangle,hoek_purified,NK cells
+GSM1576407,Platelet,3.253263884765554e-6,0,rectangle,hoek_purified,NK cells
+GSM1576407,CD4 T cells,0,0,rectangle,hoek_purified,NK cells
+GSM1576407,CD8 T cells,0.02694295080587759,0,rectangle,hoek_purified,NK cells
+GSM1576407,Tregs,0,0,rectangle,hoek_purified,NK cells
+GSM1576407,mDC,0.013286743471042842,0,rectangle,hoek_purified,NK cells
+GSM1576407,pDC,0.001004715745010885,0,rectangle,hoek_purified,NK cells
+GSM1576407,Unknown,0,0,rectangle,hoek_purified,NK cells
+GSM1576407,T cells,0.02694295080587759,0,rectangle,hoek_purified,NK cells
+GSM1576408,B cells,0,0,rectangle,hoek_purified,NK cells
+GSM1576408,ILC,0.0033800244566778727,0,rectangle,hoek_purified,NK cells
+GSM1576408,Monocytes,0,0,rectangle,hoek_purified,NK cells
+GSM1576408,NK cells,0.9692412258654157,1,rectangle,hoek_purified,NK cells
+GSM1576408,Plasma cells,0,0,rectangle,hoek_purified,NK cells
+GSM1576408,Platelet,3.1871706427724086e-4,0,rectangle,hoek_purified,NK cells
+GSM1576408,CD4 T cells,0,0,rectangle,hoek_purified,NK cells
+GSM1576408,CD8 T cells,0.024507293876347445,0,rectangle,hoek_purified,NK cells
+GSM1576408,Tregs,0,0,rectangle,hoek_purified,NK cells
+GSM1576408,mDC,0.0014081574608373901,0,rectangle,hoek_purified,NK cells
+GSM1576408,pDC,0.0011445812764442197,0,rectangle,hoek_purified,NK cells
+GSM1576408,Unknown,0,0,rectangle,hoek_purified,NK cells
+GSM1576408,T cells,0.024507293876347445,0,rectangle,hoek_purified,NK cells
+GSM1576409,B cells,2.710103330097742e-20,0,rectangle,hoek_purified,NK cells
+GSM1576409,ILC,0.01152828326825815,0,rectangle,hoek_purified,NK cells
+GSM1576409,Monocytes,0,0,rectangle,hoek_purified,NK cells
+GSM1576409,NK cells,0.9527903913419388,1,rectangle,hoek_purified,NK cells
+GSM1576409,Plasma cells,0,0,rectangle,hoek_purified,NK cells
+GSM1576409,Platelet,5.048279902362953e-4,0,rectangle,hoek_purified,NK cells
+GSM1576409,CD4 T cells,3.515519483531241e-18,0,rectangle,hoek_purified,NK cells
+GSM1576409,CD8 T cells,0.029572008560995858,0,rectangle,hoek_purified,NK cells
+GSM1576409,Tregs,0,0,rectangle,hoek_purified,NK cells
+GSM1576409,mDC,0.004515214492014001,0,rectangle,hoek_purified,NK cells
+GSM1576409,pDC,0.0010892743465569512,0,rectangle,hoek_purified,NK cells
+GSM1576409,Unknown,0,0,rectangle,hoek_purified,NK cells
+GSM1576409,T cells,0.02957200856099586,0,rectangle,hoek_purified,NK cells
+GSM1576410,B cells,3.404790291209025e-20,0,rectangle,hoek_purified,NK cells
+GSM1576410,ILC,0.009424023107746541,0,rectangle,hoek_purified,NK cells
+GSM1576410,Monocytes,0.01066834489829435,0,rectangle,hoek_purified,NK cells
+GSM1576410,NK cells,0.9260680158694679,1,rectangle,hoek_purified,NK cells
+GSM1576410,Plasma cells,2.640206655234191e-21,0,rectangle,hoek_purified,NK cells
+GSM1576410,Platelet,0,0,rectangle,hoek_purified,NK cells
+GSM1576410,CD4 T cells,0,0,rectangle,hoek_purified,NK cells
+GSM1576410,CD8 T cells,0.03214658230160371,0,rectangle,hoek_purified,NK cells
+GSM1576410,Tregs,0,0,rectangle,hoek_purified,NK cells
+GSM1576410,mDC,0.020158775421672236,0,rectangle,hoek_purified,NK cells
+GSM1576410,pDC,0.0015342584012153918,0,rectangle,hoek_purified,NK cells
+GSM1576410,Unknown,0,0,rectangle,hoek_purified,NK cells
+GSM1576410,T cells,0.03214658230160371,0,rectangle,hoek_purified,NK cells
+GSM1576415,B cells,2.1401069978850104e-20,0,rectangle,hoek_purified,T cells
+GSM1576415,ILC,9.477171410840277e-19,0,rectangle,hoek_purified,T cells
+GSM1576415,Monocytes,9.91633880854677e-20,0,rectangle,hoek_purified,T cells
+GSM1576415,NK cells,0.0073005543658492015,0,rectangle,hoek_purified,T cells
+GSM1576415,Plasma cells,4.053923179687972e-22,0,rectangle,hoek_purified,T cells
+GSM1576415,Platelet,0,0,rectangle,hoek_purified,T cells
+GSM1576415,CD4 T cells,0.6849784832134713,0,rectangle,hoek_purified,T cells
+GSM1576415,CD8 T cells,0.1221580084939349,0,rectangle,hoek_purified,T cells
+GSM1576415,Tregs,0.18489126983941742,0,rectangle,hoek_purified,T cells
+GSM1576415,mDC,0,0,rectangle,hoek_purified,T cells
+GSM1576415,pDC,6.716840873272349e-4,0,rectangle,hoek_purified,T cells
+GSM1576415,Unknown,0,0,rectangle,hoek_purified,T cells
+GSM1576415,T cells,0.9920277615468236,1,rectangle,hoek_purified,T cells
+GSM1576416,B cells,5.981493624286029e-19,0,rectangle,hoek_purified,T cells
+GSM1576416,ILC,7.7101065009975075e-19,0,rectangle,hoek_purified,T cells
+GSM1576416,Monocytes,3.274699266813452e-20,0,rectangle,hoek_purified,T cells
+GSM1576416,NK cells,0.013518007106255036,0,rectangle,hoek_purified,T cells
+GSM1576416,Plasma cells,0,0,rectangle,hoek_purified,T cells
+GSM1576416,Platelet,0,0,rectangle,hoek_purified,T cells
+GSM1576416,CD4 T cells,0.8072299197816474,0,rectangle,hoek_purified,T cells
+GSM1576416,CD8 T cells,0.10151098984180938,0,rectangle,hoek_purified,T cells
+GSM1576416,Tregs,0.07589399537032518,0,rectangle,hoek_purified,T cells
+GSM1576416,mDC,0,0,rectangle,hoek_purified,T cells
+GSM1576416,pDC,0.001847087899963007,0,rectangle,hoek_purified,T cells
+GSM1576416,Unknown,0,0,rectangle,hoek_purified,T cells
+GSM1576416,T cells,0.9846349049937819,1,rectangle,hoek_purified,T cells
+GSM1576417,B cells,5.686205243704292e-19,0,rectangle,hoek_purified,T cells
+GSM1576417,ILC,7.984320071157148e-4,0,rectangle,hoek_purified,T cells
+GSM1576417,Monocytes,0,0,rectangle,hoek_purified,T cells
+GSM1576417,NK cells,0.01738843085241224,0,rectangle,hoek_purified,T cells
+GSM1576417,Plasma cells,0,0,rectangle,hoek_purified,T cells
+GSM1576417,Platelet,3.3901745170665695e-20,0,rectangle,hoek_purified,T cells
+GSM1576417,CD4 T cells,0.7306783251242908,0,rectangle,hoek_purified,T cells
+GSM1576417,CD8 T cells,0.08048251443008389,0,rectangle,hoek_purified,T cells
+GSM1576417,Tregs,0.17065229758609746,0,rectangle,hoek_purified,T cells
+GSM1576417,mDC,1.8886212528916361e-19,0,rectangle,hoek_purified,T cells
+GSM1576417,pDC,2.533605920424447e-19,0,rectangle,hoek_purified,T cells
+GSM1576417,Unknown,0,0,rectangle,hoek_purified,T cells
+GSM1576417,T cells,0.9818131371404721,1,rectangle,hoek_purified,T cells
+GSM1576418,B cells,1.45076686207592e-20,0,rectangle,hoek_purified,T cells
+GSM1576418,ILC,1.3793904889381467e-5,0,rectangle,hoek_purified,T cells
+GSM1576418,Monocytes,1.4949480460829606e-19,0,rectangle,hoek_purified,T cells
+GSM1576418,NK cells,0.009324397696776409,0,rectangle,hoek_purified,T cells
+GSM1576418,Plasma cells,3.609423242734803e-22,0,rectangle,hoek_purified,T cells
+GSM1576418,Platelet,0,0,rectangle,hoek_purified,T cells
+GSM1576418,CD4 T cells,0.6581733292561962,0,rectangle,hoek_purified,T cells
+GSM1576418,CD8 T cells,0.1248564583345773,0,rectangle,hoek_purified,T cells
+GSM1576418,Tregs,0.20700042849733075,0,rectangle,hoek_purified,T cells
+GSM1576418,mDC,1.1686554553006272e-20,0,rectangle,hoek_purified,T cells
+GSM1576418,pDC,6.315923102300316e-4,0,rectangle,hoek_purified,T cells
+GSM1576418,Unknown,0,0,rectangle,hoek_purified,T cells
+GSM1576418,T cells,0.9900302160881043,1,rectangle,hoek_purified,T cells
+GSM1576419,B cells,0.9847805590856497,1,rectangle,hoek_purified,B cells
+GSM1576419,ILC,4.4934959235158264e-4,0,rectangle,hoek_purified,B cells
+GSM1576419,Monocytes,1.9251995752680282e-19,0,rectangle,hoek_purified,B cells
+GSM1576419,NK cells,0,0,rectangle,hoek_purified,B cells
+GSM1576419,Plasma cells,0.014770091321998644,0,rectangle,hoek_purified,B cells
+GSM1576419,Platelet,0,0,rectangle,hoek_purified,B cells
+GSM1576419,CD4 T cells,0,0,rectangle,hoek_purified,B cells
+GSM1576419,CD8 T cells,2.6715501239656627e-17,0,rectangle,hoek_purified,B cells
+GSM1576419,Tregs,0,0,rectangle,hoek_purified,B cells
+GSM1576419,mDC,1.0214225914577454e-18,0,rectangle,hoek_purified,B cells
+GSM1576419,pDC,0,0,rectangle,hoek_purified,B cells
+GSM1576419,Unknown,0,0,rectangle,hoek_purified,B cells
+GSM1576419,T cells,2.6715501239656627e-17,0,rectangle,hoek_purified,B cells
+GSM1576420,B cells,0.9819885520832681,1,rectangle,hoek_purified,B cells
+GSM1576420,ILC,2.7571488464818265e-4,0,rectangle,hoek_purified,B cells
+GSM1576420,Monocytes,6.983581443914328e-20,0,rectangle,hoek_purified,B cells
+GSM1576420,NK cells,0,0,rectangle,hoek_purified,B cells
+GSM1576420,Plasma cells,0.017735733032083652,0,rectangle,hoek_purified,B cells
+GSM1576420,Platelet,0,0,rectangle,hoek_purified,B cells
+GSM1576420,CD4 T cells,8.37600451369124e-18,0,rectangle,hoek_purified,B cells
+GSM1576420,CD8 T cells,3.571749373005697e-17,0,rectangle,hoek_purified,B cells
+GSM1576420,Tregs,0,0,rectangle,hoek_purified,B cells
+GSM1576420,mDC,9.276767880059474e-19,0,rectangle,hoek_purified,B cells
+GSM1576420,pDC,0,0,rectangle,hoek_purified,B cells
+GSM1576420,Unknown,0,0,rectangle,hoek_purified,B cells
+GSM1576420,T cells,4.409349824374821e-17,0,rectangle,hoek_purified,B cells
+GSM1576421,B cells,0.9539978812824228,1,rectangle,hoek_purified,B cells
+GSM1576421,ILC,2.799807097686111e-17,0,rectangle,hoek_purified,B cells
+GSM1576421,Monocytes,0,0,rectangle,hoek_purified,B cells
+GSM1576421,NK cells,0,0,rectangle,hoek_purified,B cells
+GSM1576421,Plasma cells,0.04600211871757717,0,rectangle,hoek_purified,B cells
+GSM1576421,Platelet,0,0,rectangle,hoek_purified,B cells
+GSM1576421,CD4 T cells,0,0,rectangle,hoek_purified,B cells
+GSM1576421,CD8 T cells,1.9136955394923144e-17,0,rectangle,hoek_purified,B cells
+GSM1576421,Tregs,4.819575472122724e-18,0,rectangle,hoek_purified,B cells
+GSM1576421,mDC,1.8002965642420017e-19,0,rectangle,hoek_purified,B cells
+GSM1576421,pDC,0,0,rectangle,hoek_purified,B cells
+GSM1576421,Unknown,0,0,rectangle,hoek_purified,B cells
+GSM1576421,T cells,2.3956530867045866e-17,0,rectangle,hoek_purified,B cells
+GSM1576422,B cells,0.9702778337854563,1,rectangle,hoek_purified,B cells
+GSM1576422,ILC,3.278186625337481e-4,0,rectangle,hoek_purified,B cells
+GSM1576422,Monocytes,2.284965745731637e-20,0,rectangle,hoek_purified,B cells
+GSM1576422,NK cells,0,0,rectangle,hoek_purified,B cells
+GSM1576422,Plasma cells,0.029394347552009977,0,rectangle,hoek_purified,B cells
+GSM1576422,Platelet,0,0,rectangle,hoek_purified,B cells
+GSM1576422,CD4 T cells,1.223076252895311e-17,0,rectangle,hoek_purified,B cells
+GSM1576422,CD8 T cells,3.028197534596809e-17,0,rectangle,hoek_purified,B cells
+GSM1576422,Tregs,0,0,rectangle,hoek_purified,B cells
+GSM1576422,mDC,1.163224405304051e-18,0,rectangle,hoek_purified,B cells
+GSM1576422,pDC,0,0,rectangle,hoek_purified,B cells
+GSM1576422,Unknown,0,0,rectangle,hoek_purified,B cells
+GSM1576422,T cells,4.2512737874921195e-17,0,rectangle,hoek_purified,B cells
+GSM1576423,B cells,0.02679613305629918,0,rectangle,hoek_purified,mDC
+GSM1576423,ILC,0.1068819766441493,0,rectangle,hoek_purified,mDC
+GSM1576423,Monocytes,0.07623630709979261,0,rectangle,hoek_purified,mDC
+GSM1576423,NK cells,0.0532825342464175,0,rectangle,hoek_purified,mDC
+GSM1576423,Plasma cells,0,0,rectangle,hoek_purified,mDC
+GSM1576423,Platelet,2.0457005993507202e-4,0,rectangle,hoek_purified,mDC
+GSM1576423,CD4 T cells,0.011458442326466188,0,rectangle,hoek_purified,mDC
+GSM1576423,CD8 T cells,0,0,rectangle,hoek_purified,mDC
+GSM1576423,Tregs,0.24062728885579013,0,rectangle,hoek_purified,mDC
+GSM1576423,mDC,0.42485086154621476,1,rectangle,hoek_purified,mDC
+GSM1576423,pDC,0.059661886164935306,0,rectangle,hoek_purified,mDC
+GSM1576423,Unknown,0,0,rectangle,hoek_purified,mDC
+GSM1576423,T cells,0.2520857311822563,0,rectangle,hoek_purified,mDC
+GSM1576424,B cells,0.0108206804561918,0,rectangle,hoek_purified,mDC
+GSM1576424,ILC,0.006952246623583922,0,rectangle,hoek_purified,mDC
+GSM1576424,Monocytes,0.4248714419318404,0,rectangle,hoek_purified,mDC
+GSM1576424,NK cells,0.052917966278748826,0,rectangle,hoek_purified,mDC
+GSM1576424,Plasma cells,1.894542868031741e-20,0,rectangle,hoek_purified,mDC
+GSM1576424,Platelet,6.969193971803535e-4,0,rectangle,hoek_purified,mDC
+GSM1576424,CD4 T cells,0.05012676474072705,0,rectangle,hoek_purified,mDC
+GSM1576424,CD8 T cells,0,0,rectangle,hoek_purified,mDC
+GSM1576424,Tregs,0.032458225525297243,0,rectangle,hoek_purified,mDC
+GSM1576424,mDC,0.36361500284930526,1,rectangle,hoek_purified,mDC
+GSM1576424,pDC,0.057540752197125046,0,rectangle,hoek_purified,mDC
+GSM1576424,Unknown,0,0,rectangle,hoek_purified,mDC
+GSM1576424,T cells,0.0825849902660243,0,rectangle,hoek_purified,mDC
+GSM1576425,B cells,0.011276635064458597,0,rectangle,hoek_purified,mDC
+GSM1576425,ILC,0.007020596068473331,0,rectangle,hoek_purified,mDC
+GSM1576425,Monocytes,0.5899693113733668,0,rectangle,hoek_purified,mDC
+GSM1576425,NK cells,0.0555163786945082,0,rectangle,hoek_purified,mDC
+GSM1576425,Plasma cells,3.002617181928149e-20,0,rectangle,hoek_purified,mDC
+GSM1576425,Platelet,9.916052514291104e-4,0,rectangle,hoek_purified,mDC
+GSM1576425,CD4 T cells,0.035093644771368816,0,rectangle,hoek_purified,mDC
+GSM1576425,CD8 T cells,1.2100337216914689e-17,0,rectangle,hoek_purified,mDC
+GSM1576425,Tregs,0.02896855910215735,0,rectangle,hoek_purified,mDC
+GSM1576425,mDC,0.224375475654876,1,rectangle,hoek_purified,mDC
+GSM1576425,pDC,0.046787794019361825,0,rectangle,hoek_purified,mDC
+GSM1576425,Unknown,0,0,rectangle,hoek_purified,mDC
+GSM1576425,T cells,0.06406220387352618,0,rectangle,hoek_purified,mDC
+GSM1576426,B cells,0.03599173812737836,0,rectangle,hoek_purified,mDC
+GSM1576426,ILC,0.12166114373180852,0,rectangle,hoek_purified,mDC
+GSM1576426,Monocytes,0.08220893822358422,0,rectangle,hoek_purified,mDC
+GSM1576426,NK cells,0.05881306802244082,0,rectangle,hoek_purified,mDC
+GSM1576426,Plasma cells,0,0,rectangle,hoek_purified,mDC
+GSM1576426,Platelet,6.235499433251381e-4,0,rectangle,hoek_purified,mDC
+GSM1576426,CD4 T cells,0.011273260648532873,0,rectangle,hoek_purified,mDC
+GSM1576426,CD8 T cells,1.846743061758766e-18,0,rectangle,hoek_purified,mDC
+GSM1576426,Tregs,0.2254652129706578,0,rectangle,hoek_purified,mDC
+GSM1576426,mDC,0.40999054485674286,1,rectangle,hoek_purified,mDC
+GSM1576426,pDC,0.05397254347552952,0,rectangle,hoek_purified,mDC
+GSM1576426,Unknown,0,0,rectangle,hoek_purified,mDC
+GSM1576426,T cells,0.23673847361919068,0,rectangle,hoek_purified,mDC
+GSM1576427,B cells,0,0,rectangle,hoek_purified,Monocytes
+GSM1576427,ILC,8.297330471669599e-17,0,rectangle,hoek_purified,Monocytes
+GSM1576427,Monocytes,0.9828569967242817,1,rectangle,hoek_purified,Monocytes
+GSM1576427,NK cells,1.8064961406495777e-19,0,rectangle,hoek_purified,Monocytes
+GSM1576427,Plasma cells,0,0,rectangle,hoek_purified,Monocytes
+GSM1576427,Platelet,0,0,rectangle,hoek_purified,Monocytes
+GSM1576427,CD4 T cells,0,0,rectangle,hoek_purified,Monocytes
+GSM1576427,CD8 T cells,0,0,rectangle,hoek_purified,Monocytes
+GSM1576427,Tregs,0.017143003275718348,0,rectangle,hoek_purified,Monocytes
+GSM1576427,mDC,2.0398497128872758e-18,0,rectangle,hoek_purified,Monocytes
+GSM1576427,pDC,3.751945952125074e-18,0,rectangle,hoek_purified,Monocytes
+GSM1576427,Unknown,0,0,rectangle,hoek_purified,Monocytes
+GSM1576427,T cells,0.017143003275718348,0,rectangle,hoek_purified,Monocytes
+GSM1576428,B cells,2.0865614039853556e-20,0,rectangle,hoek_purified,Monocytes
+GSM1576428,ILC,5.011658537829372e-19,0,rectangle,hoek_purified,Monocytes
+GSM1576428,Monocytes,1,1,rectangle,hoek_purified,Monocytes
+GSM1576428,NK cells,0,0,rectangle,hoek_purified,Monocytes
+GSM1576428,Plasma cells,0,0,rectangle,hoek_purified,Monocytes
+GSM1576428,Platelet,0,0,rectangle,hoek_purified,Monocytes
+GSM1576428,CD4 T cells,0,0,rectangle,hoek_purified,Monocytes
+GSM1576428,CD8 T cells,4.8199901068630584e-17,0,rectangle,hoek_purified,Monocytes
+GSM1576428,Tregs,3.1204564280066684e-17,0,rectangle,hoek_purified,Monocytes
+GSM1576428,mDC,2.5073550494210463e-18,0,rectangle,hoek_purified,Monocytes
+GSM1576428,pDC,4.470870363483823e-19,0,rectangle,hoek_purified,Monocytes
+GSM1576428,Unknown,0,0,rectangle,hoek_purified,Monocytes
+GSM1576428,T cells,7.940446534869727e-17,0,rectangle,hoek_purified,Monocytes
+GSM1576429,B cells,0,0,rectangle,hoek_purified,Monocytes
+GSM1576429,ILC,1.5979023834450721e-16,0,rectangle,hoek_purified,Monocytes
+GSM1576429,Monocytes,0.9999999999999997,1,rectangle,hoek_purified,Monocytes
+GSM1576429,NK cells,0,0,rectangle,hoek_purified,Monocytes
+GSM1576429,Plasma cells,6.703400937200296e-21,0,rectangle,hoek_purified,Monocytes
+GSM1576429,Platelet,1.3931611148246014e-19,0,rectangle,hoek_purified,Monocytes
+GSM1576429,CD4 T cells,0,0,rectangle,hoek_purified,Monocytes
+GSM1576429,CD8 T cells,2.354692170379354e-16,0,rectangle,hoek_purified,Monocytes
+GSM1576429,Tregs,1.4636920484002483e-18,0,rectangle,hoek_purified,Monocytes
+GSM1576429,mDC,3.915757329584632e-18,0,rectangle,hoek_purified,Monocytes
+GSM1576429,pDC,6.656807302555202e-19,0,rectangle,hoek_purified,Monocytes
+GSM1576429,Unknown,0,0,rectangle,hoek_purified,Monocytes
+GSM1576429,T cells,2.3693290908633563e-16,0,rectangle,hoek_purified,Monocytes
+GSM1576430,B cells,0,0,rectangle,hoek_purified,Monocytes
+GSM1576430,ILC,1.6002446522824933e-16,0,rectangle,hoek_purified,Monocytes
+GSM1576430,Monocytes,0.9999999999999996,1,rectangle,hoek_purified,Monocytes
+GSM1576430,NK cells,0,0,rectangle,hoek_purified,Monocytes
+GSM1576430,Plasma cells,0,0,rectangle,hoek_purified,Monocytes
+GSM1576430,Platelet,0,0,rectangle,hoek_purified,Monocytes
+GSM1576430,CD4 T cells,0,0,rectangle,hoek_purified,Monocytes
+GSM1576430,CD8 T cells,2.2791152271698626e-16,0,rectangle,hoek_purified,Monocytes
+GSM1576430,Tregs,0,0,rectangle,hoek_purified,Monocytes
+GSM1576430,mDC,1.6306225270476274e-18,0,rectangle,hoek_purified,Monocytes
+GSM1576430,pDC,5.447527217087819e-19,0,rectangle,hoek_purified,Monocytes
+GSM1576430,Unknown,0,0,rectangle,hoek_purified,Monocytes
+GSM1576430,T cells,2.2791152271698626e-16,0,rectangle,hoek_purified,Monocytes
+GSM1576431,B cells,0.007109813863298068,0,rectangle,hoek_purified,NA
+GSM1576431,ILC,0.007109813863298057,0,rectangle,hoek_purified,NA
+GSM1576431,Monocytes,0.9569942836911611,0,rectangle,hoek_purified,NA
+GSM1576431,NK cells,0.01762385763132122,0,rectangle,hoek_purified,NA
+GSM1576431,Plasma cells,0,0,rectangle,hoek_purified,NA
+GSM1576431,Platelet,0,0,rectangle,hoek_purified,NA
+GSM1576431,CD4 T cells,0,0,rectangle,hoek_purified,NA
+GSM1576431,CD8 T cells,0.0033834357450866284,0,rectangle,hoek_purified,NA
+GSM1576431,Tregs,0.007109813863299356,0,rectangle,hoek_purified,NA
+GSM1576431,mDC,2.2383917289621418e-18,0,rectangle,hoek_purified,NA
+GSM1576431,pDC,6.689813425354736e-4,0,rectangle,hoek_purified,NA
+GSM1576431,Unknown,0,0,rectangle,hoek_purified,NA
+GSM1576431,T cells,0.010493249608385984,0,rectangle,hoek_purified,NA
+GSM1576432,B cells,0.007349313697289604,0,rectangle,hoek_purified,NA
+GSM1576432,ILC,0.007349313697289589,0,rectangle,hoek_purified,NA
+GSM1576432,Monocytes,0.9596530931779467,0,rectangle,hoek_purified,NA
+GSM1576432,NK cells,0.012090687636928369,0,rectangle,hoek_purified,NA
+GSM1576432,Plasma cells,0,0,rectangle,hoek_purified,NA
+GSM1576432,Platelet,0,0,rectangle,hoek_purified,NA
+GSM1576432,CD4 T cells,0,0,rectangle,hoek_purified,NA
+GSM1576432,CD8 T cells,0.004643822425918848,0,rectangle,hoek_purified,NA
+GSM1576432,Tregs,0.007349313697290743,0,rectangle,hoek_purified,NA
+GSM1576432,mDC,1.1242547476827512e-17,0,rectangle,hoek_purified,NA
+GSM1576432,pDC,0.0015644556673362312,0,rectangle,hoek_purified,NA
+GSM1576432,Unknown,0,0,rectangle,hoek_purified,NA
+GSM1576432,T cells,0.01199313612320959,0,rectangle,hoek_purified,NA
+GSM1576433,B cells,0.007078801833303672,0,rectangle,hoek_purified,NA
+GSM1576433,ILC,0.007078801833303681,0,rectangle,hoek_purified,NA
+GSM1576433,Monocytes,0.9559468568892886,0,rectangle,hoek_purified,NA
+GSM1576433,NK cells,0.01788188677312473,0,rectangle,hoek_purified,NA
+GSM1576433,Plasma cells,0,0,rectangle,hoek_purified,NA
+GSM1576433,Platelet,0,0,rectangle,hoek_purified,NA
+GSM1576433,CD4 T cells,0,0,rectangle,hoek_purified,NA
+GSM1576433,CD8 T cells,0.002256765510864847,0,rectangle,hoek_purified,NA
+GSM1576433,Tregs,0.007078801833305057,0,rectangle,hoek_purified,NA
+GSM1576433,mDC,1.6906593740326449e-18,0,rectangle,hoek_purified,NA
+GSM1576433,pDC,0.0026780853268093996,0,rectangle,hoek_purified,NA
+GSM1576433,Unknown,0,0,rectangle,hoek_purified,NA
+GSM1576433,T cells,0.009335567344169904,0,rectangle,hoek_purified,NA
+GSM1576434,B cells,0.007048736721964792,0,rectangle,hoek_purified,NA
+GSM1576434,ILC,0.007048736721964792,0,rectangle,hoek_purified,NA
+GSM1576434,Monocytes,0.9520872954001928,0,rectangle,hoek_purified,NA
+GSM1576434,NK cells,0.016553946288248727,0,rectangle,hoek_purified,NA
+GSM1576434,Plasma cells,4.548961706686059e-21,0,rectangle,hoek_purified,NA
+GSM1576434,Platelet,7.3281894406772855e-19,0,rectangle,hoek_purified,NA
+GSM1576434,CD4 T cells,0,0,rectangle,hoek_purified,NA
+GSM1576434,CD8 T cells,0.007287145686521839,0,rectangle,hoek_purified,NA
+GSM1576434,Tregs,0.007048736721965758,0,rectangle,hoek_purified,NA
+GSM1576434,mDC,0,0,rectangle,hoek_purified,NA
+GSM1576434,pDC,0.0029254024591413392,0,rectangle,hoek_purified,NA
+GSM1576434,Unknown,0,0,rectangle,hoek_purified,NA
+GSM1576434,T cells,0.014335882408487596,0,rectangle,hoek_purified,NA
+GSM1576435,B cells,1.3406172320134404e-20,0,rectangle,hoek_purified,NK cells
+GSM1576435,ILC,0.014120990954870762,0,rectangle,hoek_purified,NK cells
+GSM1576435,Monocytes,0.002281678699038012,0,rectangle,hoek_purified,NK cells
+GSM1576435,NK cells,0.9338411264303729,1,rectangle,hoek_purified,NK cells
+GSM1576435,Plasma cells,0,0,rectangle,hoek_purified,NK cells
+GSM1576435,Platelet,4.35937331119244e-4,0,rectangle,hoek_purified,NK cells
+GSM1576435,CD4 T cells,3.1921590649063673e-18,0,rectangle,hoek_purified,NK cells
+GSM1576435,CD8 T cells,0.032773652040002835,0,rectangle,hoek_purified,NK cells
+GSM1576435,Tregs,3.73495749844605e-19,0,rectangle,hoek_purified,NK cells
+GSM1576435,mDC,0.015643972512150498,0,rectangle,hoek_purified,NK cells
+GSM1576435,pDC,9.026420324458751e-4,0,rectangle,hoek_purified,NK cells
+GSM1576435,Unknown,0,0,rectangle,hoek_purified,NK cells
+GSM1576435,T cells,0.032773652040002835,0,rectangle,hoek_purified,NK cells
+GSM1576436,B cells,8.032106892670926e-21,0,rectangle,hoek_purified,NK cells
+GSM1576436,ILC,0.01563667575469255,0,rectangle,hoek_purified,NK cells
+GSM1576436,Monocytes,0.0033533476373611825,0,rectangle,hoek_purified,NK cells
+GSM1576436,NK cells,0.93435136052990575,1,rectangle,hoek_purified,NK cells
+GSM1576436,Plasma cells,0,0,rectangle,hoek_purified,NK cells
+GSM1576436,Platelet,1.0594572675897248e-4,0,rectangle,hoek_purified,NK cells
+GSM1576436,CD4 T cells,0,0,rectangle,hoek_purified,NK cells
+GSM1576436,CD8 T cells,0.03236794500469732,0,rectangle,hoek_purified,NK cells
+GSM1576436,Tregs,0,0,rectangle,hoek_purified,NK cells
+GSM1576436,mDC,0.013692210525171184,0,rectangle,hoek_purified,NK cells
+GSM1576436,pDC,4.925148214130615e-4,0,rectangle,hoek_purified,NK cells
+GSM1576436,Unknown,0,0,rectangle,hoek_purified,NK cells
+GSM1576436,T cells,0.03236794500469732,0,rectangle,hoek_purified,NK cells
+GSM1576437,B cells,0,0,rectangle,hoek_purified,NK cells
+GSM1576437,ILC,0.013135412395635763,0,rectangle,hoek_purified,NK cells
+GSM1576437,Monocytes,7.348155468109816e-20,0,rectangle,hoek_purified,NK cells
+GSM1576437,NK cells,0.9468994495358162,1,rectangle,hoek_purified,NK cells
+GSM1576437,Plasma cells,0,0,rectangle,hoek_purified,NK cells
+GSM1576437,Platelet,0.0010506852629673165,0,rectangle,hoek_purified,NK cells
+GSM1576437,CD4 T cells,0,0,rectangle,hoek_purified,NK cells
+GSM1576437,CD8 T cells,0.033599052301050904,0,rectangle,hoek_purified,NK cells
+GSM1576437,Tregs,0,0,rectangle,hoek_purified,NK cells
+GSM1576437,mDC,0.0041725667673001895,0,rectangle,hoek_purified,NK cells
+GSM1576437,pDC,0.0011428337372296352,0,rectangle,hoek_purified,NK cells
+GSM1576437,Unknown,0,0,rectangle,hoek_purified,NK cells
+GSM1576437,T cells,0.033599052301050904,0,rectangle,hoek_purified,NK cells
+GSM1576438,B cells,0,0,rectangle,hoek_purified,NK cells
+GSM1576438,ILC,0.015859492089520734,0,rectangle,hoek_purified,NK cells
+GSM1576438,Monocytes,0,0,rectangle,hoek_purified,NK cells
+GSM1576438,NK cells,0.9482087923327283,1,rectangle,hoek_purified,NK cells
+GSM1576438,Plasma cells,1.340961601780633e-20,0,rectangle,hoek_purified,NK cells
+GSM1576438,Platelet,0.001409394253561101,0,rectangle,hoek_purified,NK cells
+GSM1576438,CD4 T cells,0,0,rectangle,hoek_purified,NK cells
+GSM1576438,CD8 T cells,0.030879919736538405,0,rectangle,hoek_purified,NK cells
+GSM1576438,Tregs,0,0,rectangle,hoek_purified,NK cells
+GSM1576438,mDC,0.0028719331252055843,0,rectangle,hoek_purified,NK cells
+GSM1576438,pDC,7.704684624457729e-4,0,rectangle,hoek_purified,NK cells
+GSM1576438,Unknown,0,0,rectangle,hoek_purified,NK cells
+GSM1576438,T cells,0.030879919736538405,0,rectangle,hoek_purified,NK cells
+GSM1576443,B cells,3.3987768637768774e-20,0,rectangle,hoek_purified,T cells
+GSM1576443,ILC,1.1220187265844391e-4,0,rectangle,hoek_purified,T cells
+GSM1576443,Monocytes,1.999674128816856e-19,0,rectangle,hoek_purified,T cells
+GSM1576443,NK cells,0.01234231184698064,0,rectangle,hoek_purified,T cells
+GSM1576443,Plasma cells,8.077860901181664e-23,0,rectangle,hoek_purified,T cells
+GSM1576443,Platelet,0,0,rectangle,hoek_purified,T cells
+GSM1576443,CD4 T cells,0.6498425946668915,0,rectangle,hoek_purified,T cells
+GSM1576443,CD8 T cells,0.15879763515805262,0,rectangle,hoek_purified,T cells
+GSM1576443,Tregs,0.17844103246475804,0,rectangle,hoek_purified,T cells
+GSM1576443,mDC,0,0,rectangle,hoek_purified,T cells
+GSM1576443,pDC,4.642239906587025e-4,0,rectangle,hoek_purified,T cells
+GSM1576443,Unknown,0,0,rectangle,hoek_purified,T cells
+GSM1576443,T cells,0.9870812622897023,1,rectangle,hoek_purified,T cells
+GSM1576444,B cells,4.2449318579250633e-20,0,rectangle,hoek_purified,T cells
+GSM1576444,ILC,8.842040835997582e-5,0,rectangle,hoek_purified,T cells
+GSM1576444,Monocytes,0,0,rectangle,hoek_purified,T cells
+GSM1576444,NK cells,0.010895857334352806,0,rectangle,hoek_purified,T cells
+GSM1576444,Plasma cells,4.122850812296022e-21,0,rectangle,hoek_purified,T cells
+GSM1576444,Platelet,0,0,rectangle,hoek_purified,T cells
+GSM1576444,CD4 T cells,0.6271683031372105,0,rectangle,hoek_purified,T cells
+GSM1576444,CD8 T cells,0.1571773512648795,0,rectangle,hoek_purified,T cells
+GSM1576444,Tregs,0.20423849346016124,0,rectangle,hoek_purified,T cells
+GSM1576444,mDC,1.6221400461227244e-20,0,rectangle,hoek_purified,T cells
+GSM1576444,pDC,4.315743950358428e-4,0,rectangle,hoek_purified,T cells
+GSM1576444,Unknown,0,0,rectangle,hoek_purified,T cells
+GSM1576444,T cells,0.9885841478622512,1,rectangle,hoek_purified,T cells
+GSM1576445,B cells,1.682112772712017e-20,0,rectangle,hoek_purified,T cells
+GSM1576445,ILC,1.5864019014810444e-4,0,rectangle,hoek_purified,T cells
+GSM1576445,Monocytes,8.417003129513208e-20,0,rectangle,hoek_purified,T cells
+GSM1576445,NK cells,0.011695231443658582,0,rectangle,hoek_purified,T cells
+GSM1576445,Plasma cells,2.8307059713914406e-21,0,rectangle,hoek_purified,T cells
+GSM1576445,Platelet,0,0,rectangle,hoek_purified,T cells
+GSM1576445,CD4 T cells,0.6753771130736457,0,rectangle,hoek_purified,T cells
+GSM1576445,CD8 T cells,0.1338679385501229,0,rectangle,hoek_purified,T cells
+GSM1576445,Tregs,0.17841615337653435,0,rectangle,hoek_purified,T cells
+GSM1576445,mDC,0,0,rectangle,hoek_purified,T cells
+GSM1576445,pDC,4.849233658902828e-4,0,rectangle,hoek_purified,T cells
+GSM1576445,Unknown,0,0,rectangle,hoek_purified,T cells
+GSM1576445,T cells,0.987661205000303,1,rectangle,hoek_purified,T cells
+GSM1576446,B cells,0,0,rectangle,hoek_purified,T cells
+GSM1576446,ILC,1.1009708179704856e-18,0,rectangle,hoek_purified,T cells
+GSM1576446,Monocytes,3.18212959162685e-20,0,rectangle,hoek_purified,T cells
+GSM1576446,NK cells,0.009147283414447276,0,rectangle,hoek_purified,T cells
+GSM1576446,Plasma cells,0,0,rectangle,hoek_purified,T cells
+GSM1576446,Platelet,0,0,rectangle,hoek_purified,T cells
+GSM1576446,CD4 T cells,0.6788136925756758,0,rectangle,hoek_purified,T cells
+GSM1576446,CD8 T cells,0.16029111565017673,0,rectangle,hoek_purified,T cells
+GSM1576446,Tregs,0.1514137683714608,0,rectangle,hoek_purified,T cells
+GSM1576446,mDC,3.6704858540577905e-6,0,rectangle,hoek_purified,T cells
+GSM1576446,pDC,3.304695023853448e-4,0,rectangle,hoek_purified,T cells
+GSM1576446,Unknown,0,0,rectangle,hoek_purified,T cells
+GSM1576446,T cells,0.9905185765973133,1,rectangle,hoek_purified,T cells
+GSM1479438,B cells,0.006599242706914595,0,rectangle,linsley_purified,NA
+GSM1479438,ILC,0.006626514604416559,0,rectangle,linsley_purified,NA
+GSM1479438,Monocytes,0.9553449896115147,0,rectangle,linsley_purified,NA
+GSM1479438,NK cells,0.022481255372334075,0,rectangle,linsley_purified,NA
+GSM1479438,Plasma cells,0,0,rectangle,linsley_purified,NA
+GSM1479438,Platelet,6.625115708866212e-19,0,rectangle,linsley_purified,NA
+GSM1479438,CD4 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479438,CD8 T cells,0.002348754997904144,0,rectangle,linsley_purified,NA
+GSM1479438,Tregs,0.006599242706915916,0,rectangle,linsley_purified,NA
+GSM1479438,mDC,0,0,rectangle,linsley_purified,NA
+GSM1479438,pDC,3.764054326742062e-19,0,rectangle,linsley_purified,NA
+GSM1479438,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479439,B cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479439,ILC,4.509355189804171e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479439,Monocytes,1,1,rectangle,linsley_purified,Monocytes
+GSM1479439,NK cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479439,Plasma cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479439,Platelet,2.806054128709077e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479439,CD4 T cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479439,CD8 T cells,5.491356005138966e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479439,Tregs,0,0,rectangle,linsley_purified,Monocytes
+GSM1479439,mDC,0,0,rectangle,linsley_purified,Monocytes
+GSM1479439,pDC,4.101472630269609e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479439,Unknown,0,0,rectangle,linsley_purified,Monocytes
+GSM1479440,B cells,0.9919955103368749,1,rectangle,linsley_purified,B cells
+GSM1479440,ILC,1.829973918833757e-4,0,rectangle,linsley_purified,B cells
+GSM1479440,Monocytes,0.004953944940677851,0,rectangle,linsley_purified,B cells
+GSM1479440,NK cells,0,0,rectangle,linsley_purified,B cells
+GSM1479440,Plasma cells,0.0024474786532082734,0,rectangle,linsley_purified,B cells
+GSM1479440,Platelet,0,0,rectangle,linsley_purified,B cells
+GSM1479440,CD4 T cells,0,0,rectangle,linsley_purified,B cells
+GSM1479440,CD8 T cells,1.6446512655193803e-18,0,rectangle,linsley_purified,B cells
+GSM1479440,Tregs,0,0,rectangle,linsley_purified,B cells
+GSM1479440,mDC,0,0,rectangle,linsley_purified,B cells
+GSM1479440,pDC,4.2006867735566706e-4,0,rectangle,linsley_purified,B cells
+GSM1479440,Unknown,0,0,rectangle,linsley_purified,B cells
+GSM1479441,B cells,4.070016198766152e-19,0,rectangle,linsley_purified,NA
+GSM1479441,ILC,0.028943749023588938,0,rectangle,linsley_purified,NA
+GSM1479441,Monocytes,0,0,rectangle,linsley_purified,NA
+GSM1479441,NK cells,1.3781341308362517e-4,0,rectangle,linsley_purified,NA
+GSM1479441,Plasma cells,4.8631338912978575e-21,0,rectangle,linsley_purified,NA
+GSM1479441,Platelet,9.32109085913922e-20,0,rectangle,linsley_purified,NA
+GSM1479441,CD4 T cells,0.8490136765262463,0,rectangle,linsley_purified,NA
+GSM1479441,CD8 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479441,Tregs,0.1215450389076272,0,rectangle,linsley_purified,NA
+GSM1479441,mDC,0,0,rectangle,linsley_purified,NA
+GSM1479441,pDC,3.597221294540635e-4,0,rectangle,linsley_purified,NA
+GSM1479441,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479442,B cells,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479442,ILC,0.054603899151588385,0,rectangle,linsley_purified,CD8 T cells
+GSM1479442,Monocytes,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479442,NK cells,0.0066589680323003485,0,rectangle,linsley_purified,CD8 T cells
+GSM1479442,Plasma cells,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479442,Platelet,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479442,CD4 T cells,0.5753324275870958,0,rectangle,linsley_purified,CD8 T cells
+GSM1479442,CD8 T cells,0.27032401781912624,1,rectangle,linsley_purified,CD8 T cells
+GSM1479442,Tregs,0.09282902270140561,0,rectangle,linsley_purified,CD8 T cells
+GSM1479442,mDC,9.337523146530562e-20,0,rectangle,linsley_purified,CD8 T cells
+GSM1479442,pDC,2.5166470848369133e-4,0,rectangle,linsley_purified,CD8 T cells
+GSM1479442,Unknown,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479443,B cells,4.962614461567321e-18,0,rectangle,linsley_purified,NK cells
+GSM1479443,ILC,0.02893929507264937,0,rectangle,linsley_purified,NK cells
+GSM1479443,Monocytes,2.0067725987431666e-19,0,rectangle,linsley_purified,NK cells
+GSM1479443,NK cells,0.9318673441689979,1,rectangle,linsley_purified,NK cells
+GSM1479443,Plasma cells,0,0,rectangle,linsley_purified,NK cells
+GSM1479443,Platelet,0,0,rectangle,linsley_purified,NK cells
+GSM1479443,CD4 T cells,0,0,rectangle,linsley_purified,NK cells
+GSM1479443,CD8 T cells,0.03870040656223413,0,rectangle,linsley_purified,NK cells
+GSM1479443,Tregs,0,0,rectangle,linsley_purified,NK cells
+GSM1479443,mDC,0,0,rectangle,linsley_purified,NK cells
+GSM1479443,pDC,4.929541961184985e-4,0,rectangle,linsley_purified,NK cells
+GSM1479443,Unknown,0,0,rectangle,linsley_purified,NK cells
+GSM1479444,B cells,0.0065528075338003354,0,rectangle,linsley_purified,NA
+GSM1479444,ILC,0.006552807533800347,0,rectangle,linsley_purified,NA
+GSM1479444,Monocytes,0.9624126546296944,0,rectangle,linsley_purified,NA
+GSM1479444,NK cells,0.01792892276890238,0,rectangle,linsley_purified,NA
+GSM1479444,Plasma cells,0,0,rectangle,linsley_purified,NA
+GSM1479444,Platelet,1.4136027647640115e-18,0,rectangle,linsley_purified,NA
+GSM1479444,CD4 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479444,CD8 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479444,Tregs,0.006552807533802533,0,rectangle,linsley_purified,NA
+GSM1479444,mDC,0,0,rectangle,linsley_purified,NA
+GSM1479444,pDC,0,0,rectangle,linsley_purified,NA
+GSM1479444,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479445,B cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479445,ILC,5.648862413830141e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479445,Monocytes,1,1,rectangle,linsley_purified,Monocytes
+GSM1479445,NK cells,1.797188126904637e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479445,Plasma cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479445,Platelet,2.336113789408273e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479445,CD4 T cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479445,CD8 T cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479445,Tregs,7.189608324957753e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479445,mDC,3.7179171572913003e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479445,pDC,3.1744247022659167e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479445,Unknown,0,0,rectangle,linsley_purified,Monocytes
+GSM1479446,B cells,0.9772573164000903,1,rectangle,linsley_purified,B cells
+GSM1479446,ILC,4.100468266999029e-4,0,rectangle,linsley_purified,B cells
+GSM1479446,Monocytes,0,0,rectangle,linsley_purified,B cells
+GSM1479446,NK cells,1.4339612608595814e-18,0,rectangle,linsley_purified,B cells
+GSM1479446,Plasma cells,0.02233263677320985,0,rectangle,linsley_purified,B cells
+GSM1479446,Platelet,1.935501495670318e-18,0,rectangle,linsley_purified,B cells
+GSM1479446,CD4 T cells,0,0,rectangle,linsley_purified,B cells
+GSM1479446,CD8 T cells,0,0,rectangle,linsley_purified,B cells
+GSM1479446,Tregs,0,0,rectangle,linsley_purified,B cells
+GSM1479446,mDC,0,0,rectangle,linsley_purified,B cells
+GSM1479446,pDC,9.222227002083957e-19,0,rectangle,linsley_purified,B cells
+GSM1479446,Unknown,0,0,rectangle,linsley_purified,B cells
+GSM1479447,B cells,2.2286656305566075e-18,0,rectangle,linsley_purified,NA
+GSM1479447,ILC,0.0026334759430890996,0,rectangle,linsley_purified,NA
+GSM1479447,Monocytes,6.383148545197408e-20,0,rectangle,linsley_purified,NA
+GSM1479447,NK cells,0,0,rectangle,linsley_purified,NA
+GSM1479447,Plasma cells,0,0,rectangle,linsley_purified,NA
+GSM1479447,Platelet,2.547213289560225e-4,0,rectangle,linsley_purified,NA
+GSM1479447,CD4 T cells,0.815914946554411,0,rectangle,linsley_purified,NA
+GSM1479447,CD8 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479447,Tregs,0.17960402675657255,0,rectangle,linsley_purified,NA
+GSM1479447,mDC,0.001063191299155115,0,rectangle,linsley_purified,NA
+GSM1479447,pDC,5.296381178162576e-4,0,rectangle,linsley_purified,NA
+GSM1479447,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479448,B cells,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479448,ILC,0.014135084810489851,0,rectangle,linsley_purified,CD8 T cells
+GSM1479448,Monocytes,0.009391403710528186,0,rectangle,linsley_purified,CD8 T cells
+GSM1479448,NK cells,0.08329707849953719,0,rectangle,linsley_purified,CD8 T cells
+GSM1479448,Plasma cells,0.0020370795465161065,0,rectangle,linsley_purified,CD8 T cells
+GSM1479448,Platelet,0.001087161080123892,0,rectangle,linsley_purified,CD8 T cells
+GSM1479448,CD4 T cells,0.5999952921421962,0,rectangle,linsley_purified,CD8 T cells
+GSM1479448,CD8 T cells,0.15976182959367982,1,rectangle,linsley_purified,CD8 T cells
+GSM1479448,Tregs,0.11676663224843177,0,rectangle,linsley_purified,CD8 T cells
+GSM1479448,mDC,0.01186662645945428,0,rectangle,linsley_purified,CD8 T cells
+GSM1479448,pDC,0.0016618119090426235,0,rectangle,linsley_purified,CD8 T cells
+GSM1479448,Unknown,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479449,B cells,0.0066802140356103466,0,rectangle,linsley_purified,NA
+GSM1479449,ILC,0.006680214035610331,0,rectangle,linsley_purified,NA
+GSM1479449,Monocytes,0.9737695737916413,0,rectangle,linsley_purified,NA
+GSM1479449,NK cells,0.0061897841015262235,0,rectangle,linsley_purified,NA
+GSM1479449,Plasma cells,1.374814044933712e-22,0,rectangle,linsley_purified,NA
+GSM1479449,Platelet,0,0,rectangle,linsley_purified,NA
+GSM1479449,CD4 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479449,CD8 T cells,3.5273134696351043e-19,0,rectangle,linsley_purified,NA
+GSM1479449,Tregs,0.006680214035611773,0,rectangle,linsley_purified,NA
+GSM1479449,mDC,1.025632584300246e-18,0,rectangle,linsley_purified,NA
+GSM1479449,pDC,3.94926987429991e-19,0,rectangle,linsley_purified,NA
+GSM1479449,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479450,B cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479450,ILC,0,0,rectangle,linsley_purified,Monocytes
+GSM1479450,Monocytes,1,1,rectangle,linsley_purified,Monocytes
+GSM1479450,NK cells,2.705556751208573e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479450,Plasma cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479450,Platelet,2.8086581070088073e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479450,CD4 T cells,1.995278716578698e-17,0,rectangle,linsley_purified,Monocytes
+GSM1479450,CD8 T cells,4.750171954147928e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479450,Tregs,0,0,rectangle,linsley_purified,Monocytes
+GSM1479450,mDC,0,0,rectangle,linsley_purified,Monocytes
+GSM1479450,pDC,0,0,rectangle,linsley_purified,Monocytes
+GSM1479450,Unknown,0,0,rectangle,linsley_purified,Monocytes
+GSM1479451,B cells,0.9588255411424088,1,rectangle,linsley_purified,B cells
+GSM1479451,ILC,0.025512364325293288,0,rectangle,linsley_purified,B cells
+GSM1479451,Monocytes,2.4210345132288773e-5,0,rectangle,linsley_purified,B cells
+GSM1479451,NK cells,0,0,rectangle,linsley_purified,B cells
+GSM1479451,Plasma cells,0.015637884187165555,0,rectangle,linsley_purified,B cells
+GSM1479451,Platelet,2.7902347503277773e-21,0,rectangle,linsley_purified,B cells
+GSM1479451,CD4 T cells,4.659952222576515e-18,0,rectangle,linsley_purified,B cells
+GSM1479451,CD8 T cells,1.0860679202131941e-17,0,rectangle,linsley_purified,B cells
+GSM1479451,Tregs,1.293965791398393e-17,0,rectangle,linsley_purified,B cells
+GSM1479451,mDC,0,0,rectangle,linsley_purified,B cells
+GSM1479451,pDC,0,0,rectangle,linsley_purified,B cells
+GSM1479451,Unknown,0,0,rectangle,linsley_purified,B cells
+GSM1479452,B cells,1.5168072861501586e-18,0,rectangle,linsley_purified,NA
+GSM1479452,ILC,0.0024229395525882423,0,rectangle,linsley_purified,NA
+GSM1479452,Monocytes,0,0,rectangle,linsley_purified,NA
+GSM1479452,NK cells,0,0,rectangle,linsley_purified,NA
+GSM1479452,Plasma cells,4.278179881944078e-21,0,rectangle,linsley_purified,NA
+GSM1479452,Platelet,2.512819510465663e-5,0,rectangle,linsley_purified,NA
+GSM1479452,CD4 T cells,0.8872215932685271,0,rectangle,linsley_purified,NA
+GSM1479452,CD8 T cells,2.9961601223065314e-18,0,rectangle,linsley_purified,NA
+GSM1479452,Tregs,0.10988744490213365,0,rectangle,linsley_purified,NA
+GSM1479452,mDC,4.76459373516438e-21,0,rectangle,linsley_purified,NA
+GSM1479452,pDC,4.4289408164628727e-4,0,rectangle,linsley_purified,NA
+GSM1479452,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479453,B cells,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479453,ILC,0.04001178780179204,0,rectangle,linsley_purified,CD8 T cells
+GSM1479453,Monocytes,4.82218673829005e-19,0,rectangle,linsley_purified,CD8 T cells
+GSM1479453,NK cells,0.14021598347996997,0,rectangle,linsley_purified,CD8 T cells
+GSM1479453,Plasma cells,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479453,Platelet,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479453,CD4 T cells,0.5341363084652254,0,rectangle,linsley_purified,CD8 T cells
+GSM1479453,CD8 T cells,0.24957796120844128,1,rectangle,linsley_purified,CD8 T cells
+GSM1479453,Tregs,0.035834850063221464,0,rectangle,linsley_purified,CD8 T cells
+GSM1479453,mDC,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479453,pDC,2.2310898134972972e-4,0,rectangle,linsley_purified,CD8 T cells
+GSM1479453,Unknown,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479454,B cells,0.006610847294625029,0,rectangle,linsley_purified,NA
+GSM1479454,ILC,0.00661084729462503,0,rectangle,linsley_purified,NA
+GSM1479454,Monocytes,0.96791472458622,0,rectangle,linsley_purified,NA
+GSM1479454,NK cells,0.00702713044264783,0,rectangle,linsley_purified,NA
+GSM1479454,Plasma cells,0,0,rectangle,linsley_purified,NA
+GSM1479454,Platelet,0.005225603087255479,0,rectangle,linsley_purified,NA
+GSM1479454,CD4 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479454,CD8 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479454,Tregs,0.0066108472946265805,0,rectangle,linsley_purified,NA
+GSM1479454,mDC,0,0,rectangle,linsley_purified,NA
+GSM1479454,pDC,3.820382659195201e-19,0,rectangle,linsley_purified,NA
+GSM1479454,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479455,B cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479455,ILC,0,0,rectangle,linsley_purified,Monocytes
+GSM1479455,Monocytes,1,1,rectangle,linsley_purified,Monocytes
+GSM1479455,NK cells,7.50712136402087e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479455,Plasma cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479455,Platelet,8.387999756627971e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479455,CD4 T cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479455,CD8 T cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479455,Tregs,1.9248527857173786e-17,0,rectangle,linsley_purified,Monocytes
+GSM1479455,mDC,0,0,rectangle,linsley_purified,Monocytes
+GSM1479455,pDC,3.162542706143987e-20,0,rectangle,linsley_purified,Monocytes
+GSM1479455,Unknown,0,0,rectangle,linsley_purified,Monocytes
+GSM1479456,B cells,0.9736299911173052,1,rectangle,linsley_purified,B cells
+GSM1479456,ILC,1.1197609904592747e-17,0,rectangle,linsley_purified,B cells
+GSM1479456,Monocytes,0,0,rectangle,linsley_purified,B cells
+GSM1479456,NK cells,9.956341054274273e-19,0,rectangle,linsley_purified,B cells
+GSM1479456,Plasma cells,0.02627758728926035,0,rectangle,linsley_purified,B cells
+GSM1479456,Platelet,1.2608724514051682e-18,0,rectangle,linsley_purified,B cells
+GSM1479456,CD4 T cells,0,0,rectangle,linsley_purified,B cells
+GSM1479456,CD8 T cells,0,0,rectangle,linsley_purified,B cells
+GSM1479456,Tregs,2.407172035000005e-17,0,rectangle,linsley_purified,B cells
+GSM1479456,mDC,3.6882422382836476e-21,0,rectangle,linsley_purified,B cells
+GSM1479456,pDC,9.242159343436944e-5,0,rectangle,linsley_purified,B cells
+GSM1479456,Unknown,0,0,rectangle,linsley_purified,B cells
+GSM1479457,B cells,1.4914957957388572e-18,0,rectangle,linsley_purified,NA
+GSM1479457,ILC,1.0482313955648062e-19,0,rectangle,linsley_purified,NA
+GSM1479457,Monocytes,0,0,rectangle,linsley_purified,NA
+GSM1479457,NK cells,0.02768379933764255,0,rectangle,linsley_purified,NA
+GSM1479457,Plasma cells,3.785360148919902e-21,0,rectangle,linsley_purified,NA
+GSM1479457,Platelet,1.0727266039944805e-19,0,rectangle,linsley_purified,NA
+GSM1479457,CD4 T cells,0.8156719938744829,0,rectangle,linsley_purified,NA
+GSM1479457,CD8 T cells,0.10155151358464205,0,rectangle,linsley_purified,NA
+GSM1479457,Tregs,0.054586268440322105,0,rectangle,linsley_purified,NA
+GSM1479457,mDC,2.0206894144535022e-20,0,rectangle,linsley_purified,NA
+GSM1479457,pDC,5.064247629104591e-4,0,rectangle,linsley_purified,NA
+GSM1479457,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479458,B cells,5.344776708116999e-19,0,rectangle,linsley_purified,CD8 T cells
+GSM1479458,ILC,0.0019369036502926307,0,rectangle,linsley_purified,CD8 T cells
+GSM1479458,Monocytes,9.829604007727705e-20,0,rectangle,linsley_purified,CD8 T cells
+GSM1479458,NK cells,0.11672578115618289,0,rectangle,linsley_purified,CD8 T cells
+GSM1479458,Plasma cells,2.3325418775070874e-21,0,rectangle,linsley_purified,CD8 T cells
+GSM1479458,Platelet,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479458,CD4 T cells,0.43471244344025733,0,rectangle,linsley_purified,CD8 T cells
+GSM1479458,CD8 T cells,0.4464784326447636,1,rectangle,linsley_purified,CD8 T cells
+GSM1479458,Tregs,3.2480885169758344e-17,0,rectangle,linsley_purified,CD8 T cells
+GSM1479458,mDC,2.5457167565107205e-19,0,rectangle,linsley_purified,CD8 T cells
+GSM1479458,pDC,1.4643910850364197e-4,0,rectangle,linsley_purified,CD8 T cells
+GSM1479458,Unknown,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479459,B cells,5.8445459284253665e-18,0,rectangle,linsley_purified,NK cells
+GSM1479459,ILC,2.3377433440943793e-18,0,rectangle,linsley_purified,NK cells
+GSM1479459,Monocytes,3.2904150161037854e-20,0,rectangle,linsley_purified,NK cells
+GSM1479459,NK cells,0.9651441402150079,1,rectangle,linsley_purified,NK cells
+GSM1479459,Plasma cells,5.5966013318162795e-5,0,rectangle,linsley_purified,NK cells
+GSM1479459,Platelet,0,0,rectangle,linsley_purified,NK cells
+GSM1479459,CD4 T cells,7.319723773555279e-18,0,rectangle,linsley_purified,NK cells
+GSM1479459,CD8 T cells,0.030149571992158772,0,rectangle,linsley_purified,NK cells
+GSM1479459,Tregs,0,0,rectangle,linsley_purified,NK cells
+GSM1479459,mDC,1.5523316223248674e-19,0,rectangle,linsley_purified,NK cells
+GSM1479459,pDC,0.004650321779515076,0,rectangle,linsley_purified,NK cells
+GSM1479459,Unknown,0,0,rectangle,linsley_purified,NK cells
+GSM1479460,B cells,0.0066278085407927645,0,rectangle,linsley_purified,NA
+GSM1479460,ILC,0.006627808540792781,0,rectangle,linsley_purified,NA
+GSM1479460,Monocytes,0.957715931476195,0,rectangle,linsley_purified,NA
+GSM1479460,NK cells,0.01914103980279318,0,rectangle,linsley_purified,NA
+GSM1479460,Plasma cells,9.123440694204556e-21,0,rectangle,linsley_purified,NA
+GSM1479460,Platelet,0,0,rectangle,linsley_purified,NA
+GSM1479460,CD4 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479460,CD8 T cells,5.192820665063934e-4,0,rectangle,linsley_purified,NA
+GSM1479460,Tregs,0.006627808540794313,0,rectangle,linsley_purified,NA
+GSM1479460,mDC,1.3712027455600496e-18,0,rectangle,linsley_purified,NA
+GSM1479460,pDC,0.0027403210321256424,0,rectangle,linsley_purified,NA
+GSM1479460,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479461,B cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479461,ILC,1.201663379501383e-17,0,rectangle,linsley_purified,Monocytes
+GSM1479461,Monocytes,1,1,rectangle,linsley_purified,Monocytes
+GSM1479461,NK cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479461,Plasma cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479461,Platelet,1.8392447705869704e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479461,CD4 T cells,3.7319876311803114e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479461,CD8 T cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479461,Tregs,0,0,rectangle,linsley_purified,Monocytes
+GSM1479461,mDC,4.339390674379604e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479461,pDC,1.688012268888071e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479461,Unknown,0,0,rectangle,linsley_purified,Monocytes
+GSM1479462,B cells,0.9956710539792403,1,rectangle,linsley_purified,B cells
+GSM1479462,ILC,0,0,rectangle,linsley_purified,B cells
+GSM1479462,Monocytes,3.6975802683374203e-19,0,rectangle,linsley_purified,B cells
+GSM1479462,NK cells,2.44375839617603e-18,0,rectangle,linsley_purified,B cells
+GSM1479462,Plasma cells,0.00432894602075978,0,rectangle,linsley_purified,B cells
+GSM1479462,Platelet,0,0,rectangle,linsley_purified,B cells
+GSM1479462,CD4 T cells,4.21416004502032e-17,0,rectangle,linsley_purified,B cells
+GSM1479462,CD8 T cells,0,0,rectangle,linsley_purified,B cells
+GSM1479462,Tregs,0,0,rectangle,linsley_purified,B cells
+GSM1479462,mDC,0,0,rectangle,linsley_purified,B cells
+GSM1479462,pDC,0,0,rectangle,linsley_purified,B cells
+GSM1479462,Unknown,0,0,rectangle,linsley_purified,B cells
+GSM1479463,B cells,0,0,rectangle,linsley_purified,NA
+GSM1479463,ILC,0.002037849800244896,0,rectangle,linsley_purified,NA
+GSM1479463,Monocytes,0,0,rectangle,linsley_purified,NA
+GSM1479463,NK cells,8.018494144144146e-20,0,rectangle,linsley_purified,NA
+GSM1479463,Plasma cells,0,0,rectangle,linsley_purified,NA
+GSM1479463,Platelet,7.845965949914935e-20,0,rectangle,linsley_purified,NA
+GSM1479463,CD4 T cells,0.7870513209474035,0,rectangle,linsley_purified,NA
+GSM1479463,CD8 T cells,3.917173478383521e-19,0,rectangle,linsley_purified,NA
+GSM1479463,Tregs,0.21038107611193718,0,rectangle,linsley_purified,NA
+GSM1479463,mDC,0,0,rectangle,linsley_purified,NA
+GSM1479463,pDC,5.297531404144434e-4,0,rectangle,linsley_purified,NA
+GSM1479463,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479464,B cells,2.8599009313813304e-20,0,rectangle,linsley_purified,CD8 T cells
+GSM1479464,ILC,0.01538662858756133,0,rectangle,linsley_purified,CD8 T cells
+GSM1479464,Monocytes,3.5686530228563926e-22,0,rectangle,linsley_purified,CD8 T cells
+GSM1479464,NK cells,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479464,Plasma cells,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479464,Platelet,1.0341083564413934e-19,0,rectangle,linsley_purified,CD8 T cells
+GSM1479464,CD4 T cells,0.7030192333742861,0,rectangle,linsley_purified,CD8 T cells
+GSM1479464,CD8 T cells,0.17438930893851837,1,rectangle,linsley_purified,CD8 T cells
+GSM1479464,Tregs,0.10698515494222646,0,rectangle,linsley_purified,CD8 T cells
+GSM1479464,mDC,1.416979493199739e-20,0,rectangle,linsley_purified,CD8 T cells
+GSM1479464,pDC,2.196741574079672e-4,0,rectangle,linsley_purified,CD8 T cells
+GSM1479464,Unknown,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479465,B cells,0.006537204052767242,0,rectangle,linsley_purified,NA
+GSM1479465,ILC,0.0065372040527672814,0,rectangle,linsley_purified,NA
+GSM1479465,Monocytes,0.9326856123164166,0,rectangle,linsley_purified,NA
+GSM1479465,NK cells,0.04758269062342274,0,rectangle,linsley_purified,NA
+GSM1479465,Plasma cells,0,0,rectangle,linsley_purified,NA
+GSM1479465,Platelet,2.0140604815748974e-17,0,rectangle,linsley_purified,NA
+GSM1479465,CD4 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479465,CD8 T cells,1.0152223196176979e-17,0,rectangle,linsley_purified,NA
+GSM1479465,Tregs,0.006537204052770915,0,rectangle,linsley_purified,NA
+GSM1479465,mDC,1.2008490185518957e-4,0,rectangle,linsley_purified,NA
+GSM1479465,pDC,0,0,rectangle,linsley_purified,NA
+GSM1479465,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479466,B cells,3.035985952121741e-20,0,rectangle,linsley_purified,Monocytes
+GSM1479466,ILC,7.954414046661601e-17,0,rectangle,linsley_purified,Monocytes
+GSM1479466,Monocytes,0.985844308131391,1,rectangle,linsley_purified,Monocytes
+GSM1479466,NK cells,1.786584738991178e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479466,Plasma cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479466,Platelet,0,0,rectangle,linsley_purified,Monocytes
+GSM1479466,CD4 T cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479466,CD8 T cells,0.003389428171550817,0,rectangle,linsley_purified,Monocytes
+GSM1479466,Tregs,0.010766263697058232,0,rectangle,linsley_purified,Monocytes
+GSM1479466,mDC,1.579571834203593e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479466,pDC,3.9958665755731946e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479466,Unknown,0,0,rectangle,linsley_purified,Monocytes
+GSM1479467,B cells,0.9031551072362779,1,rectangle,linsley_purified,B cells
+GSM1479467,ILC,0.011582204671631208,0,rectangle,linsley_purified,B cells
+GSM1479467,Monocytes,0.08121945767017832,0,rectangle,linsley_purified,B cells
+GSM1479467,NK cells,0,0,rectangle,linsley_purified,B cells
+GSM1479467,Plasma cells,0.004043230421912602,0,rectangle,linsley_purified,B cells
+GSM1479467,Platelet,1.2463196867901584e-20,0,rectangle,linsley_purified,B cells
+GSM1479467,CD4 T cells,8.542740779276462e-19,0,rectangle,linsley_purified,B cells
+GSM1479467,CD8 T cells,0,0,rectangle,linsley_purified,B cells
+GSM1479467,Tregs,0,0,rectangle,linsley_purified,B cells
+GSM1479467,mDC,4.508054994324274e-19,0,rectangle,linsley_purified,B cells
+GSM1479467,pDC,0,0,rectangle,linsley_purified,B cells
+GSM1479467,Unknown,0,0,rectangle,linsley_purified,B cells
+GSM1479468,B cells,0,0,rectangle,linsley_purified,NA
+GSM1479468,ILC,3.906422352406066e-5,0,rectangle,linsley_purified,NA
+GSM1479468,Monocytes,4.229894162614058e-21,0,rectangle,linsley_purified,NA
+GSM1479468,NK cells,0.10787033659095546,0,rectangle,linsley_purified,NA
+GSM1479468,Plasma cells,5.937998313551699e-21,0,rectangle,linsley_purified,NA
+GSM1479468,Platelet,0,0,rectangle,linsley_purified,NA
+GSM1479468,CD4 T cells,0.7685231670704379,0,rectangle,linsley_purified,NA
+GSM1479468,CD8 T cells,0.10164620209647493,0,rectangle,linsley_purified,NA
+GSM1479468,Tregs,0.021760398242370412,0,rectangle,linsley_purified,NA
+GSM1479468,mDC,1.553996128893162e-4,0,rectangle,linsley_purified,NA
+GSM1479468,pDC,5.4321633478338976e-6,0,rectangle,linsley_purified,NA
+GSM1479468,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479469,B cells,2.0394329745668942e-18,0,rectangle,linsley_purified,CD8 T cells
+GSM1479469,ILC,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479469,Monocytes,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479469,NK cells,0.3155026821726272,0,rectangle,linsley_purified,CD8 T cells
+GSM1479469,Plasma cells,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479469,Platelet,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479469,CD4 T cells,0.0031970765437003097,0,rectangle,linsley_purified,CD8 T cells
+GSM1479469,CD8 T cells,0.6292897199528181,1,rectangle,linsley_purified,CD8 T cells
+GSM1479469,Tregs,0.0519792344494832,0,rectangle,linsley_purified,CD8 T cells
+GSM1479469,mDC,3.128688137122602e-5,0,rectangle,linsley_purified,CD8 T cells
+GSM1479469,pDC,1.1939169904768427e-18,0,rectangle,linsley_purified,CD8 T cells
+GSM1479469,Unknown,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479470,B cells,4.64463846979792e-18,0,rectangle,linsley_purified,NK cells
+GSM1479470,ILC,6.6661391027685006e-18,0,rectangle,linsley_purified,NK cells
+GSM1479470,Monocytes,0,0,rectangle,linsley_purified,NK cells
+GSM1479470,NK cells,0.9724823886791549,1,rectangle,linsley_purified,NK cells
+GSM1479470,Plasma cells,0,0,rectangle,linsley_purified,NK cells
+GSM1479470,Platelet,1.724783527884221e-18,0,rectangle,linsley_purified,NK cells
+GSM1479470,CD4 T cells,0,0,rectangle,linsley_purified,NK cells
+GSM1479470,CD8 T cells,0.02559946365906449,0,rectangle,linsley_purified,NK cells
+GSM1479470,Tregs,0,0,rectangle,linsley_purified,NK cells
+GSM1479470,mDC,1.4615362478436151e-18,0,rectangle,linsley_purified,NK cells
+GSM1479470,pDC,0.0019181476617806017,0,rectangle,linsley_purified,NK cells
+GSM1479470,Unknown,0,0,rectangle,linsley_purified,NK cells
+GSM1479472,B cells,0.0064915880813997025,0,rectangle,linsley_purified,NA
+GSM1479472,ILC,0.006491588081399737,0,rectangle,linsley_purified,NA
+GSM1479472,Monocytes,0.9243929344875927,0,rectangle,linsley_purified,NA
+GSM1479472,NK cells,0.05603642922549343,0,rectangle,linsley_purified,NA
+GSM1479472,Plasma cells,2.932580791972749e-21,0,rectangle,linsley_purified,NA
+GSM1479472,Platelet,1.772900182020376e-17,0,rectangle,linsley_purified,NA
+GSM1479472,CD4 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479472,CD8 T cells,3.412685475125239e-18,0,rectangle,linsley_purified,NA
+GSM1479472,Tregs,0.006491588081402992,0,rectangle,linsley_purified,NA
+GSM1479472,mDC,9.587204271139632e-5,0,rectangle,linsley_purified,NA
+GSM1479472,pDC,0,0,rectangle,linsley_purified,NA
+GSM1479472,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479473,B cells,0.0059071245541418805,0,rectangle,linsley_purified,Monocytes
+GSM1479473,ILC,0.005907124554141879,0,rectangle,linsley_purified,Monocytes
+GSM1479473,Monocytes,0.9652331712836819,1,rectangle,linsley_purified,Monocytes
+GSM1479473,NK cells,0.017045455053891313,0,rectangle,linsley_purified,Monocytes
+GSM1479473,Plasma cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479473,Platelet,0,0,rectangle,linsley_purified,Monocytes
+GSM1479473,CD4 T cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479473,CD8 T cells,5.2118628379234845e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479473,Tregs,0.005907124554143048,0,rectangle,linsley_purified,Monocytes
+GSM1479473,mDC,1.587716736420305e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479473,pDC,3.6681658440558506e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479473,Unknown,0,0,rectangle,linsley_purified,Monocytes
+GSM1479474,B cells,0.9284908377024821,1,rectangle,linsley_purified,B cells
+GSM1479474,ILC,1.740495785807124e-5,0,rectangle,linsley_purified,B cells
+GSM1479474,Monocytes,0.07058895821106663,0,rectangle,linsley_purified,B cells
+GSM1479474,NK cells,1.6693843639840355e-20,0,rectangle,linsley_purified,B cells
+GSM1479474,Plasma cells,9.027991285932028e-4,0,rectangle,linsley_purified,B cells
+GSM1479474,Platelet,7.242756832558299e-19,0,rectangle,linsley_purified,B cells
+GSM1479474,CD4 T cells,0,0,rectangle,linsley_purified,B cells
+GSM1479474,CD8 T cells,0,0,rectangle,linsley_purified,B cells
+GSM1479474,Tregs,0,0,rectangle,linsley_purified,B cells
+GSM1479474,mDC,0,0,rectangle,linsley_purified,B cells
+GSM1479474,pDC,1.2183363638983451e-20,0,rectangle,linsley_purified,B cells
+GSM1479474,Unknown,0,0,rectangle,linsley_purified,B cells
+GSM1479475,B cells,6.67166938234569e-19,0,rectangle,linsley_purified,NA
+GSM1479475,ILC,0.0012646730860634604,0,rectangle,linsley_purified,NA
+GSM1479475,Monocytes,0.020655981924678823,0,rectangle,linsley_purified,NA
+GSM1479475,NK cells,0,0,rectangle,linsley_purified,NA
+GSM1479475,Plasma cells,3.667625436532555e-6,0,rectangle,linsley_purified,NA
+GSM1479475,Platelet,2.4935738308422994e-21,0,rectangle,linsley_purified,NA
+GSM1479475,CD4 T cells,0.45595574794503396,0,rectangle,linsley_purified,NA
+GSM1479475,CD8 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479475,Tregs,0.520726641531416,0,rectangle,linsley_purified,NA
+GSM1479475,mDC,8.097601729737847e-5,0,rectangle,linsley_purified,NA
+GSM1479475,pDC,0.0013123118700736195,0,rectangle,linsley_purified,NA
+GSM1479475,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479476,B cells,0.003383835363913043,0,rectangle,linsley_purified,CD8 T cells
+GSM1479476,ILC,0.003204600137505667,0,rectangle,linsley_purified,CD8 T cells
+GSM1479476,Monocytes,0.3194691183907078,0,rectangle,linsley_purified,CD8 T cells
+GSM1479476,NK cells,0.09293786009550752,0,rectangle,linsley_purified,CD8 T cells
+GSM1479476,Plasma cells,3.9183308788553366e-4,0,rectangle,linsley_purified,CD8 T cells
+GSM1479476,Platelet,7.176689225298445e-20,0,rectangle,linsley_purified,CD8 T cells
+GSM1479476,CD4 T cells,0.20868832821658098,0,rectangle,linsley_purified,CD8 T cells
+GSM1479476,CD8 T cells,0.15233345412633728,1,rectangle,linsley_purified,CD8 T cells
+GSM1479476,Tregs,0.21959097058156216,0,rectangle,linsley_purified,CD8 T cells
+GSM1479476,mDC,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479476,pDC,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479476,Unknown,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479478,B cells,0.006629471938192684,0,rectangle,linsley_purified,NA
+GSM1479478,ILC,0.006629471938192724,0,rectangle,linsley_purified,NA
+GSM1479478,Monocytes,0.9194199291822222,0,rectangle,linsley_purified,NA
+GSM1479478,NK cells,0.06016436266127446,0,rectangle,linsley_purified,NA
+GSM1479478,Plasma cells,3.077962946504276e-21,0,rectangle,linsley_purified,NA
+GSM1479478,Platelet,2.213675687430672e-17,0,rectangle,linsley_purified,NA
+GSM1479478,CD4 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479478,CD8 T cells,6.006897455856415e-18,0,rectangle,linsley_purified,NA
+GSM1479478,Tregs,0.006629471938196399,0,rectangle,linsley_purified,NA
+GSM1479478,mDC,5.072470358799646e-4,0,rectangle,linsley_purified,NA
+GSM1479478,pDC,2.0045306041600813e-5,0,rectangle,linsley_purified,NA
+GSM1479478,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479479,B cells,0.007196794173504632,0,rectangle,linsley_purified,Monocytes
+GSM1479479,ILC,0,0,rectangle,linsley_purified,Monocytes
+GSM1479479,Monocytes,0.9786950227228213,1,rectangle,linsley_purified,Monocytes
+GSM1479479,NK cells,0.0019210644195572755,0,rectangle,linsley_purified,Monocytes
+GSM1479479,Plasma cells,2.554481507627743e-21,0,rectangle,linsley_purified,Monocytes
+GSM1479479,Platelet,0,0,rectangle,linsley_purified,Monocytes
+GSM1479479,CD4 T cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479479,CD8 T cells,0.004990324510611177,0,rectangle,linsley_purified,Monocytes
+GSM1479479,Tregs,0.007196794173505587,0,rectangle,linsley_purified,Monocytes
+GSM1479479,mDC,2.0473351388863014e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479479,pDC,4.796150011756267e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479479,Unknown,0,0,rectangle,linsley_purified,Monocytes
+GSM1479480,B cells,0.9945127691254215,1,rectangle,linsley_purified,B cells
+GSM1479480,ILC,1.4626441637461905e-17,0,rectangle,linsley_purified,B cells
+GSM1479480,Monocytes,1.0842230209990355e-19,0,rectangle,linsley_purified,B cells
+GSM1479480,NK cells,0,0,rectangle,linsley_purified,B cells
+GSM1479480,Plasma cells,0.005439957854453662,0,rectangle,linsley_purified,B cells
+GSM1479480,Platelet,0,0,rectangle,linsley_purified,B cells
+GSM1479480,CD4 T cells,3.5889760576299115e-18,0,rectangle,linsley_purified,B cells
+GSM1479480,CD8 T cells,0,0,rectangle,linsley_purified,B cells
+GSM1479480,Tregs,0,0,rectangle,linsley_purified,B cells
+GSM1479480,mDC,2.3399107255232103e-18,0,rectangle,linsley_purified,B cells
+GSM1479480,pDC,4.727302012484499e-5,0,rectangle,linsley_purified,B cells
+GSM1479480,Unknown,0,0,rectangle,linsley_purified,B cells
+GSM1479481,B cells,1.6967112712942566e-18,0,rectangle,linsley_purified,NA
+GSM1479481,ILC,0.0039210477605555955,0,rectangle,linsley_purified,NA
+GSM1479481,Monocytes,0,0,rectangle,linsley_purified,NA
+GSM1479481,NK cells,0.006455539878506854,0,rectangle,linsley_purified,NA
+GSM1479481,Plasma cells,2.0622410396444105e-21,0,rectangle,linsley_purified,NA
+GSM1479481,Platelet,9.60103783601786e-20,0,rectangle,linsley_purified,NA
+GSM1479481,CD4 T cells,0.7679833731810823,0,rectangle,linsley_purified,NA
+GSM1479481,CD8 T cells,0.002845549282641593,0,rectangle,linsley_purified,NA
+GSM1479481,Tregs,0.2178519527578173,0,rectangle,linsley_purified,NA
+GSM1479481,mDC,0,0,rectangle,linsley_purified,NA
+GSM1479481,pDC,9.425371393963119e-4,0,rectangle,linsley_purified,NA
+GSM1479481,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479482,B cells,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479482,ILC,0.009363754796304833,0,rectangle,linsley_purified,CD8 T cells
+GSM1479482,Monocytes,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479482,NK cells,0.050295798563934846,0,rectangle,linsley_purified,CD8 T cells
+GSM1479482,Plasma cells,6.207435253974766e-4,0,rectangle,linsley_purified,CD8 T cells
+GSM1479482,Platelet,3.351783666113572e-19,0,rectangle,linsley_purified,CD8 T cells
+GSM1479482,CD4 T cells,0.22590155179115906,0,rectangle,linsley_purified,CD8 T cells
+GSM1479482,CD8 T cells,0.4794305693847045,1,rectangle,linsley_purified,CD8 T cells
+GSM1479482,Tregs,0.23398651688354372,0,rectangle,linsley_purified,CD8 T cells
+GSM1479482,mDC,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479482,pDC,4.010650549554536e-4,0,rectangle,linsley_purified,CD8 T cells
+GSM1479482,Unknown,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479483,B cells,0,0,rectangle,linsley_purified,NK cells
+GSM1479483,ILC,0.0030542127006250165,0,rectangle,linsley_purified,NK cells
+GSM1479483,Monocytes,2.0171431706805981e-19,0,rectangle,linsley_purified,NK cells
+GSM1479483,NK cells,0.8852019510367585,1,rectangle,linsley_purified,NK cells
+GSM1479483,Plasma cells,1.3436940182219475e-4,0,rectangle,linsley_purified,NK cells
+GSM1479483,Platelet,0.0010417560893093434,0,rectangle,linsley_purified,NK cells
+GSM1479483,CD4 T cells,0,0,rectangle,linsley_purified,NK cells
+GSM1479483,CD8 T cells,0.11044552304325016,0,rectangle,linsley_purified,NK cells
+GSM1479483,Tregs,0,0,rectangle,linsley_purified,NK cells
+GSM1479483,mDC,1.0032552001044381e-18,0,rectangle,linsley_purified,NK cells
+GSM1479483,pDC,1.2218772823473163e-4,0,rectangle,linsley_purified,NK cells
+GSM1479483,Unknown,0,0,rectangle,linsley_purified,NK cells
+GSM1479485,B cells,0.006507101716108517,0,rectangle,linsley_purified,NA
+GSM1479485,ILC,0.006507101716108517,0,rectangle,linsley_purified,NA
+GSM1479485,Monocytes,0.9646228003879573,0,rectangle,linsley_purified,NA
+GSM1479485,NK cells,0.010088132528135334,0,rectangle,linsley_purified,NA
+GSM1479485,Plasma cells,2.75538922280265e-23,0,rectangle,linsley_purified,NA
+GSM1479485,Platelet,2.212660632443962e-4,0,rectangle,linsley_purified,NA
+GSM1479485,CD4 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479485,CD8 T cells,0.0022719485842749823,0,rectangle,linsley_purified,NA
+GSM1479485,Tregs,0.0065071017161096424,0,rectangle,linsley_purified,NA
+GSM1479485,mDC,0,0,rectangle,linsley_purified,NA
+GSM1479485,pDC,0.003274547288061294,0,rectangle,linsley_purified,NA
+GSM1479485,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479486,B cells,8.35783961392567e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479486,ILC,0,0,rectangle,linsley_purified,Monocytes
+GSM1479486,Monocytes,1,1,rectangle,linsley_purified,Monocytes
+GSM1479486,NK cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479486,Plasma cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479486,Platelet,0,0,rectangle,linsley_purified,Monocytes
+GSM1479486,CD4 T cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479486,CD8 T cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479486,Tregs,6.514063387790231e-17,0,rectangle,linsley_purified,Monocytes
+GSM1479486,mDC,0,0,rectangle,linsley_purified,Monocytes
+GSM1479486,pDC,7.486954909282915e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479486,Unknown,0,0,rectangle,linsley_purified,Monocytes
+GSM1479487,B cells,0.9868792020196835,1,rectangle,linsley_purified,B cells
+GSM1479487,ILC,0.0026384497582475188,0,rectangle,linsley_purified,B cells
+GSM1479487,Monocytes,0.001420321648800219,0,rectangle,linsley_purified,B cells
+GSM1479487,NK cells,0,0,rectangle,linsley_purified,B cells
+GSM1479487,Plasma cells,0.008305180581409671,0,rectangle,linsley_purified,B cells
+GSM1479487,Platelet,5.837903635620579e-21,0,rectangle,linsley_purified,B cells
+GSM1479487,CD4 T cells,3.15000407831563e-18,0,rectangle,linsley_purified,B cells
+GSM1479487,CD8 T cells,0,0,rectangle,linsley_purified,B cells
+GSM1479487,Tregs,0,0,rectangle,linsley_purified,B cells
+GSM1479487,mDC,7.568459918590811e-4,0,rectangle,linsley_purified,B cells
+GSM1479487,pDC,0,0,rectangle,linsley_purified,B cells
+GSM1479487,Unknown,0,0,rectangle,linsley_purified,B cells
+GSM1479488,B cells,0,0,rectangle,linsley_purified,NA
+GSM1479488,ILC,0.009212494059517483,0,rectangle,linsley_purified,NA
+GSM1479488,Monocytes,0,0,rectangle,linsley_purified,NA
+GSM1479488,NK cells,0.008273131133765039,0,rectangle,linsley_purified,NA
+GSM1479488,Plasma cells,3.7440204437912316e-21,0,rectangle,linsley_purified,NA
+GSM1479488,Platelet,0,0,rectangle,linsley_purified,NA
+GSM1479488,CD4 T cells,0.8798642540342401,0,rectangle,linsley_purified,NA
+GSM1479488,CD8 T cells,0.027140447825787922,0,rectangle,linsley_purified,NA
+GSM1479488,Tregs,0.07521384609606298,0,rectangle,linsley_purified,NA
+GSM1479488,mDC,0,0,rectangle,linsley_purified,NA
+GSM1479488,pDC,2.958268506265405e-4,0,rectangle,linsley_purified,NA
+GSM1479488,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479489,B cells,2.46481814169014e-18,0,rectangle,linsley_purified,CD8 T cells
+GSM1479489,ILC,0.012030505202760985,0,rectangle,linsley_purified,CD8 T cells
+GSM1479489,Monocytes,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479489,NK cells,0.03593861713356574,0,rectangle,linsley_purified,CD8 T cells
+GSM1479489,Plasma cells,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479489,Platelet,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479489,CD4 T cells,0.5100383983649277,0,rectangle,linsley_purified,CD8 T cells
+GSM1479489,CD8 T cells,0.4149379042474826,1,rectangle,linsley_purified,CD8 T cells
+GSM1479489,Tregs,0.026950722522334755,0,rectangle,linsley_purified,CD8 T cells
+GSM1479489,mDC,9.245484781963048e-19,0,rectangle,linsley_purified,CD8 T cells
+GSM1479489,pDC,1.0385252892818121e-4,0,rectangle,linsley_purified,CD8 T cells
+GSM1479489,Unknown,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479490,B cells,4.157804148847721e-18,0,rectangle,linsley_purified,NK cells
+GSM1479490,ILC,0.006297943070306676,0,rectangle,linsley_purified,NK cells
+GSM1479490,Monocytes,5.034916794944643e-19,0,rectangle,linsley_purified,NK cells
+GSM1479490,NK cells,0.9626586207010404,1,rectangle,linsley_purified,NK cells
+GSM1479490,Plasma cells,0,0,rectangle,linsley_purified,NK cells
+GSM1479490,Platelet,5.092028789940886e-19,0,rectangle,linsley_purified,NK cells
+GSM1479490,CD4 T cells,0,0,rectangle,linsley_purified,NK cells
+GSM1479490,CD8 T cells,0.029926462780830578,0,rectangle,linsley_purified,NK cells
+GSM1479490,Tregs,4.619077957394429e-18,0,rectangle,linsley_purified,NK cells
+GSM1479490,mDC,0,0,rectangle,linsley_purified,NK cells
+GSM1479490,pDC,0.0011169734478223535,0,rectangle,linsley_purified,NK cells
+GSM1479490,Unknown,0,0,rectangle,linsley_purified,NK cells
+GSM1479492,B cells,0.006032498960780679,0,rectangle,linsley_purified,NA
+GSM1479492,ILC,0.00449294729180817,0,rectangle,linsley_purified,NA
+GSM1479492,Monocytes,0.9419805048633763,0,rectangle,linsley_purified,NA
+GSM1479492,NK cells,1.2535461491130505e-4,0,rectangle,linsley_purified,NA
+GSM1479492,Plasma cells,8.598801236670532e-22,0,rectangle,linsley_purified,NA
+GSM1479492,Platelet,8.995114424659264e-5,0,rectangle,linsley_purified,NA
+GSM1479492,CD4 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479492,CD8 T cells,0.04124624416409563,0,rectangle,linsley_purified,NA
+GSM1479492,Tregs,0.006032498960781353,0,rectangle,linsley_purified,NA
+GSM1479492,mDC,0,0,rectangle,linsley_purified,NA
+GSM1479492,pDC,0,0,rectangle,linsley_purified,NA
+GSM1479492,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479493,B cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479493,ILC,4.893786749785205e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479493,Monocytes,1,1,rectangle,linsley_purified,Monocytes
+GSM1479493,NK cells,1.4938942241657168e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479493,Plasma cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479493,Platelet,4.625566283558626e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479493,CD4 T cells,1.9750770111640576e-17,0,rectangle,linsley_purified,Monocytes
+GSM1479493,CD8 T cells,3.499997174137163e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479493,Tregs,0,0,rectangle,linsley_purified,Monocytes
+GSM1479493,mDC,0,0,rectangle,linsley_purified,Monocytes
+GSM1479493,pDC,1.525246413378883e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479493,Unknown,0,0,rectangle,linsley_purified,Monocytes
+GSM1479494,B cells,0.9900337864229293,1,rectangle,linsley_purified,B cells
+GSM1479494,ILC,0.0018272498048150685,0,rectangle,linsley_purified,B cells
+GSM1479494,Monocytes,4.4771983804415873e-20,0,rectangle,linsley_purified,B cells
+GSM1479494,NK cells,0,0,rectangle,linsley_purified,B cells
+GSM1479494,Plasma cells,0.007529276378519564,0,rectangle,linsley_purified,B cells
+GSM1479494,Platelet,0,0,rectangle,linsley_purified,B cells
+GSM1479494,CD4 T cells,1.6065226540789354e-18,0,rectangle,linsley_purified,B cells
+GSM1479494,CD8 T cells,0,0,rectangle,linsley_purified,B cells
+GSM1479494,Tregs,0,0,rectangle,linsley_purified,B cells
+GSM1479494,mDC,4.0304779612617607e-4,0,rectangle,linsley_purified,B cells
+GSM1479494,pDC,2.0663959760993487e-4,0,rectangle,linsley_purified,B cells
+GSM1479494,Unknown,0,0,rectangle,linsley_purified,B cells
+GSM1479495,B cells,0,0,rectangle,linsley_purified,NA
+GSM1479495,ILC,0.0016836752476860717,0,rectangle,linsley_purified,NA
+GSM1479495,Monocytes,1.3076945984476142e-19,0,rectangle,linsley_purified,NA
+GSM1479495,NK cells,0.010020904763236539,0,rectangle,linsley_purified,NA
+GSM1479495,Plasma cells,0,0,rectangle,linsley_purified,NA
+GSM1479495,Platelet,0,0,rectangle,linsley_purified,NA
+GSM1479495,CD4 T cells,0.8581679883261556,0,rectangle,linsley_purified,NA
+GSM1479495,CD8 T cells,0.04750575808838205,0,rectangle,linsley_purified,NA
+GSM1479495,Tregs,0.08247935467244713,0,rectangle,linsley_purified,NA
+GSM1479495,mDC,0,0,rectangle,linsley_purified,NA
+GSM1479495,pDC,1.4231890209271956e-4,0,rectangle,linsley_purified,NA
+GSM1479495,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479496,B cells,6.772293231057904e-19,0,rectangle,linsley_purified,CD8 T cells
+GSM1479496,ILC,0.007402792635165009,0,rectangle,linsley_purified,CD8 T cells
+GSM1479496,Monocytes,1.548721644251591e-19,0,rectangle,linsley_purified,CD8 T cells
+GSM1479496,NK cells,0.10317308440637228,0,rectangle,linsley_purified,CD8 T cells
+GSM1479496,Plasma cells,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479496,Platelet,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479496,CD4 T cells,0.433731667020881,0,rectangle,linsley_purified,CD8 T cells
+GSM1479496,CD8 T cells,0.42327821095011164,1,rectangle,linsley_purified,CD8 T cells
+GSM1479496,Tregs,0.03241424498746985,0,rectangle,linsley_purified,CD8 T cells
+GSM1479496,mDC,5.752920054522854e-19,0,rectangle,linsley_purified,CD8 T cells
+GSM1479496,pDC,4.452784008825124e-19,0,rectangle,linsley_purified,CD8 T cells
+GSM1479496,Unknown,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479497,B cells,4.233345176809655e-18,0,rectangle,linsley_purified,NK cells
+GSM1479497,ILC,6.959770554883543e-18,0,rectangle,linsley_purified,NK cells
+GSM1479497,Monocytes,0,0,rectangle,linsley_purified,NK cells
+GSM1479497,NK cells,0.9739705329270796,1,rectangle,linsley_purified,NK cells
+GSM1479497,Plasma cells,0,0,rectangle,linsley_purified,NK cells
+GSM1479497,Platelet,0,0,rectangle,linsley_purified,NK cells
+GSM1479497,CD4 T cells,5.24156983437649e-18,0,rectangle,linsley_purified,NK cells
+GSM1479497,CD8 T cells,0.025007451991370135,0,rectangle,linsley_purified,NK cells
+GSM1479497,Tregs,0,0,rectangle,linsley_purified,NK cells
+GSM1479497,mDC,1.6985735755788892e-19,0,rectangle,linsley_purified,NK cells
+GSM1479497,pDC,0.001022015081550153,0,rectangle,linsley_purified,NK cells
+GSM1479497,Unknown,0,0,rectangle,linsley_purified,NK cells
+GSM1479499,B cells,0.00753485459569299,0,rectangle,linsley_purified,NA
+GSM1479499,ILC,0.007534854595692957,0,rectangle,linsley_purified,NA
+GSM1479499,Monocytes,0.9656823309091817,0,rectangle,linsley_purified,NA
+GSM1479499,NK cells,0.007413827659034966,0,rectangle,linsley_purified,NA
+GSM1479499,Plasma cells,0,0,rectangle,linsley_purified,NA
+GSM1479499,Platelet,0.0014669346952405399,0,rectangle,linsley_purified,NA
+GSM1479499,CD4 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479499,CD8 T cells,4.836536983029473e-19,0,rectangle,linsley_purified,NA
+GSM1479499,Tregs,0.007534854595692889,0,rectangle,linsley_purified,NA
+GSM1479499,mDC,1.2136480573555594e-19,0,rectangle,linsley_purified,NA
+GSM1479499,pDC,0.0028323429494639383,0,rectangle,linsley_purified,NA
+GSM1479499,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479500,B cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479500,ILC,4.6903494601632294e-17,0,rectangle,linsley_purified,Monocytes
+GSM1479500,Monocytes,1,1,rectangle,linsley_purified,Monocytes
+GSM1479500,NK cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479500,Plasma cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479500,Platelet,0,0,rectangle,linsley_purified,Monocytes
+GSM1479500,CD4 T cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479500,CD8 T cells,6.189949129213816e-17,0,rectangle,linsley_purified,Monocytes
+GSM1479500,Tregs,1.05671789442247e-17,0,rectangle,linsley_purified,Monocytes
+GSM1479500,mDC,1.2129542520063408e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479500,pDC,2.9243285426027684e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479500,Unknown,0,0,rectangle,linsley_purified,Monocytes
+GSM1479501,B cells,0.9969403530774134,1,rectangle,linsley_purified,B cells
+GSM1479501,ILC,2.6266763625450058e-17,0,rectangle,linsley_purified,B cells
+GSM1479501,Monocytes,0,0,rectangle,linsley_purified,B cells
+GSM1479501,NK cells,2.9308183777660956e-18,0,rectangle,linsley_purified,B cells
+GSM1479501,Plasma cells,0.0030596469225866603,0,rectangle,linsley_purified,B cells
+GSM1479501,Platelet,3.632971294916522e-18,0,rectangle,linsley_purified,B cells
+GSM1479501,CD4 T cells,7.389642065126678e-18,0,rectangle,linsley_purified,B cells
+GSM1479501,CD8 T cells,0,0,rectangle,linsley_purified,B cells
+GSM1479501,Tregs,2.249970114898775e-17,0,rectangle,linsley_purified,B cells
+GSM1479501,mDC,0,0,rectangle,linsley_purified,B cells
+GSM1479501,pDC,3.696127315212851e-19,0,rectangle,linsley_purified,B cells
+GSM1479501,Unknown,0,0,rectangle,linsley_purified,B cells
+GSM1479502,B cells,2.5353978141837712e-18,0,rectangle,linsley_purified,NA
+GSM1479502,ILC,9.653540735016933e-5,0,rectangle,linsley_purified,NA
+GSM1479502,Monocytes,0,0,rectangle,linsley_purified,NA
+GSM1479502,NK cells,0.002139978497544261,0,rectangle,linsley_purified,NA
+GSM1479502,Plasma cells,7.81542112966136e-22,0,rectangle,linsley_purified,NA
+GSM1479502,Platelet,0,0,rectangle,linsley_purified,NA
+GSM1479502,CD4 T cells,0.8855447223023241,0,rectangle,linsley_purified,NA
+GSM1479502,CD8 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479502,Tregs,0.11180792660830173,0,rectangle,linsley_purified,NA
+GSM1479502,mDC,0,0,rectangle,linsley_purified,NA
+GSM1479502,pDC,4.108371844798102e-4,0,rectangle,linsley_purified,NA
+GSM1479502,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479503,B cells,1.703360453693291e-19,0,rectangle,linsley_purified,CD8 T cells
+GSM1479503,ILC,0.01211402609505532,0,rectangle,linsley_purified,CD8 T cells
+GSM1479503,Monocytes,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479503,NK cells,0.004505090034513661,0,rectangle,linsley_purified,CD8 T cells
+GSM1479503,Plasma cells,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479503,Platelet,1.527143266717542e-20,0,rectangle,linsley_purified,CD8 T cells
+GSM1479503,CD4 T cells,0.7146784860360174,0,rectangle,linsley_purified,CD8 T cells
+GSM1479503,CD8 T cells,0.23107197995030054,1,rectangle,linsley_purified,CD8 T cells
+GSM1479503,Tregs,0.0365884930014806,0,rectangle,linsley_purified,CD8 T cells
+GSM1479503,mDC,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479503,pDC,0.0010419248826325387,0,rectangle,linsley_purified,CD8 T cells
+GSM1479503,Unknown,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479504,B cells,6.022921901424326e-18,0,rectangle,linsley_purified,NK cells
+GSM1479504,ILC,0.008917086012675534,0,rectangle,linsley_purified,NK cells
+GSM1479504,Monocytes,1.5180821511316992e-19,0,rectangle,linsley_purified,NK cells
+GSM1479504,NK cells,0.9547203146103482,1,rectangle,linsley_purified,NK cells
+GSM1479504,Plasma cells,0,0,rectangle,linsley_purified,NK cells
+GSM1479504,Platelet,0,0,rectangle,linsley_purified,NK cells
+GSM1479504,CD4 T cells,0,0,rectangle,linsley_purified,NK cells
+GSM1479504,CD8 T cells,0.03636259937697626,0,rectangle,linsley_purified,NK cells
+GSM1479504,Tregs,0,0,rectangle,linsley_purified,NK cells
+GSM1479504,mDC,0,0,rectangle,linsley_purified,NK cells
+GSM1479504,pDC,0,0,rectangle,linsley_purified,NK cells
+GSM1479504,Unknown,0,0,rectangle,linsley_purified,NK cells
+GSM1479506,B cells,0.00784540354712564,0,rectangle,linsley_purified,NA
+GSM1479506,ILC,0.00784540354712563,0,rectangle,linsley_purified,NA
+GSM1479506,Monocytes,0.9628015460489574,0,rectangle,linsley_purified,NA
+GSM1479506,NK cells,3.5327361784867284e-20,0,rectangle,linsley_purified,NA
+GSM1479506,Plasma cells,6.675578848165163e-22,0,rectangle,linsley_purified,NA
+GSM1479506,Platelet,0.013662243309665699,0,rectangle,linsley_purified,NA
+GSM1479506,CD4 T cells,2.5110898087708288e-17,0,rectangle,linsley_purified,NA
+GSM1479506,CD8 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479506,Tregs,0.007845403547125597,0,rectangle,linsley_purified,NA
+GSM1479506,mDC,0,0,rectangle,linsley_purified,NA
+GSM1479506,pDC,0,0,rectangle,linsley_purified,NA
+GSM1479506,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479507,B cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479507,ILC,0,0,rectangle,linsley_purified,Monocytes
+GSM1479507,Monocytes,0.9987806039223167,1,rectangle,linsley_purified,Monocytes
+GSM1479507,NK cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479507,Plasma cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479507,Platelet,1.1294204917531766e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479507,CD4 T cells,1.0760062906677636e-17,0,rectangle,linsley_purified,Monocytes
+GSM1479507,CD8 T cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479507,Tregs,0,0,rectangle,linsley_purified,Monocytes
+GSM1479507,mDC,0,0,rectangle,linsley_purified,Monocytes
+GSM1479507,pDC,0.0012193960776833298,0,rectangle,linsley_purified,Monocytes
+GSM1479507,Unknown,0,0,rectangle,linsley_purified,Monocytes
+GSM1479508,B cells,0.9918085281520398,1,rectangle,linsley_purified,B cells
+GSM1479508,ILC,2.698027574418109e-4,0,rectangle,linsley_purified,B cells
+GSM1479508,Monocytes,0,0,rectangle,linsley_purified,B cells
+GSM1479508,NK cells,1.5148462143202212e-18,0,rectangle,linsley_purified,B cells
+GSM1479508,Plasma cells,0.007837562347509418,0,rectangle,linsley_purified,B cells
+GSM1479508,Platelet,1.79561138256148e-18,0,rectangle,linsley_purified,B cells
+GSM1479508,CD4 T cells,0,0,rectangle,linsley_purified,B cells
+GSM1479508,CD8 T cells,0,0,rectangle,linsley_purified,B cells
+GSM1479508,Tregs,5.986122564634101e-17,0,rectangle,linsley_purified,B cells
+GSM1479508,mDC,0,0,rectangle,linsley_purified,B cells
+GSM1479508,pDC,8.41067430090147e-5,0,rectangle,linsley_purified,B cells
+GSM1479508,Unknown,0,0,rectangle,linsley_purified,B cells
+GSM1479509,B cells,0,0,rectangle,linsley_purified,NA
+GSM1479509,ILC,2.226194682750356e-18,0,rectangle,linsley_purified,NA
+GSM1479509,Monocytes,2.978986524550648e-20,0,rectangle,linsley_purified,NA
+GSM1479509,NK cells,0.02581037354785586,0,rectangle,linsley_purified,NA
+GSM1479509,Plasma cells,4.730486495932363e-21,0,rectangle,linsley_purified,NA
+GSM1479509,Platelet,3.0072073677935885e-20,0,rectangle,linsley_purified,NA
+GSM1479509,CD4 T cells,0.861417765798484,0,rectangle,linsley_purified,NA
+GSM1479509,CD8 T cells,0.09521723753195367,0,rectangle,linsley_purified,NA
+GSM1479509,Tregs,0.01728601473436203,0,rectangle,linsley_purified,NA
+GSM1479509,mDC,5.635550059395238e-20,0,rectangle,linsley_purified,NA
+GSM1479509,pDC,2.6860838734449414e-4,0,rectangle,linsley_purified,NA
+GSM1479509,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479510,B cells,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479510,ILC,0.005647166201780152,0,rectangle,linsley_purified,CD8 T cells
+GSM1479510,Monocytes,4.684677080715997e-20,0,rectangle,linsley_purified,CD8 T cells
+GSM1479510,NK cells,0.1962720552409103,0,rectangle,linsley_purified,CD8 T cells
+GSM1479510,Plasma cells,3.913604556122295e-21,0,rectangle,linsley_purified,CD8 T cells
+GSM1479510,Platelet,1.20000556664933e-19,0,rectangle,linsley_purified,CD8 T cells
+GSM1479510,CD4 T cells,0.30832272105235015,0,rectangle,linsley_purified,CD8 T cells
+GSM1479510,CD8 T cells,0.4889678723064833,1,rectangle,linsley_purified,CD8 T cells
+GSM1479510,Tregs,7.901851984760623e-4,0,rectangle,linsley_purified,CD8 T cells
+GSM1479510,mDC,6.563637539391088e-19,0,rectangle,linsley_purified,CD8 T cells
+GSM1479510,pDC,1.2078344099635285e-18,0,rectangle,linsley_purified,CD8 T cells
+GSM1479510,Unknown,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479511,B cells,2.2375296525949016e-18,0,rectangle,linsley_purified,NK cells
+GSM1479511,ILC,0,0,rectangle,linsley_purified,NK cells
+GSM1479511,Monocytes,0.038549421390906134,0,rectangle,linsley_purified,NK cells
+GSM1479511,NK cells,0.9352945194446682,1,rectangle,linsley_purified,NK cells
+GSM1479511,Plasma cells,6.910393144080415e-21,0,rectangle,linsley_purified,NK cells
+GSM1479511,Platelet,2.7209875004352574e-19,0,rectangle,linsley_purified,NK cells
+GSM1479511,CD4 T cells,6.451203135383295e-18,0,rectangle,linsley_purified,NK cells
+GSM1479511,CD8 T cells,0.02615605916442567,0,rectangle,linsley_purified,NK cells
+GSM1479511,Tregs,3.4068309651256135e-18,0,rectangle,linsley_purified,NK cells
+GSM1479511,mDC,1.5084445218596063e-19,0,rectangle,linsley_purified,NK cells
+GSM1479511,pDC,9.880404996142552e-19,0,rectangle,linsley_purified,NK cells
+GSM1479511,Unknown,0,0,rectangle,linsley_purified,NK cells
+GSM1479513,B cells,0.007142122897149431,0,rectangle,linsley_purified,NA
+GSM1479513,ILC,0.007142122897149445,0,rectangle,linsley_purified,NA
+GSM1479513,Monocytes,0.965081692419605,0,rectangle,linsley_purified,NA
+GSM1479513,NK cells,0.012892327975917422,0,rectangle,linsley_purified,NA
+GSM1479513,Plasma cells,0,0,rectangle,linsley_purified,NA
+GSM1479513,Platelet,0,0,rectangle,linsley_purified,NA
+GSM1479513,CD4 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479513,CD8 T cells,5.996109130278178e-4,0,rectangle,linsley_purified,NA
+GSM1479513,Tregs,0.007142122897150839,0,rectangle,linsley_purified,NA
+GSM1479513,mDC,0,0,rectangle,linsley_purified,NA
+GSM1479513,pDC,0,0,rectangle,linsley_purified,NA
+GSM1479513,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479514,B cells,2.7770440150498807e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479514,ILC,0.006245631456142239,0,rectangle,linsley_purified,Monocytes
+GSM1479514,Monocytes,0.9937543685438578,1,rectangle,linsley_purified,Monocytes
+GSM1479514,NK cells,4.708601979100223e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479514,Plasma cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479514,Platelet,3.5882388746562954e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479514,CD4 T cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479514,CD8 T cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479514,Tregs,4.177712957566736e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479514,mDC,0,0,rectangle,linsley_purified,Monocytes
+GSM1479514,pDC,2.1162010669757964e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479514,Unknown,0,0,rectangle,linsley_purified,Monocytes
+GSM1479515,B cells,0.9890822667539583,1,rectangle,linsley_purified,B cells
+GSM1479515,ILC,2.4025659085233797e-4,0,rectangle,linsley_purified,B cells
+GSM1479515,Monocytes,0.00740937800470519,0,rectangle,linsley_purified,B cells
+GSM1479515,NK cells,1.124097251373307e-18,0,rectangle,linsley_purified,B cells
+GSM1479515,Plasma cells,0.003268098650484112,0,rectangle,linsley_purified,B cells
+GSM1479515,Platelet,8.272704418519854e-21,0,rectangle,linsley_purified,B cells
+GSM1479515,CD4 T cells,1.077352732631481e-18,0,rectangle,linsley_purified,B cells
+GSM1479515,CD8 T cells,1.2121524441149424e-17,0,rectangle,linsley_purified,B cells
+GSM1479515,Tregs,0,0,rectangle,linsley_purified,B cells
+GSM1479515,mDC,8.907003397479935e-21,0,rectangle,linsley_purified,B cells
+GSM1479515,pDC,0,0,rectangle,linsley_purified,B cells
+GSM1479515,Unknown,0,0,rectangle,linsley_purified,B cells
+GSM1479516,B cells,1.864867027503804e-18,0,rectangle,linsley_purified,NA
+GSM1479516,ILC,0.001709741353667852,0,rectangle,linsley_purified,NA
+GSM1479516,Monocytes,1.0841833075809718e-19,0,rectangle,linsley_purified,NA
+GSM1479516,NK cells,0.0012562825112306898,0,rectangle,linsley_purified,NA
+GSM1479516,Plasma cells,0,0,rectangle,linsley_purified,NA
+GSM1479516,Platelet,1.0250266270098078e-19,0,rectangle,linsley_purified,NA
+GSM1479516,CD4 T cells,0.8426818803011102,0,rectangle,linsley_purified,NA
+GSM1479516,CD8 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479516,Tregs,0.15368415226313384,0,rectangle,linsley_purified,NA
+GSM1479516,mDC,0,0,rectangle,linsley_purified,NA
+GSM1479516,pDC,6.679435708573949e-4,0,rectangle,linsley_purified,NA
+GSM1479516,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479517,B cells,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479517,ILC,0.012991534723951984,0,rectangle,linsley_purified,CD8 T cells
+GSM1479517,Monocytes,5.989323513651146e-21,0,rectangle,linsley_purified,CD8 T cells
+GSM1479517,NK cells,0.021108114693622334,0,rectangle,linsley_purified,CD8 T cells
+GSM1479517,Plasma cells,3.893810375430905e-21,0,rectangle,linsley_purified,CD8 T cells
+GSM1479517,Platelet,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479517,CD4 T cells,0.48902205610207566,0,rectangle,linsley_purified,CD8 T cells
+GSM1479517,CD8 T cells,0.31544939559539653,1,rectangle,linsley_purified,CD8 T cells
+GSM1479517,Tregs,0.16127633445041117,0,rectangle,linsley_purified,CD8 T cells
+GSM1479517,mDC,8.766446956516369e-20,0,rectangle,linsley_purified,CD8 T cells
+GSM1479517,pDC,1.5256443454225724e-4,0,rectangle,linsley_purified,CD8 T cells
+GSM1479517,Unknown,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479518,B cells,3.795764350582108e-18,0,rectangle,linsley_purified,NK cells
+GSM1479518,ILC,0.0025158609343927814,0,rectangle,linsley_purified,NK cells
+GSM1479518,Monocytes,7.570415131480343e-19,0,rectangle,linsley_purified,NK cells
+GSM1479518,NK cells,0.9665843765444547,1,rectangle,linsley_purified,NK cells
+GSM1479518,Plasma cells,0,0,rectangle,linsley_purified,NK cells
+GSM1479518,Platelet,0,0,rectangle,linsley_purified,NK cells
+GSM1479518,CD4 T cells,0,0,rectangle,linsley_purified,NK cells
+GSM1479518,CD8 T cells,0.029870282503530996,0,rectangle,linsley_purified,NK cells
+GSM1479518,Tregs,0,0,rectangle,linsley_purified,NK cells
+GSM1479518,mDC,0,0,rectangle,linsley_purified,NK cells
+GSM1479518,pDC,0.0010294800176216205,0,rectangle,linsley_purified,NK cells
+GSM1479518,Unknown,0,0,rectangle,linsley_purified,NK cells
+GSM1479520,B cells,0.006960751733718942,0,rectangle,linsley_purified,NA
+GSM1479520,ILC,0.006991729058625137,0,rectangle,linsley_purified,NA
+GSM1479520,Monocytes,0.9481350740777699,0,rectangle,linsley_purified,NA
+GSM1479520,NK cells,0.02542353010861672,0,rectangle,linsley_purified,NA
+GSM1479520,Plasma cells,3.699442231289377e-21,0,rectangle,linsley_purified,NA
+GSM1479520,Platelet,0,0,rectangle,linsley_purified,NA
+GSM1479520,CD4 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479520,CD8 T cells,0.0034274873945462237,0,rectangle,linsley_purified,NA
+GSM1479520,Tregs,0.006960751733720417,0,rectangle,linsley_purified,NA
+GSM1479520,mDC,1.920264585557196e-18,0,rectangle,linsley_purified,NA
+GSM1479520,pDC,0.0021006758930027713,0,rectangle,linsley_purified,NA
+GSM1479520,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479521,B cells,3.841365652824806e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479521,ILC,4.7575686067623834e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479521,Monocytes,1,1,rectangle,linsley_purified,Monocytes
+GSM1479521,NK cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479521,Plasma cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479521,Platelet,0,0,rectangle,linsley_purified,Monocytes
+GSM1479521,CD4 T cells,2.730966199755239e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479521,CD8 T cells,1.2192303989119424e-17,0,rectangle,linsley_purified,Monocytes
+GSM1479521,Tregs,2.2173864976757965e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479521,mDC,3.61745613640278e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479521,pDC,0,0,rectangle,linsley_purified,Monocytes
+GSM1479521,Unknown,0,0,rectangle,linsley_purified,Monocytes
+GSM1479522,B cells,0.9905737980166116,1,rectangle,linsley_purified,B cells
+GSM1479522,ILC,6.545200070026698e-4,0,rectangle,linsley_purified,B cells
+GSM1479522,Monocytes,0.003572849551078458,0,rectangle,linsley_purified,B cells
+GSM1479522,NK cells,0,0,rectangle,linsley_purified,B cells
+GSM1479522,Plasma cells,0.004908060072731066,0,rectangle,linsley_purified,B cells
+GSM1479522,Platelet,0,0,rectangle,linsley_purified,B cells
+GSM1479522,CD4 T cells,0,0,rectangle,linsley_purified,B cells
+GSM1479522,CD8 T cells,0,0,rectangle,linsley_purified,B cells
+GSM1479522,Tregs,0,0,rectangle,linsley_purified,B cells
+GSM1479522,mDC,8.684772236413696e-20,0,rectangle,linsley_purified,B cells
+GSM1479522,pDC,2.9077235257632346e-4,0,rectangle,linsley_purified,B cells
+GSM1479522,Unknown,0,0,rectangle,linsley_purified,B cells
+GSM1479523,B cells,2.4101803280396864e-18,0,rectangle,linsley_purified,NA
+GSM1479523,ILC,0.005605086677585633,0,rectangle,linsley_purified,NA
+GSM1479523,Monocytes,0,0,rectangle,linsley_purified,NA
+GSM1479523,NK cells,0.0028782814950810615,0,rectangle,linsley_purified,NA
+GSM1479523,Plasma cells,2.7692523093758275e-21,0,rectangle,linsley_purified,NA
+GSM1479523,Platelet,8.458006123428978e-20,0,rectangle,linsley_purified,NA
+GSM1479523,CD4 T cells,0.9050558689507325,0,rectangle,linsley_purified,NA
+GSM1479523,CD8 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479523,Tregs,0.08609910800375722,0,rectangle,linsley_purified,NA
+GSM1479523,mDC,0,0,rectangle,linsley_purified,NA
+GSM1479523,pDC,3.616548728434834e-4,0,rectangle,linsley_purified,NA
+GSM1479523,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479524,B cells,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479524,ILC,0.06983250567259518,0,rectangle,linsley_purified,CD8 T cells
+GSM1479524,Monocytes,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479524,NK cells,0.01041932701854465,0,rectangle,linsley_purified,CD8 T cells
+GSM1479524,Plasma cells,5.0196462284049555e-21,0,rectangle,linsley_purified,CD8 T cells
+GSM1479524,Platelet,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479524,CD4 T cells,0.59030543789011,0,rectangle,linsley_purified,CD8 T cells
+GSM1479524,CD8 T cells,0.2766099374989474,1,rectangle,linsley_purified,CD8 T cells
+GSM1479524,Tregs,0.05243183386627913,0,rectangle,linsley_purified,CD8 T cells
+GSM1479524,mDC,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479524,pDC,4.009580535236727e-4,0,rectangle,linsley_purified,CD8 T cells
+GSM1479524,Unknown,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479525,B cells,0,0,rectangle,linsley_purified,NK cells
+GSM1479525,ILC,0.05397152992466813,0,rectangle,linsley_purified,NK cells
+GSM1479525,Monocytes,1.6780357100099642e-19,0,rectangle,linsley_purified,NK cells
+GSM1479525,NK cells,0.9074016347737147,1,rectangle,linsley_purified,NK cells
+GSM1479525,Plasma cells,2.0875918737827823e-20,0,rectangle,linsley_purified,NK cells
+GSM1479525,Platelet,1.2506838769475813e-20,0,rectangle,linsley_purified,NK cells
+GSM1479525,CD4 T cells,5.593495450663363e-17,0,rectangle,linsley_purified,NK cells
+GSM1479525,CD8 T cells,0.03296540254938007,0,rectangle,linsley_purified,NK cells
+GSM1479525,Tregs,0,0,rectangle,linsley_purified,NK cells
+GSM1479525,mDC,0,0,rectangle,linsley_purified,NK cells
+GSM1479525,pDC,0.005661432752237,0,rectangle,linsley_purified,NK cells
+GSM1479525,Unknown,0,0,rectangle,linsley_purified,NK cells
+GSM1479527,B cells,0.007157746596316204,0,rectangle,linsley_purified,NA
+GSM1479527,ILC,0.007157746596316205,0,rectangle,linsley_purified,NA
+GSM1479527,Monocytes,0.9770000124441658,0,rectangle,linsley_purified,NA
+GSM1479527,NK cells,0.001526747766884039,0,rectangle,linsley_purified,NA
+GSM1479527,Plasma cells,0,0,rectangle,linsley_purified,NA
+GSM1479527,Platelet,9.814677982108378e-19,0,rectangle,linsley_purified,NA
+GSM1479527,CD4 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479527,CD8 T cells,3.0693277567517013e-18,0,rectangle,linsley_purified,NA
+GSM1479527,Tregs,0.007157746596317835,0,rectangle,linsley_purified,NA
+GSM1479527,mDC,0,0,rectangle,linsley_purified,NA
+GSM1479527,pDC,4.853939914085411e-19,0,rectangle,linsley_purified,NA
+GSM1479527,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479528,B cells,4.113514234181427e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479528,ILC,0.010048133737122487,0,rectangle,linsley_purified,Monocytes
+GSM1479528,Monocytes,0.9777273007647649,1,rectangle,linsley_purified,Monocytes
+GSM1479528,NK cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479528,Plasma cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479528,Platelet,3.314728088210774e-21,0,rectangle,linsley_purified,Monocytes
+GSM1479528,CD4 T cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479528,CD8 T cells,3.4736079360634215e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479528,Tregs,0.012224565498112763,0,rectangle,linsley_purified,Monocytes
+GSM1479528,mDC,0,0,rectangle,linsley_purified,Monocytes
+GSM1479528,pDC,1.6325779695603757e-22,0,rectangle,linsley_purified,Monocytes
+GSM1479528,Unknown,0,0,rectangle,linsley_purified,Monocytes
+GSM1479529,B cells,0.9892793702789476,1,rectangle,linsley_purified,B cells
+GSM1479529,ILC,4.327553887212272e-4,0,rectangle,linsley_purified,B cells
+GSM1479529,Monocytes,0.006621064552857442,0,rectangle,linsley_purified,B cells
+GSM1479529,NK cells,0,0,rectangle,linsley_purified,B cells
+GSM1479529,Plasma cells,0.002790511262913641,0,rectangle,linsley_purified,B cells
+GSM1479529,Platelet,2.628654338819591e-19,0,rectangle,linsley_purified,B cells
+GSM1479529,CD4 T cells,3.599714989605463e-18,0,rectangle,linsley_purified,B cells
+GSM1479529,CD8 T cells,5.496601548058071e-18,0,rectangle,linsley_purified,B cells
+GSM1479529,Tregs,4.186338817344529e-17,0,rectangle,linsley_purified,B cells
+GSM1479529,mDC,9.217193802732504e-19,0,rectangle,linsley_purified,B cells
+GSM1479529,pDC,8.7629851656013e-4,0,rectangle,linsley_purified,B cells
+GSM1479529,Unknown,0,0,rectangle,linsley_purified,B cells
+GSM1479530,B cells,0,0,rectangle,linsley_purified,NA
+GSM1479530,ILC,2.447668882279748e-19,0,rectangle,linsley_purified,NA
+GSM1479530,Monocytes,1.2753733335469959e-19,0,rectangle,linsley_purified,NA
+GSM1479530,NK cells,0.025950183721536062,0,rectangle,linsley_purified,NA
+GSM1479530,Plasma cells,0,0,rectangle,linsley_purified,NA
+GSM1479530,Platelet,1.597341904130416e-20,0,rectangle,linsley_purified,NA
+GSM1479530,CD4 T cells,0.7985166094283015,0,rectangle,linsley_purified,NA
+GSM1479530,CD8 T cells,0.08818914110010577,0,rectangle,linsley_purified,NA
+GSM1479530,Tregs,0.08726373419744317,0,rectangle,linsley_purified,NA
+GSM1479530,mDC,3.9306083573662265e-20,0,rectangle,linsley_purified,NA
+GSM1479530,pDC,8.033155261341995e-5,0,rectangle,linsley_purified,NA
+GSM1479530,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479531,B cells,1.6643324313851907e-18,0,rectangle,linsley_purified,CD8 T cells
+GSM1479531,ILC,0.006596441035056365,0,rectangle,linsley_purified,CD8 T cells
+GSM1479531,Monocytes,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479531,NK cells,0.1610107756186038,0,rectangle,linsley_purified,CD8 T cells
+GSM1479531,Plasma cells,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479531,Platelet,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479531,CD4 T cells,0.3380345417860714,0,rectangle,linsley_purified,CD8 T cells
+GSM1479531,CD8 T cells,0.4943582415602684,1,rectangle,linsley_purified,CD8 T cells
+GSM1479531,Tregs,9.945735337276154e-18,0,rectangle,linsley_purified,CD8 T cells
+GSM1479531,mDC,2.3039859910082417e-19,0,rectangle,linsley_purified,CD8 T cells
+GSM1479531,pDC,6.605481152049931e-19,0,rectangle,linsley_purified,CD8 T cells
+GSM1479531,Unknown,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479532,B cells,6.619400734060077e-18,0,rectangle,linsley_purified,NK cells
+GSM1479532,ILC,2.3413867379307093e-4,0,rectangle,linsley_purified,NK cells
+GSM1479532,Monocytes,0,0,rectangle,linsley_purified,NK cells
+GSM1479532,NK cells,0.9843135026345051,1,rectangle,linsley_purified,NK cells
+GSM1479532,Plasma cells,1.0410705077675527e-20,0,rectangle,linsley_purified,NK cells
+GSM1479532,Platelet,2.0038966410852137e-18,0,rectangle,linsley_purified,NK cells
+GSM1479532,CD4 T cells,0,0,rectangle,linsley_purified,NK cells
+GSM1479532,CD8 T cells,0.01510883067949143,0,rectangle,linsley_purified,NK cells
+GSM1479532,Tregs,0,0,rectangle,linsley_purified,NK cells
+GSM1479532,mDC,3.435280122103752e-4,0,rectangle,linsley_purified,NK cells
+GSM1479532,pDC,2.5962474072072345e-19,0,rectangle,linsley_purified,NK cells
+GSM1479532,Unknown,0,0,rectangle,linsley_purified,NK cells
+GSM1479534,B cells,0.007206453567454049,0,rectangle,linsley_purified,NA
+GSM1479534,ILC,0.007206453567454064,0,rectangle,linsley_purified,NA
+GSM1479534,Monocytes,0.9754405643405706,0,rectangle,linsley_purified,NA
+GSM1479534,NK cells,0.002940074957065677,0,rectangle,linsley_purified,NA
+GSM1479534,Plasma cells,0,0,rectangle,linsley_purified,NA
+GSM1479534,Platelet,9.549620239368656e-19,0,rectangle,linsley_purified,NA
+GSM1479534,CD4 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479534,CD8 T cells,8.730365498288512e-18,0,rectangle,linsley_purified,NA
+GSM1479534,Tregs,0.007206453567455591,0,rectangle,linsley_purified,NA
+GSM1479534,mDC,0,0,rectangle,linsley_purified,NA
+GSM1479534,pDC,5.078650485506211e-19,0,rectangle,linsley_purified,NA
+GSM1479534,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479535,B cells,5.275843929511138e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479535,ILC,8.082467718529007e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479535,Monocytes,1,1,rectangle,linsley_purified,Monocytes
+GSM1479535,NK cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479535,Plasma cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479535,Platelet,2.663038423545916e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479535,CD4 T cells,4.66477116788527e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479535,CD8 T cells,4.239478958353807e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479535,Tregs,0,0,rectangle,linsley_purified,Monocytes
+GSM1479535,mDC,8.009714034717331e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479535,pDC,7.392239621048657e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479535,Unknown,0,0,rectangle,linsley_purified,Monocytes
+GSM1479536,B cells,0.9924907534848934,1,rectangle,linsley_purified,B cells
+GSM1479536,ILC,6.219938543806998e-4,0,rectangle,linsley_purified,B cells
+GSM1479536,Monocytes,1.9580499317534617e-20,0,rectangle,linsley_purified,B cells
+GSM1479536,NK cells,0,0,rectangle,linsley_purified,B cells
+GSM1479536,Plasma cells,0.006887252660726011,0,rectangle,linsley_purified,B cells
+GSM1479536,Platelet,8.380176178169051e-19,0,rectangle,linsley_purified,B cells
+GSM1479536,CD4 T cells,4.615975183365832e-18,0,rectangle,linsley_purified,B cells
+GSM1479536,CD8 T cells,0,0,rectangle,linsley_purified,B cells
+GSM1479536,Tregs,1.7493457736680244e-17,0,rectangle,linsley_purified,B cells
+GSM1479536,mDC,0,0,rectangle,linsley_purified,B cells
+GSM1479536,pDC,0,0,rectangle,linsley_purified,B cells
+GSM1479536,Unknown,0,0,rectangle,linsley_purified,B cells
+GSM1479537,B cells,2.0242744520217758e-18,0,rectangle,linsley_purified,NA
+GSM1479537,ILC,0.008226565897041337,0,rectangle,linsley_purified,NA
+GSM1479537,Monocytes,1.2275808876458426e-19,0,rectangle,linsley_purified,NA
+GSM1479537,NK cells,0.0034122212617875014,0,rectangle,linsley_purified,NA
+GSM1479537,Plasma cells,0,0,rectangle,linsley_purified,NA
+GSM1479537,Platelet,1.6204757435835073e-19,0,rectangle,linsley_purified,NA
+GSM1479537,CD4 T cells,0.8625536527018295,0,rectangle,linsley_purified,NA
+GSM1479537,CD8 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479537,Tregs,0.12565261693328614,0,rectangle,linsley_purified,NA
+GSM1479537,mDC,0,0,rectangle,linsley_purified,NA
+GSM1479537,pDC,1.5494320605552962e-4,0,rectangle,linsley_purified,NA
+GSM1479537,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479538,B cells,1.1162337987086898e-18,0,rectangle,linsley_purified,CD8 T cells
+GSM1479538,ILC,0.014129773610117994,0,rectangle,linsley_purified,CD8 T cells
+GSM1479538,Monocytes,1.616502830982667e-19,0,rectangle,linsley_purified,CD8 T cells
+GSM1479538,NK cells,0.083955540394617445,0,rectangle,linsley_purified,CD8 T cells
+GSM1479538,Plasma cells,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479538,Platelet,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479538,CD4 T cells,0.2822363458042058,0,rectangle,linsley_purified,CD8 T cells
+GSM1479538,CD8 T cells,0.4796965645247658,1,rectangle,linsley_purified,CD8 T cells
+GSM1479538,Tregs,0.13993808480713105,0,rectangle,linsley_purified,CD8 T cells
+GSM1479538,mDC,7.877218237859112e-19,0,rectangle,linsley_purified,CD8 T cells
+GSM1479538,pDC,4.369085916203067e-5,0,rectangle,linsley_purified,CD8 T cells
+GSM1479538,Unknown,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479540,B cells,0.0070090084265125975,0,rectangle,linsley_purified,NA
+GSM1479540,ILC,0.007106093537751894,0,rectangle,linsley_purified,NA
+GSM1479540,Monocytes,0.9589287072327998,0,rectangle,linsley_purified,NA
+GSM1479540,NK cells,0.017602736977820936,0,rectangle,linsley_purified,NA
+GSM1479540,Plasma cells,6.322751600478922e-22,0,rectangle,linsley_purified,NA
+GSM1479540,Platelet,7.705781335889767e-19,0,rectangle,linsley_purified,NA
+GSM1479540,CD4 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479540,CD8 T cells,0.0023444453986009167,0,rectangle,linsley_purified,NA
+GSM1479540,Tregs,0.00700900842651393,0,rectangle,linsley_purified,NA
+GSM1479540,mDC,0,0,rectangle,linsley_purified,NA
+GSM1479540,pDC,3.9390490737508354e-19,0,rectangle,linsley_purified,NA
+GSM1479540,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479541,B cells,9.315156316440813e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479541,ILC,1.6450107394376404e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479541,Monocytes,1,1,rectangle,linsley_purified,Monocytes
+GSM1479541,NK cells,3.2984660005802574e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479541,Plasma cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479541,Platelet,0,0,rectangle,linsley_purified,Monocytes
+GSM1479541,CD4 T cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479541,CD8 T cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479541,Tregs,1.7591737081052833e-17,0,rectangle,linsley_purified,Monocytes
+GSM1479541,mDC,5.892212073952208e-35,0,rectangle,linsley_purified,Monocytes
+GSM1479541,pDC,1.5552060210482349e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479541,Unknown,0,0,rectangle,linsley_purified,Monocytes
+GSM1479542,B cells,0.9942094621201816,1,rectangle,linsley_purified,B cells
+GSM1479542,ILC,0,0,rectangle,linsley_purified,B cells
+GSM1479542,Monocytes,0.0020470248295920883,0,rectangle,linsley_purified,B cells
+GSM1479542,NK cells,0,0,rectangle,linsley_purified,B cells
+GSM1479542,Plasma cells,0.003743513050226346,0,rectangle,linsley_purified,B cells
+GSM1479542,Platelet,6.049048622395233e-19,0,rectangle,linsley_purified,B cells
+GSM1479542,CD4 T cells,6.1700183540518705e-19,0,rectangle,linsley_purified,B cells
+GSM1479542,CD8 T cells,1.310238133110729e-17,0,rectangle,linsley_purified,B cells
+GSM1479542,Tregs,0,0,rectangle,linsley_purified,B cells
+GSM1479542,mDC,3.148914711958568e-20,0,rectangle,linsley_purified,B cells
+GSM1479542,pDC,0,0,rectangle,linsley_purified,B cells
+GSM1479542,Unknown,0,0,rectangle,linsley_purified,B cells
+GSM1479543,B cells,2.637071913589618e-18,0,rectangle,linsley_purified,NA
+GSM1479543,ILC,0.0039045970481891065,0,rectangle,linsley_purified,NA
+GSM1479543,Monocytes,0,0,rectangle,linsley_purified,NA
+GSM1479543,NK cells,0.001995276796390812,0,rectangle,linsley_purified,NA
+GSM1479543,Plasma cells,0,0,rectangle,linsley_purified,NA
+GSM1479543,Platelet,1.4074339942665554e-19,0,rectangle,linsley_purified,NA
+GSM1479543,CD4 T cells,0.8536967766114568,0,rectangle,linsley_purified,NA
+GSM1479543,CD8 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479543,Tregs,0.13991334175075018,0,rectangle,linsley_purified,NA
+GSM1479543,mDC,4.3463924194602107e-20,0,rectangle,linsley_purified,NA
+GSM1479543,pDC,4.900077932130085e-4,0,rectangle,linsley_purified,NA
+GSM1479543,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479544,B cells,4.081164104530642e-20,0,rectangle,linsley_purified,CD8 T cells
+GSM1479544,ILC,0.009598941470320924,0,rectangle,linsley_purified,CD8 T cells
+GSM1479544,Monocytes,3.575081041083606e-19,0,rectangle,linsley_purified,CD8 T cells
+GSM1479544,NK cells,0.0038540184569841253,0,rectangle,linsley_purified,CD8 T cells
+GSM1479544,Plasma cells,2.1076757249600435e-23,0,rectangle,linsley_purified,CD8 T cells
+GSM1479544,Platelet,1.630428672686123e-19,0,rectangle,linsley_purified,CD8 T cells
+GSM1479544,CD4 T cells,0.7134053062794381,0,rectangle,linsley_purified,CD8 T cells
+GSM1479544,CD8 T cells,0.25630474452815943,1,rectangle,linsley_purified,CD8 T cells
+GSM1479544,Tregs,0.016064930596728987,0,rectangle,linsley_purified,CD8 T cells
+GSM1479544,mDC,1.1483321065770006e-19,0,rectangle,linsley_purified,CD8 T cells
+GSM1479544,pDC,7.720586683684969e-4,0,rectangle,linsley_purified,CD8 T cells
+GSM1479544,Unknown,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479545,B cells,1.1418223247698025e-18,0,rectangle,linsley_purified,NK cells
+GSM1479545,ILC,0,0,rectangle,linsley_purified,NK cells
+GSM1479545,Monocytes,0,0,rectangle,linsley_purified,NK cells
+GSM1479545,NK cells,0.9647749658529952,1,rectangle,linsley_purified,NK cells
+GSM1479545,Plasma cells,0,0,rectangle,linsley_purified,NK cells
+GSM1479545,Platelet,1.8446124665503183e-19,0,rectangle,linsley_purified,NK cells
+GSM1479545,CD4 T cells,0,0,rectangle,linsley_purified,NK cells
+GSM1479545,CD8 T cells,0.03237858537361298,0,rectangle,linsley_purified,NK cells
+GSM1479545,Tregs,1.1134764382177752e-17,0,rectangle,linsley_purified,NK cells
+GSM1479545,mDC,0,0,rectangle,linsley_purified,NK cells
+GSM1479545,pDC,0.002846448773391857,0,rectangle,linsley_purified,NK cells
+GSM1479545,Unknown,0,0,rectangle,linsley_purified,NK cells
+GSM1479547,B cells,0.007031121259976589,0,rectangle,linsley_purified,NA
+GSM1479547,ILC,0.007031121259976598,0,rectangle,linsley_purified,NA
+GSM1479547,Monocytes,0.9672679436865568,0,rectangle,linsley_purified,NA
+GSM1479547,NK cells,0.01163869253351162,0,rectangle,linsley_purified,NA
+GSM1479547,Plasma cells,0,0,rectangle,linsley_purified,NA
+GSM1479547,Platelet,1.319964401553046e-19,0,rectangle,linsley_purified,NA
+GSM1479547,CD4 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479547,CD8 T cells,8.493934119428418e-18,0,rectangle,linsley_purified,NA
+GSM1479547,Tregs,0.007031121259978429,0,rectangle,linsley_purified,NA
+GSM1479547,mDC,1.1622074533558532e-18,0,rectangle,linsley_purified,NA
+GSM1479547,pDC,4.3126528048413505e-19,0,rectangle,linsley_purified,NA
+GSM1479547,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479548,B cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479548,ILC,4.812529432419097e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479548,Monocytes,1,1,rectangle,linsley_purified,Monocytes
+GSM1479548,NK cells,8.062151823714163e-20,0,rectangle,linsley_purified,Monocytes
+GSM1479548,Plasma cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479548,Platelet,1.1254241975233164e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479548,CD4 T cells,1.3724669336471485e-17,0,rectangle,linsley_purified,Monocytes
+GSM1479548,CD8 T cells,3.9921467851727746e-17,0,rectangle,linsley_purified,Monocytes
+GSM1479548,Tregs,1.5761829612801304e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479548,mDC,0,0,rectangle,linsley_purified,Monocytes
+GSM1479548,pDC,0,0,rectangle,linsley_purified,Monocytes
+GSM1479548,Unknown,0,0,rectangle,linsley_purified,Monocytes
+GSM1479549,B cells,0.9916144744570283,1,rectangle,linsley_purified,B cells
+GSM1479549,ILC,0.0028118217901862514,0,rectangle,linsley_purified,B cells
+GSM1479549,Monocytes,0.0011867544958634776,0,rectangle,linsley_purified,B cells
+GSM1479549,NK cells,6.385633936346805e-21,0,rectangle,linsley_purified,B cells
+GSM1479549,Plasma cells,0.0041133846081118485,0,rectangle,linsley_purified,B cells
+GSM1479549,Platelet,0,0,rectangle,linsley_purified,B cells
+GSM1479549,CD4 T cells,0,0,rectangle,linsley_purified,B cells
+GSM1479549,CD8 T cells,7.316210120512322e-21,0,rectangle,linsley_purified,B cells
+GSM1479549,Tregs,6.999477758536811e-18,0,rectangle,linsley_purified,B cells
+GSM1479549,mDC,2.7356464881022317e-4,0,rectangle,linsley_purified,B cells
+GSM1479549,pDC,0,0,rectangle,linsley_purified,B cells
+GSM1479549,Unknown,0,0,rectangle,linsley_purified,B cells
+GSM1479550,B cells,2.8452719180549942e-18,0,rectangle,linsley_purified,NA
+GSM1479550,ILC,6.807921989217892e-4,0,rectangle,linsley_purified,NA
+GSM1479550,Monocytes,0,0,rectangle,linsley_purified,NA
+GSM1479550,NK cells,9.043797390060837e-20,0,rectangle,linsley_purified,NA
+GSM1479550,Plasma cells,0,0,rectangle,linsley_purified,NA
+GSM1479550,Platelet,8.856688054474741e-20,0,rectangle,linsley_purified,NA
+GSM1479550,CD4 T cells,0.910682076566995,0,rectangle,linsley_purified,NA
+GSM1479550,CD8 T cells,4.518623997397598e-19,0,rectangle,linsley_purified,NA
+GSM1479550,Tregs,0.08823605741052187,0,rectangle,linsley_purified,NA
+GSM1479550,mDC,0,0,rectangle,linsley_purified,NA
+GSM1479550,pDC,4.0107382356129983e-4,0,rectangle,linsley_purified,NA
+GSM1479550,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479551,B cells,1.1281166647859186e-19,0,rectangle,linsley_purified,CD8 T cells
+GSM1479551,ILC,0.005761235448997972,0,rectangle,linsley_purified,CD8 T cells
+GSM1479551,Monocytes,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479551,NK cells,6.519871166630216e-6,0,rectangle,linsley_purified,CD8 T cells
+GSM1479551,Plasma cells,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479551,Platelet,1.0106768122330799e-19,0,rectangle,linsley_purified,CD8 T cells
+GSM1479551,CD4 T cells,0.7682806303887355,0,rectangle,linsley_purified,CD8 T cells
+GSM1479551,CD8 T cells,0.20927735384951957,1,rectangle,linsley_purified,CD8 T cells
+GSM1479551,Tregs,0.01638568475348289,0,rectangle,linsley_purified,CD8 T cells
+GSM1479551,mDC,9.005775931765331e-21,0,rectangle,linsley_purified,CD8 T cells
+GSM1479551,pDC,2.88575688097416e-4,0,rectangle,linsley_purified,CD8 T cells
+GSM1479551,Unknown,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479553,B cells,0.007416722439693372,0,rectangle,linsley_purified,NA
+GSM1479553,ILC,0.007416722439693388,0,rectangle,linsley_purified,NA
+GSM1479553,Monocytes,0.9722579388870822,0,rectangle,linsley_purified,NA
+GSM1479553,NK cells,0.005491893793835884,0,rectangle,linsley_purified,NA
+GSM1479553,Plasma cells,0,0,rectangle,linsley_purified,NA
+GSM1479553,Platelet,0,0,rectangle,linsley_purified,NA
+GSM1479553,CD4 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479553,CD8 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479553,Tregs,0.007416722439695005,0,rectangle,linsley_purified,NA
+GSM1479553,mDC,9.528089791562327e-19,0,rectangle,linsley_purified,NA
+GSM1479553,pDC,4.4079035389838975e-19,0,rectangle,linsley_purified,NA
+GSM1479553,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479554,B cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479554,ILC,0,0,rectangle,linsley_purified,Monocytes
+GSM1479554,Monocytes,1,1,rectangle,linsley_purified,Monocytes
+GSM1479554,NK cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479554,Plasma cells,2.418263497475402e-20,0,rectangle,linsley_purified,Monocytes
+GSM1479554,Platelet,1.6670986285414576e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479554,CD4 T cells,1.1532656228037766e-17,0,rectangle,linsley_purified,Monocytes
+GSM1479554,CD8 T cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479554,Tregs,0,0,rectangle,linsley_purified,Monocytes
+GSM1479554,mDC,0,0,rectangle,linsley_purified,Monocytes
+GSM1479554,pDC,5.354409581528326e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479554,Unknown,0,0,rectangle,linsley_purified,Monocytes
+GSM1479555,B cells,0.9904017371245729,1,rectangle,linsley_purified,B cells
+GSM1479555,ILC,0.0016255637444413196,0,rectangle,linsley_purified,B cells
+GSM1479555,Monocytes,0.00343033468935539,0,rectangle,linsley_purified,B cells
+GSM1479555,NK cells,6.699787386139513e-22,0,rectangle,linsley_purified,B cells
+GSM1479555,Plasma cells,0.003840717071844129,0,rectangle,linsley_purified,B cells
+GSM1479555,Platelet,7.016473697862482e-4,0,rectangle,linsley_purified,B cells
+GSM1479555,CD4 T cells,3.129428795128294e-17,0,rectangle,linsley_purified,B cells
+GSM1479555,CD8 T cells,6.665970581268447e-19,0,rectangle,linsley_purified,B cells
+GSM1479555,Tregs,2.4381258512468843e-18,0,rectangle,linsley_purified,B cells
+GSM1479555,mDC,0,0,rectangle,linsley_purified,B cells
+GSM1479555,pDC,0,0,rectangle,linsley_purified,B cells
+GSM1479555,Unknown,0,0,rectangle,linsley_purified,B cells
+GSM1479556,B cells,3.6739105872443e-18,0,rectangle,linsley_purified,NA
+GSM1479556,ILC,1.5806151296901565e-20,0,rectangle,linsley_purified,NA
+GSM1479556,Monocytes,0,0,rectangle,linsley_purified,NA
+GSM1479556,NK cells,0,0,rectangle,linsley_purified,NA
+GSM1479556,Plasma cells,2.803955888055535e-21,0,rectangle,linsley_purified,NA
+GSM1479556,Platelet,1.0887172809552115e-19,0,rectangle,linsley_purified,NA
+GSM1479556,CD4 T cells,0.9250719590415039,0,rectangle,linsley_purified,NA
+GSM1479556,CD8 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479556,Tregs,0.07439946462090402,0,rectangle,linsley_purified,NA
+GSM1479556,mDC,1.9265942265418516e-20,0,rectangle,linsley_purified,NA
+GSM1479556,pDC,5.285763375921279e-4,0,rectangle,linsley_purified,NA
+GSM1479556,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479557,B cells,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479557,ILC,0.013992373990021865,0,rectangle,linsley_purified,CD8 T cells
+GSM1479557,Monocytes,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479557,NK cells,0.019896423568518153,0,rectangle,linsley_purified,CD8 T cells
+GSM1479557,Plasma cells,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479557,Platelet,1.5363872944879656e-5,0,rectangle,linsley_purified,CD8 T cells
+GSM1479557,CD4 T cells,0.6604567843051136,0,rectangle,linsley_purified,CD8 T cells
+GSM1479557,CD8 T cells,0.2924815139344927,1,rectangle,linsley_purified,CD8 T cells
+GSM1479557,Tregs,0.011171793148663005,0,rectangle,linsley_purified,CD8 T cells
+GSM1479557,mDC,3.665757593109957e-4,0,rectangle,linsley_purified,CD8 T cells
+GSM1479557,pDC,0.001619171420934811,0,rectangle,linsley_purified,CD8 T cells
+GSM1479557,Unknown,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479558,B cells,0,0,rectangle,linsley_purified,NK cells
+GSM1479558,ILC,0.02212646767523509,0,rectangle,linsley_purified,NK cells
+GSM1479558,Monocytes,1.4402220901144125e-19,0,rectangle,linsley_purified,NK cells
+GSM1479558,NK cells,0.950251089834083,1,rectangle,linsley_purified,NK cells
+GSM1479558,Plasma cells,0,0,rectangle,linsley_purified,NK cells
+GSM1479558,Platelet,0,0,rectangle,linsley_purified,NK cells
+GSM1479558,CD4 T cells,0,0,rectangle,linsley_purified,NK cells
+GSM1479558,CD8 T cells,0.026080040881605825,0,rectangle,linsley_purified,NK cells
+GSM1479558,Tregs,0,0,rectangle,linsley_purified,NK cells
+GSM1479558,mDC,0,0,rectangle,linsley_purified,NK cells
+GSM1479558,pDC,0.001542401609076019,0,rectangle,linsley_purified,NK cells
+GSM1479558,Unknown,0,0,rectangle,linsley_purified,NK cells
+GSM1479560,B cells,0.007265962556243594,0,rectangle,linsley_purified,NA
+GSM1479560,ILC,0.007265962556243616,0,rectangle,linsley_purified,NA
+GSM1479560,Monocytes,0.9592070581952838,0,rectangle,linsley_purified,NA
+GSM1479560,NK cells,0.01899505413598336,0,rectangle,linsley_purified,NA
+GSM1479560,Plasma cells,6.379965280415969e-22,0,rectangle,linsley_purified,NA
+GSM1479560,Platelet,2.7906356018577696e-19,0,rectangle,linsley_purified,NA
+GSM1479560,CD4 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479560,CD8 T cells,0,0,rectangle,linsley_purified,NA
+GSM1479560,Tregs,0.007265962556245605,0,rectangle,linsley_purified,NA
+GSM1479560,mDC,1.9537748129006944e-18,0,rectangle,linsley_purified,NA
+GSM1479560,pDC,4.413213264341272e-19,0,rectangle,linsley_purified,NA
+GSM1479560,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479561,B cells,6.970778023192561e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479561,ILC,0,0,rectangle,linsley_purified,Monocytes
+GSM1479561,Monocytes,1,1,rectangle,linsley_purified,Monocytes
+GSM1479561,NK cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479561,Plasma cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479561,Platelet,0,0,rectangle,linsley_purified,Monocytes
+GSM1479561,CD4 T cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479561,CD8 T cells,0,0,rectangle,linsley_purified,Monocytes
+GSM1479561,Tregs,2.10302897024585e-18,0,rectangle,linsley_purified,Monocytes
+GSM1479561,mDC,1.7894065109713055e-19,0,rectangle,linsley_purified,Monocytes
+GSM1479561,pDC,0,0,rectangle,linsley_purified,Monocytes
+GSM1479561,Unknown,0,0,rectangle,linsley_purified,Monocytes
+GSM1479562,B cells,0.9446879579047414,1,rectangle,linsley_purified,B cells
+GSM1479562,ILC,0.05479228628622141,0,rectangle,linsley_purified,B cells
+GSM1479562,Monocytes,6.108167595672781e-20,0,rectangle,linsley_purified,B cells
+GSM1479562,NK cells,0,0,rectangle,linsley_purified,B cells
+GSM1479562,Plasma cells,0,0,rectangle,linsley_purified,B cells
+GSM1479562,Platelet,0,0,rectangle,linsley_purified,B cells
+GSM1479562,CD4 T cells,3.334006016159154e-18,0,rectangle,linsley_purified,B cells
+GSM1479562,CD8 T cells,0,0,rectangle,linsley_purified,B cells
+GSM1479562,Tregs,0,0,rectangle,linsley_purified,B cells
+GSM1479562,mDC,0,0,rectangle,linsley_purified,B cells
+GSM1479562,pDC,5.197558090371941e-4,0,rectangle,linsley_purified,B cells
+GSM1479562,Unknown,0,0,rectangle,linsley_purified,B cells
+GSM1479563,B cells,0,0,rectangle,linsley_purified,NA
+GSM1479563,ILC,2.5488653899610096e-4,0,rectangle,linsley_purified,NA
+GSM1479563,Monocytes,0,0,rectangle,linsley_purified,NA
+GSM1479563,NK cells,0.019849636586207055,0,rectangle,linsley_purified,NA
+GSM1479563,Plasma cells,0,0,rectangle,linsley_purified,NA
+GSM1479563,Platelet,1.6385043402361429e-19,0,rectangle,linsley_purified,NA
+GSM1479563,CD4 T cells,0.8108956470651242,0,rectangle,linsley_purified,NA
+GSM1479563,CD8 T cells,0.08129715994123085,0,rectangle,linsley_purified,NA
+GSM1479563,Tregs,0.08729944609402795,0,rectangle,linsley_purified,NA
+GSM1479563,mDC,3.8271446879920676e-20,0,rectangle,linsley_purified,NA
+GSM1479563,pDC,4.0322377441371927e-4,0,rectangle,linsley_purified,NA
+GSM1479563,Unknown,0,0,rectangle,linsley_purified,NA
+GSM1479564,B cells,1.811461379065351e-18,0,rectangle,linsley_purified,CD8 T cells
+GSM1479564,ILC,0.002592897170023309,0,rectangle,linsley_purified,CD8 T cells
+GSM1479564,Monocytes,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479564,NK cells,0.04226001462769068,0,rectangle,linsley_purified,CD8 T cells
+GSM1479564,Plasma cells,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479564,Platelet,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479564,CD4 T cells,0.4054118940734026,0,rectangle,linsley_purified,CD8 T cells
+GSM1479564,CD8 T cells,0.4240215069454586,1,rectangle,linsley_purified,CD8 T cells
+GSM1479564,Tregs,0.12557867755967853,0,rectangle,linsley_purified,CD8 T cells
+GSM1479564,mDC,2.1034618332485234e-19,0,rectangle,linsley_purified,CD8 T cells
+GSM1479564,pDC,1.3500962374617538e-4,0,rectangle,linsley_purified,CD8 T cells
+GSM1479564,Unknown,0,0,rectangle,linsley_purified,CD8 T cells
+GSM1479565,B cells,4.353306584750186e-18,0,rectangle,linsley_purified,NK cells
+GSM1479565,ILC,1.760056963890155e-18,0,rectangle,linsley_purified,NK cells
+GSM1479565,Monocytes,1.145032437472053e-18,0,rectangle,linsley_purified,NK cells
+GSM1479565,NK cells,0.9606176666281269,1,rectangle,linsley_purified,NK cells
+GSM1479565,Plasma cells,0,0,rectangle,linsley_purified,NK cells
+GSM1479565,Platelet,0,0,rectangle,linsley_purified,NK cells
+GSM1479565,CD4 T cells,1.3148991171889891e-17,0,rectangle,linsley_purified,NK cells
+GSM1479565,CD8 T cells,0.03871602095170531,0,rectangle,linsley_purified,NK cells
+GSM1479565,Tregs,3.4358065116053797e-18,0,rectangle,linsley_purified,NK cells
+GSM1479565,mDC,1.265157750475093e-18,0,rectangle,linsley_purified,NK cells
+GSM1479565,pDC,6.663124201679345e-4,0,rectangle,linsley_purified,NK cells
+GSM1479565,Unknown,0,0,rectangle,linsley_purified,NK cells

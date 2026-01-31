@@ -5,13 +5,16 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "autogenes>=1.0.4",
     "biomart>=0.9.2",
     "h5py>=3.13.0",
     "notebook>=7.4.4",
     "openpyxl>=3.1.5",
+    "osqp>=1.0.5",
     "pybiomart>=0.2.0",
     "pyreadr>=0.5.3",
-    "rectanglepy>=0.5.4",
+    "rectanglepy==1.2.0",
+    "scaden>=1.1.2",
     "seaborn>=0.13.2",
     "spatialdata-io>=0.2.0",
     "spatialdata-plot==0.2.13",
