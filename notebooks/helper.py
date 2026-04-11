@@ -82,8 +82,18 @@ def create_scatter_plot_total(df, rsme, p_value, r_value, title="Total", y_axis_
     }
     if size:
         plt.figure(figsize=size)
+    # Build a robust palette that also works for unseen labels.
+    plot_palette = cell_palette.copy()
+    if hue in df.columns:
+        hue_levels = [v for v in pd.Series(df[hue]).dropna().unique()]
+        missing_levels = [v for v in hue_levels if v not in plot_palette]
+        if missing_levels:
+            fallback_colors = sns.color_palette("tab20", n_colors=len(missing_levels))
+            for level, color in zip(missing_levels, fallback_colors):
+                plot_palette[level] = color
+
     # Create a scatter plot with different colored points
-    g = sns.scatterplot(x="True Fractions", y="Estimated Fractions",hue=hue, data=df, palette=cell_palette)
+    g = sns.scatterplot(x="True Fractions", y="Estimated Fractions", hue=hue, data=df, palette=plot_palette)
 
     sns.regplot(x="True Fractions", y="Estimated Fractions", data=df, scatter=False, color='#444444', ci=None)
     g.grid(False)
