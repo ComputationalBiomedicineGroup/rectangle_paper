@@ -144,7 +144,7 @@ def main() -> None:
     mixture_path = fig3_dir / "scaden_mixture_full.tsv"
     bulks_common.to_csv(mixture_path, sep="\t")
 
-    sim_max_cells = 30000
+    sim_max_cells = 900000
     print(f"Simulation input cap: {sim_max_cells} cells")
     sim_seed = int(os.environ.get("SCADEN_SIM_SEED", "42"))
     adata_for_sim = adata_hao if sim_max_cells <= 0 else _stratified_obs_sample(adata_hao, sim_max_cells, sim_seed)
