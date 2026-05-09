@@ -1,0 +1,23 @@
+﻿celltype_minor;celltype_major
+Endothelial ACKR1;Endothelial
+Endothelial RGS5;Endothelial
+Endothelial CXCL12;Endothelial
+CAFs MSC iCAF-like;CAFs
+CAFs myCAF-like;CAFs
+PVL Differentiated;PVL
+PVL Immature;PVL
+Endothelial Lymphatic LYVE1;Endothelial
+B cells Memory;B/Plasma cells
+B cells Naive;B/Plasma cells
+T cells CD8+;T-cells
+T cells CD4+;T-cells
+NK cells;T-cells
+NKT cells;T-cells
+Macrophage;Myeloid
+Monocyte;Myeloid
+DCs;Myeloid
+Plasmablasts;B/Plasma cells
+Cancer Her2 SC;Tumor
+Cancer LumB SC;Tumor
+Cancer Basal SC;Tumor
+Cancer LumA SC;Tumor

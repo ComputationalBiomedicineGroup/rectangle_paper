@@ -1,0 +1,50 @@
+Fine,Normal,Coarse,colors
+Endothelial ACKR1,Endothelial ACKR1,Endothelial,#1f77b4
+Endothelial RGS5,Endothelial RGS5,Endothelial,#1f77b4
+Endothelial CXCL12,Endothelial CXCL12,Endothelial,#1f77b4
+CAFs MSC iCAF-like s1,CAFs MSC iCAF-like,CAFs,#aec7e8
+CAFs MSC iCAF-like s2,CAFs MSC iCAF-like,CAFs,#aec7e8
+CAFs Transitioning s3,CAFs myCAF-like,CAFs,#aec7e8
+CAFs myCAF like s4,CAFs myCAF-like,CAFs,#aec7e8
+CAFs myCAF like s5,CAFs myCAF-like,CAFs,#aec7e8
+PVL Differentiated s3,PVL Differentiated,PVL,#ff7f0e
+PVL_Immature s2,PVL Immature,PVL,#ff7f0e
+PVL Immature s1,PVL Immature,PVL,#ff7f0e
+Endothelial Lymphatic LYVE1,Endothelial Lymphatic LYVE1,Endothelial,#1f77b4
+B cells Memory,B cells Memory,B-cells,#ffbb78
+B cells Naive,B cells Naive,B-cells,#ffbb78
+T_cells_c4_CD8+_ZFP36,T cells CD8+,T-cells,#2ca02c
+T_cells_c6_IFIT1,T cells CD8+,T-cells,#2ca02c
+T_cells_c5_CD8+_GZMK,T cells CD8+,T-cells,#2ca02c
+T_cells_c7_CD8+_IFNG,T cells CD8+,T-cells,#2ca02c
+T_cells_c8_CD8+_LAG3,T cells CD8+,T-cells,#2ca02c
+T_cells_c0_CD4+_CCR7,T cells CD4+,T-cells,#2ca02c
+T_cells_c1_CD4+_IL7R,T cells CD4+,T-cells,#2ca02c
+T_cells_c2_CD4+_T-regs_FOXP3,T cells CD4+,T-cells,#2ca02c
+T_cells_c3_CD4+_Tfh_CXCL13,T cells CD4+,T-cells,#2ca02c
+T_cells_c9_NK_cells_AREG,NK cells,T-cells,#2ca02c
+T_cells_c11_MKI67,Cycling T-cells,T-cells,#2ca02c
+T_cells_c10_NKT_cells_FCGR3A,NKT cells,T-cells,#2ca02c
+Myeloid_c10_Macrophage_1_EGR1,Macrophage,Myeloid,#98df8a
+Myeloid_c12_Monocyte_1_IL1B,Monocyte,Myeloid,#98df8a
+Myeloid_c2_LAM2_APOE,Macrophage,Myeloid,#98df8a
+Myeloid_c1_LAM1_FABP5,Macrophage,Myeloid,#98df8a
+Myeloid_c8_Monocyte_2_S100A9,Monocyte,Myeloid,#98df8a
+Myeloid_c7_Monocyte_3_FCGR3A,Monocyte,Myeloid,#98df8a
+Myeloid_c9_Macrophage_2_CXCL10,Macrophage,Myeloid,#98df8a
+Cycling_Myeloid,Cycling_Myeloid,Myeloid,#98df8a
+Myeloid_c11_cDC2_CD1C,DCs,Myeloid,#98df8a
+Myeloid_c4_DCs_pDC_IRF7,DCs,Myeloid,#98df8a
+Myeloid_c3_cDC1_CLEC9A,DCs,Myeloid,#98df8a
+Myeloid_c0_DC_LAMP3,DCs,Myeloid,#98df8a
+Myoepithelial,Myoepithelial,Normal Epithelial,#d62728
+Luminal Progenitors,Luminal Progenitors,Normal Epithelial,#d62728
+Mature Luminal,Mature Luminal,Normal Epithelial,#d62728
+Plasmablasts,Plasmablasts,Plasmablasts,#ff9896
+Cancer Cycling,Cancer Cycling,Cancer Epithelial,#9467bd
+Cancer Her2 SC,Cancer Her2 SC,Cancer Epithelial,#9467bd
+Cancer LumB SC,Cancer LumB SC,Cancer Epithelial,#9467bd
+Cancer Basal SC,Cancer Basal SC,Cancer Epithelial,#9467bd
+Cycling PVL,Cycling PVL,PVL,#ff7f0e
+Cancer LumA SC,Cancer LumA SC,Cancer Epithelial,#9467bd
+Myeloid_c5_Macrophage_3_SIGLEC1,Macrophage,Myeloid,#98df8a
