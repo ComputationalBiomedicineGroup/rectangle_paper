@@ -1,4 +1,4 @@
-method,subset_value,bulk_samples,elapsed_minutes,process,sc_name,sc_norm,bulk_name,bulk_norm,replicate,user.self,sys.self,elapsed
+method,subset_value,bulk_samples,replicate,elapsed_minutes,process,sc_name,sc_norm,bulk_name,bulk_norm,user.self,sys.self,elapsed
 Rectangle,1000,5,1,15.559750000000001,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
 Rectangle,1000,5,2,15.635783333333334,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
 Rectangle,1000,5,3,11.76795,FULL WORKFLOW,NA,NA,NA,NA,NA,NA,NA
