@@ -1,3 +1,163 @@
+args <- commandArgs(trailingOnly = FALSE)
+file_arg <- "--file="
+script_path <- sub(file_arg, "", args[grep(file_arg, args)])
+script_dir <- if (length(script_path) > 0) dirname(normalizePath(script_path)) else getwd()
+repo_root <- normalizePath(file.path(script_dir, ".."), mustWork = FALSE)
+data_dir <- file.path(repo_root, "data")
+
+hao_default <- file.path(data_dir, "Hao_sce.rds")
+bulks_tpm_default <- file.path(data_dir, "bulks_finotello_tpm.csv")
+bulks_counts_default <- file.path(data_dir, "bulks_finotello_counts.rds")
+
+hao_path <- Sys.getenv("HAO_SCE_PATH", unset = hao_default)
+bulks_path <- Sys.getenv(
+  "BULKS_PATH",
+  unset = if (file.exists(bulks_tpm_default)) bulks_tpm_default else bulks_counts_default
+)
+
+cran_repo <- getOption("repos")[["CRAN"]]
+if (is.null(cran_repo) || !nzchar(cran_repo) || cran_repo %in% c("@CRAN", "@CRAN@")) {
+  cran_repo <- "https://cloud.r-project.org"
+}
+
+ensure_cran_pkg <- function(pkg) {
+  if (!requireNamespace(pkg, quietly = TRUE)) {
+    install.packages(pkg, repos = cran_repo)
+  }
+  if (!requireNamespace(pkg, quietly = TRUE)) {
+    stop(sprintf("Required package '%s' could not be installed.", pkg))
+  }
+}
+
+ensure_bioc_pkg <- function(pkg) {
+  if (!requireNamespace("BiocManager", quietly = TRUE)) {
+    install.packages("BiocManager", repos = cran_repo)
+  }
+  if (requireNamespace("BiocManager", quietly = TRUE)) {
+    options(repos = BiocManager::repositories())
+  }
+  if (!requireNamespace(pkg, quietly = TRUE) && requireNamespace("BiocManager", quietly = TRUE)) {
+    try(BiocManager::install(pkg, ask = FALSE, update = FALSE), silent = TRUE)
+  }
+  if (!requireNamespace(pkg, quietly = TRUE)) {
+    stop(sprintf("Required Bioconductor package '%s' could not be installed.", pkg))
+  }
+}
+
+ensure_bioc_stack <- function(pkgs) {
+  missing <- pkgs[!vapply(pkgs, requireNamespace, logical(1), quietly = TRUE)]
+  if (length(missing) == 0L) {
+    return(invisible(TRUE))
+  }
+  if (!requireNamespace("BiocManager", quietly = TRUE)) {
+    install.packages("BiocManager", repos = cran_repo)
+  }
+  if (requireNamespace("BiocManager", quietly = TRUE)) {
+    options(repos = BiocManager::repositories())
+  }
+  if (requireNamespace("BiocManager", quietly = TRUE)) {
+    try(BiocManager::install(missing, ask = FALSE, update = FALSE), silent = TRUE)
+  }
+  still_missing <- pkgs[!vapply(pkgs, requireNamespace, logical(1), quietly = TRUE)]
+  if (length(still_missing) > 0L) {
+    stop(
+      paste(
+        sprintf("Failed to install Bioconductor stack: %s.", paste(still_missing, collapse = ", ")),
+        "In conda environments, install binaries first:",
+        "conda install -c conda-forge bioconductor-iranges bioconductor-s4vectors",
+        "bioconductor-delayedarray bioconductor-genomicranges",
+        "bioconductor-genomeinfodbdata bioconductor-genomeinfodb bioconductor-summarizedexperiment",
+        "bioconductor-singlecellexperiment"
+      )
+    )
+  }
+}
+
+ensure_toast_pkg <- function() {
+  if (requireNamespace("TOAST", quietly = TRUE)) {
+    return(invisible(TRUE))
+  }
+
+  if (!requireNamespace("BiocManager", quietly = TRUE)) {
+    install.packages("BiocManager", repos = cran_repo)
+  }
+  if (requireNamespace("BiocManager", quietly = TRUE)) {
+    options(repos = BiocManager::repositories())
+  }
+  if (requireNamespace("BiocManager", quietly = TRUE)) {
+    try(BiocManager::install("TOAST", ask = FALSE, update = FALSE), silent = TRUE)
+  }
+  if (requireNamespace("TOAST", quietly = TRUE)) {
+    return(invisible(TRUE))
+  }
+
+  if (!requireNamespace("remotes", quietly = TRUE)) {
+    install.packages("remotes", repos = cran_repo)
+  }
+  if (requireNamespace("remotes", quietly = TRUE)) {
+    try(remotes::install_github("xuranw/TOAST", upgrade = "never"), silent = TRUE)
+  }
+
+  if (!requireNamespace("TOAST", quietly = TRUE)) {
+    stop(
+      paste(
+        "Required package 'TOAST' could not be installed.",
+        "Please install it manually via BiocManager::install('TOAST')",
+        "or remotes::install_github('xuranw/TOAST')."
+      )
+    )
+  }
+}
+
+ensure_music_pkg <- function() {
+  if (requireNamespace("MuSiC", quietly = TRUE)) {
+    return(invisible(TRUE))
+  }
+
+  # Install core Bioconductor stack first to avoid cascading source-build failures.
+  ensure_bioc_stack(c(
+    "IRanges", "S4Vectors", "S4Arrays", "DelayedArray",
+    "GenomeInfoDbData", "GenomeInfoDb", "GenomicRanges", "SummarizedExperiment",
+    "SingleCellExperiment"
+  ))
+
+  # Install key dependencies first to avoid GitHub build failures.
+  ensure_bioc_pkg("Biobase")
+  ensure_bioc_pkg("SingleCellExperiment")
+  ensure_toast_pkg()
+
+  if (!requireNamespace("BiocManager", quietly = TRUE)) {
+    install.packages("BiocManager", repos = cran_repo)
+  }
+  if (requireNamespace("BiocManager", quietly = TRUE)) {
+    try(BiocManager::install("MuSiC", ask = FALSE, update = FALSE), silent = TRUE)
+  }
+  if (requireNamespace("MuSiC", quietly = TRUE)) {
+    return(invisible(TRUE))
+  }
+
+  if (!requireNamespace("remotes", quietly = TRUE)) {
+    install.packages("remotes", repos = cran_repo)
+  }
+  if (requireNamespace("remotes", quietly = TRUE)) {
+    try(remotes::install_github("xuranw/MuSiC", upgrade = "never"), silent = TRUE)
+  }
+
+  if (!requireNamespace("MuSiC", quietly = TRUE)) {
+    stop(
+      paste(
+        "Required package 'MuSiC' could not be installed.",
+        "Please install it manually via BiocManager::install('MuSiC')",
+        "or remotes::install_github('xuranw/MuSiC')."
+      )
+    )
+  }
+}
+
+ensure_music_pkg()
+ensure_cran_pkg("peakRAM")
+ensure_bioc_pkg("Biobase")
+ensure_bioc_pkg("SingleCellExperiment")
 library(MuSiC)
 library(Biobase)
 library(SingleCellExperiment)
@@ -5,11 +165,24 @@ library(SingleCellExperiment)
 # -----------------------------
 # Data loading / preprocessing
 # -----------------------------
-Hao_sce <- readRDS("~/Uni/Rectangle/omnideconv_runtimes/Hao_sce.rds")
+if (!file.exists(hao_path)) {
+  stop(sprintf("Missing Hao_sce input: %s", hao_path))
+}
+if (!file.exists(bulks_path)) {
+  stop(sprintf("Missing bulk input: %s", bulks_path))
+}
+
+Hao_sce <- readRDS(hao_path)
 genes <- Hao_sce@NAMES
 cellnames <- Hao_sce@colData@rownames
 counts <- Hao_sce@assays@data@listData[["counts"]]
-bulks <- readRDS("~/Uni/Rectangle/omnideconv_runtimes/finotello_tpm.rds")
+if (grepl("\\.rds$", bulks_path, ignore.case = TRUE)) {
+  bulks <- readRDS(bulks_path)
+} else if (grepl("\\.csv$", bulks_path, ignore.case = TRUE)) {
+  bulks <- utils::read.csv(bulks_path, row.names = 1, check.names = FALSE)
+} else {
+  stop(sprintf("Unsupported bulk input extension for: %s (use .csv or .rds)", bulks_path))
+}
 annotations <- Hao_sce@colData@listData[["cell_type"]]
 
 sc_pheno <- data.frame(
@@ -54,10 +227,6 @@ if (is.null(rownames(counts(sce)))) {
 # Benchmarking SCDC (peakRAM)
 # -----------------------------
 
-# Ensure peakRAM exists
-if (!requireNamespace("peakRAM", quietly = TRUE)) {
-  install.packages("peakRAM")
-}
 library(peakRAM)
 
 n_runs <- 5
@@ -107,13 +276,17 @@ for (i in 1:n_runs) {
     raw_peak_val <- max(as.numeric(pr[1, sapply(pr, is.numeric)]), na.rm = TRUE)
   }
 
-  # Conversion: Words (or weird unit) -> Bytes -> MiB
-  peak_mem_mib <- (raw_peak_val * 8) / (1024 * 1024)
+  # Some systems report peakRAM in words despite MiB column naming.
+  peak_mem_mib <- if (!is.na(raw_peak_val) && raw_peak_val > 1e6) {
+    (raw_peak_val * 8) / (1024 * 1024)
+  } else {
+    raw_peak_val
+  }
 
   runtimes[i] <- duration_secs
   memories[i] <- peak_mem_mib
 
-  cat(sprintf("  Run %d: %.4fs, %.2f MiB (converted from raw %.0f)\n", i, duration_secs, peak_mem_mib, raw_peak_val))
+  cat(sprintf("  Run %d: %.4fs, %.2f MiB (peakRAM)\n", i, duration_secs, peak_mem_mib))
 }
 
 cat("\n--- Benchmark Results Summary ---\n")

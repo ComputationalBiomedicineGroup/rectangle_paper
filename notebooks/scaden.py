@@ -144,7 +144,7 @@ def main() -> None:
     mixture_path = fig3_dir / "scaden_mixture_full.tsv"
     bulks_common.to_csv(mixture_path, sep="\t")
 
-    sim_max_cells = 90000
+    sim_max_cells = 20000
     print(f"Simulation input cap: {sim_max_cells} cells")
     sim_seed = int(os.environ.get("SCADEN_SIM_SEED", "42"))
     adata_for_sim = adata_hao if sim_max_cells <= 0 else _stratified_obs_sample(adata_hao, sim_max_cells, sim_seed)
@@ -265,8 +265,8 @@ def main() -> None:
     runtime_df = pd.DataFrame(runtime_records)
     memory_df = pd.DataFrame(memory_records)
 
-    runtime_file = fig3_dir / "scaden_runtime_full_py.csv"
-    memory_file = fig3_dir / "scaden_memory_full_py.csv"
+    runtime_file = fig3_dir / "scaden_runtime_20k_py.csv"
+    memory_file = fig3_dir / "scaden_memory_20k_py.csv"
     runtime_df.to_csv(runtime_file, index=False)
     memory_df.to_csv(memory_file, index=False)
 

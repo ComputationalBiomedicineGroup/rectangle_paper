@@ -48,6 +48,56 @@ ensure_bisque_pkg <- function() {
     return(invisible(TRUE))
   }
 
+  ensure_mass_pkg <- function() {
+    if (requireNamespace("MASS", quietly = TRUE)) {
+      return(invisible(TRUE))
+    }
+
+    # Try regular CRAN first.
+    try(install.packages("MASS", repos = cran_repo), silent = TRUE)
+    if (requireNamespace("MASS", quietly = TRUE)) {
+      return(invisible(TRUE))
+    }
+
+    # On older R versions, current CRAN MASS may be unavailable; use archive.
+    if (!requireNamespace("remotes", quietly = TRUE)) {
+      install.packages("remotes", repos = cran_repo)
+    }
+    if (requireNamespace("remotes", quietly = TRUE) && getRversion() < "4.4.0") {
+      try(
+        remotes::install_version(
+          "MASS",
+          version = "7.3-60",
+          repos = cran_repo,
+          upgrade = "never"
+        ),
+        silent = TRUE
+      )
+    }
+
+    if (!requireNamespace("MASS", quietly = TRUE)) {
+      stop(
+        paste(
+          "Required package 'MASS' could not be installed automatically.",
+          "If you use conda, try: conda install -c conda-forge r-mass."
+        )
+      )
+    }
+  }
+
+  ensure_limsolve_pkg <- function() {
+    if (requireNamespace("limSolve", quietly = TRUE)) {
+      return(invisible(TRUE))
+    }
+    ensure_mass_pkg()
+    try(install.packages("limSolve", repos = cran_repo), silent = TRUE)
+    if (!requireNamespace("limSolve", quietly = TRUE)) {
+      stop("Required package 'limSolve' could not be installed.")
+    }
+  }
+
+  ensure_limsolve_pkg()
+
   # Preferred: Bioconductor
   if (!requireNamespace("BiocManager", quietly = TRUE)) {
     install.packages("BiocManager", repos = cran_repo)
@@ -123,7 +173,7 @@ bulk_mat <- bulk_mat[common_genes, , drop = FALSE]
 sc_counts <- sc_counts[common_genes, , drop = FALSE]
 
 # Downsample cells before dense conversion to keep memory bounded.
-max_cells <- 35000L
+max_cells <- 20000L
 if (!is.na(max_cells) && max_cells > 0 && ncol(sc_counts) > max_cells) {
   set.seed(42)
   ann <- as.character(annotations)
@@ -254,6 +304,6 @@ print(res_df)
 cat(sprintf("\nAverage Runtime: %.4f seconds (sd: %.4f)\n", mean(runtimes), sd(runtimes)))
 cat(sprintf("Average Peak Memory: %.2f MiB (sd: %.2f)\n", mean(memories), sd(memories)))
 
-csv_filename <- "bisque_benchmark_results.csv"
+csv_filename <- "bisque_benchmark_results_20k.csv"
 write.csv(res_df, csv_filename, row.names = FALSE)
 cat(sprintf("\nResults saved to %s\n", csv_filename))

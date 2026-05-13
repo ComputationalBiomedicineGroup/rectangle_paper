@@ -1,38 +1,38 @@
-Fine,Normal,Coarse
-Macrophages alveolar,Macrophages,Macrophages-Monocytes
-Macrophages,Macrophages,Macrophages-Monocytes
-Monocytes classical,Monocytes,Macrophages-Monocytes
-Monocytes non classical,Monocytes,Macrophages-Monocytes
-B cells,B cells,B cells
-T cells CD8 activated,T cells CD8,T and NK cells
-T cells CD8 naive,T cells CD8,T and NK cells
-T cells CD8 effector memory,T cells CD8,T and NK cells
-T cells NK like,T cells CD8,T and NK cells
-T cells CD8 terminally exhausted,T cells CD8,T and NK cells
-T cells CD4 non reg,T cells CD4,T and NK cells
-Tregs,T cells CD4,T and NK cells
-cDC1,mDCs,mDCs
-cDC2,mDCs,mDCs
-Plasma cells,Plasma cells,Plasma cells
-pDCs,pDCs,pDCs
-NK cells,NK cells,T and NK cells
-Mast cells,Mast cells,Mast cells
-Neutrophils,Neutrophils,Neutrophils
-Fibroblasts alveolar,Stromal cells,Stromal cells
-Fibroblasts peribronchial,Stromal cells,Stromal cells
-Fibroblasts adventitial,Stromal cells,Stromal cells
-Pericytes,Stromal cells,Stromal cells
-Alveolar cells type 1,Epithelial cells,Epithelial cells
-Alveolar cells type 2,Epithelial cells,Epithelial cells
-Ciliated,Epithelial cells,Epithelial cells
-Club,Epithelial cells,Epithelial cells
-Endothelial cells venous,Endothelial cells,Endothelial cells
-Endothelial cells capillary,Endothelial cells,Endothelial cells
-Endothelial cells arterial,Endothelial cells,Endothelial cells
-Endothelial cells lymphatic,Endothelial cells,Endothelial cells
-Tumor cells LUSC mitotic,Tumor cells,Tumor cells
-Tumor cells LUAD,Tumor cells,Tumor cells
-Tumor cells LUSC,Tumor cells,Tumor cells
-Tumor cells LUAD mitotic,Tumor cells,Tumor cells
-Tumor cells NSCLC mixed,Tumor cells,Tumor cells
-Tumor cells LUAD EMT,Tumor cells,Tumor cells
+Fine,Normal,Coarse,colors
+Macrophages alveolar,Macrophages,Macrophages-Monocytes,#1f77b4
+Macrophages,Macrophages,Macrophages-Monocytes,#1f77b4
+Monocytes classical,Monocytes,Macrophages-Monocytes,#1f77b4
+Monocytes non classical,Monocytes,Macrophages-Monocytes,#1f77b4
+B cells,B cells,B cells,#aec7e8
+T cells CD8 activated,T cells CD8,T and NK cells,#ff7f0e
+T cells CD8 naive,T cells CD8,T and NK cells,#ff7f0e
+T cells CD8 effector memory,T cells CD8,T and NK cells,#ff7f0e
+T cells NK like,T cells CD8,T and NK cells,#ff7f0e
+T cells CD8 terminally exhausted,T cells CD8,T and NK cells,#ff7f0e
+T cells CD4 non reg,T cells CD4,T and NK cells,#ff7f0e
+Tregs,T cells CD4,T and NK cells,#ff7f0e
+cDC1,mDCs,mDCs,#ffbb78
+cDC2,mDCs,mDCs,#ffbb78
+Plasma cells,Plasma cells,Plasma cells,#2ca02c
+pDCs,pDCs,pDCs,#98df8a
+NK cells,NK cells,T and NK cells,#ff7f0e
+Mast cells,Mast cells,Mast cells,#d62728
+Neutrophils,Neutrophils,Neutrophils,#ff9896
+Fibroblasts alveolar,Stromal cells,Stromal cells,#9467bd
+Fibroblasts peribronchial,Stromal cells,Stromal cells,#9467bd
+Fibroblasts adventitial,Stromal cells,Stromal cells,#9467bd
+Pericytes,Stromal cells,Stromal cells,#9467bd
+Alveolar cells type 1,Epithelial cells,Epithelial cells,#c5b0d5
+Alveolar cells type 2,Epithelial cells,Epithelial cells,#c5b0d5
+Ciliated,Epithelial cells,Epithelial cells,#c5b0d5
+Club,Epithelial cells,Epithelial cells,#c5b0d5
+Endothelial cells venous,Endothelial cells,Endothelial cells,#8c564b
+Endothelial cells capillary,Endothelial cells,Endothelial cells,#8c564b
+Endothelial cells arterial,Endothelial cells,Endothelial cells,#8c564b
+Endothelial cells lymphatic,Endothelial cells,Endothelial cells,#8c564b
+Tumor cells LUSC mitotic,Tumor cells,Tumor cells,#c49c94
+Tumor cells LUAD,Tumor cells,Tumor cells,#c49c94
+Tumor cells LUSC,Tumor cells,Tumor cells,#c49c94
+Tumor cells LUAD mitotic,Tumor cells,Tumor cells,#c49c94
+Tumor cells NSCLC mixed,Tumor cells,Tumor cells,#c49c94
+Tumor cells LUAD EMT,Tumor cells,Tumor cells,#c49c94

@@ -2865,6 +2865,7 @@ dependencies = [
     { name = "rectanglepy" },
     { name = "scaden" },
     { name = "seaborn" },
+    { name = "setuptools" },
     { name = "spatialdata-io" },
     { name = "spatialdata-plot" },
 ]
@@ -2879,16 +2880,17 @@ requires-dist = [
     { name = "osqp", specifier = ">=1.0.5" },
     { name = "pybiomart", specifier = ">=0.2.0" },
     { name = "pyreadr", specifier = ">=0.5.3" },
-    { name = "rectanglepy", specifier = "==1.2.0" },
+    { name = "rectanglepy", specifier = "==1.3.0" },
     { name = "scaden", specifier = ">=1.1.2" },
     { name = "seaborn", specifier = ">=0.13.2" },
+    { name = "setuptools", specifier = "===78.0.2" },
     { name = "spatialdata-io", specifier = ">=0.2.0" },
     { name = "spatialdata-plot", specifier = "==0.2.13" },
 ]
 
 [[package]]
 name = "rectanglepy"
-version = "1.2.0"
+version = "1.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anndata" },
@@ -2898,12 +2900,11 @@ dependencies = [
     { name = "pandas" },
     { name = "pydeseq2" },
     { name = "scipy" },
-    { name = "setuptools" },
     { name = "statsmodels" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/38/e4/5b141e091d08a44c536c916c3e149b6266d782865ac4f7f97efc16ceee84/rectanglepy-1.2.0.tar.gz", hash = "sha256:f4beeaf20426801620908f802e944b96df82b1987061b9123b0fc42572dcb9bf", size = 3271214 }
+sdist = { url = "https://files.pythonhosted.org/packages/41/0c/31a5542b9a5186e240421bb9902624305eba621fb1847b983966ed5c0a02/rectanglepy-1.3.0.tar.gz", hash = "sha256:a054b89f00631d0ac7f308ea6869a6e25e423edc8b594e2abbfc2bcc1355bbfc", size = 3272009 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/2c/04/658ff81bd2c394bb0ba153a2250924cc7c9989a12017834bd01172ab8c83/rectanglepy-1.2.0-py3-none-any.whl", hash = "sha256:6bdd41f1850c6fd416a919d3f2092bdaad972bed3395f05fffcd1b49501b4879", size = 1714502 },
+    { url = "https://files.pythonhosted.org/packages/79/c8/2e08381dde185c3e5b982806d3668b2c0f2d47b596c5cf26f81a508ca653/rectanglepy-1.3.0-py3-none-any.whl", hash = "sha256:28da29dbcdb0229dbe9ae875b73ce61cb9eedc62c08ee509152d2cd27b4d5f12", size = 1715355 },
 ]
 
 [[package]]
@@ -3236,11 +3237,11 @@ wheels = [
 
 [[package]]
 name = "setuptools"
-version = "69.5.1"
+version = "78.0.2"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/d6/4f/b10f707e14ef7de524fe1f8988a294fb262a29c9b5b12275c7e188864aed/setuptools-69.5.1.tar.gz", hash = "sha256:6c1fccdac05a97e598fb0ae3bbed5904ccb317337a51139dcd51453611bbb987", size = 2291314 }
+sdist = { url = "https://files.pythonhosted.org/packages/4c/f4/aa8d364f0dc1f33b2718938648c31202e2db5cd6479a73f0a9ca5a88372d/setuptools-78.0.2.tar.gz", hash = "sha256:137525e6afb9022f019d6e884a319017f9bf879a0d8783985d32cbc8683cab93", size = 1367747 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f7/29/13965af254e3373bceae8fb9a0e6ea0d0e571171b80d6646932131d6439b/setuptools-69.5.1-py3-none-any.whl", hash = "sha256:c636ac361bc47580504644275c9ad802c50415c7522212252c033bd15f301f32", size = 894566 },
+    { url = "https://files.pythonhosted.org/packages/aa/db/2fd473dfe436ad19fda190f4079162d400402aedfcc41e048d38c0a375c6/setuptools-78.0.2-py3-none-any.whl", hash = "sha256:4a612c80e1f1d71b80e4906ce730152e8dec23df439f82731d9d0b608d7b700d", size = 1255965 },
 ]
 
 [[package]]

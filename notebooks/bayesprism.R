@@ -127,7 +127,7 @@ sc_counts <- sc_counts[common_genes, , drop = FALSE]
 
 # Hardcoded benchmark settings:
 # keep all genes, downsample cells to keep local Docker runs feasible.
-max_cells <- 50000
+max_cells <- 20000
 if (ncol(sc_counts) > max_cells) {
   set.seed(42)
   ann <- as.character(annotations)
@@ -241,6 +241,6 @@ print(res_df)
 cat(sprintf("\nAverage Runtime: %.4f seconds (sd: %.4f)\n", mean(runtimes), sd(runtimes)))
 cat(sprintf("Average Peak Memory: %.2f MiB (sd: %.2f)\n", mean(memories), sd(memories)))
 
-csv_filename <- "bayesprism_benchmark_results.csv"
+csv_filename <- "bayesprism_benchmark_results_20k.csv"
 write.csv(res_df, csv_filename, row.names = FALSE)
 cat(sprintf("\nResults saved to %s\n", csv_filename))
