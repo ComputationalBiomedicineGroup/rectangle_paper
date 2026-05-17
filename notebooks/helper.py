@@ -5,6 +5,14 @@ import seaborn as sns
 import numpy as np
 
 
+def _format_p_value(p_value, decimals=3):
+    if pd.isna(p_value):
+        return "= NA"
+    threshold = 10 ** (-decimals)
+    if p_value < threshold:
+        return f"< {threshold:.{decimals}f}"
+    return f"= {p_value:.{decimals}f}"
+
 def match_dfs2(df1, df2):
     df1 = df1.loc[:, df2.columns]
     df1 = df1.loc[df1.index.isin(df2.index)]
@@ -97,7 +105,7 @@ def create_scatter_plot_total(df, rsme, p_value, r_value, title="Total", y_axis_
 
     sns.regplot(x="True Fractions", y="Estimated Fractions", data=df, scatter=False, color='#444444', ci=None)
     g.grid(False)
-    text = f"r = {round(r_value, 3)}, p = {round(p_value, 10)} \nRMSE = {round(rsme, 3)}\nn = {len(df)}"
+    text = f"r = {round(r_value, 3)}, p {_format_p_value(p_value, decimals=3)} \nRMSE = {round(rsme, 3)}\nn = {len(df)}"
 
 
 

@@ -456,9 +456,7 @@ sel_cell_types_requested <- c(
   "Unknown",
   "dorsal.forebrain",
   "dorsal.forebrain.prog.",
-  "hindbrain.prog.",
-  "muscle",
-  "eye"
+  "hindbrain.prog."
 )
 
 normalize_cell_type <- function(x) {
@@ -518,7 +516,7 @@ shared_legend <- get_legend(legend_plot)
 grid.arrange(
   shared_legend,
   arrangeGrob(grobs = plot_list,
-              ncol = 3,
+              ncol = 4,
               nrow = ceiling(length(plot_list) / 3)),
   ncol = 1,
   heights = c(1, 10),

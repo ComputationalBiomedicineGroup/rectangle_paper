@@ -10,6 +10,15 @@ library(dplyr)
 library(gridExtra)
 library(ggpubr)  # For stat_compare_means and easy significance annotation
 
+p_to_stars <- function(p) {
+  case_when(
+    p < 0.001 ~ "***",
+    p < 0.01 ~ "**",
+    p < 0.05 ~ "*",
+    TRUE ~ "ns"
+  )
+}
+
 ## ------------------------------
 ## Data loading and preprocessing
 ## ------------------------------
@@ -38,6 +47,12 @@ data <- data %>% filter(!is.na(subtype))
 
 # Set subtype order
 data$subtype <- factor(data$subtype, levels = c("D", "F", "IE/F", "IE"))
+subtype_labels <- c(
+  "D" = "desert",
+  "F" = "fibrotic",
+  "IE/F" = "fibrotic inflamed",
+  "IE" = "inflamed"
+)
 
 # Get cell type columns to plot, ordered as requested
 cell_types <- c(
@@ -71,34 +86,75 @@ all_comparisons <- list(
   c("F", "IE/F"), c("F", "IE"), c("IE/F", "IE")
 )
 
+all_comparisons_df <- data.frame(
+  group1 = vapply(all_comparisons, `[`, character(1), 1),
+  group2 = vapply(all_comparisons, `[`, character(1), 2)
+)
+
 # Option 2: Only comparisons vs reference (e.g., D)
 # comparisons_vs_D <- list(c("D", "F"), c("D", "IE/F"), c("D", "IE"))
+
+# Pre-compute pairwise statistics so plot annotations and exported results use
+# the same BH-adjusted p-values. With explicit comparisons, stat_compare_means()
+# can annotate raw test p-values even when p.adjust.method is supplied.
+pairwise_stats <- data.frame()
+
+for (ct in cell_types) {
+  
+  ct_data <- plot_data %>% filter(cell_type == ct)
+  
+  p_raw <- mapply(function(group1, group2) {
+    wilcox.test(
+      ct_data$proportion[ct_data$subtype == group1],
+      ct_data$proportion[ct_data$subtype == group2]
+    )$p.value
+  }, all_comparisons_df$group1, all_comparisons_df$group2)
+  
+  y_range <- range(ct_data$proportion, na.rm = TRUE)
+  y_step <- max(diff(y_range) * 0.08, max(y_range) * 0.05, 0.01)
+  
+  pairwise_stats <- rbind(
+    pairwise_stats,
+    data.frame(
+      cell_type = ct,
+      group1 = all_comparisons_df$group1,
+      group2 = all_comparisons_df$group2,
+      comparison = paste(all_comparisons_df$group1, "vs", all_comparisons_df$group2),
+      p = p_raw,
+      p.adj = p.adjust(p_raw, method = "BH"),
+      y.position = max(y_range) + seq_along(p_raw) * y_step
+    )
+  )
+}
+
+pairwise_stats <- pairwise_stats %>%
+  mutate(p.adj.signif = p_to_stars(p.adj))
 
 # Create list of plots with statistics
 plot_list <- list()
 
 for (ct in cell_types) {
+  ct_pairwise_stats <- pairwise_stats %>%
+    filter(cell_type == ct, p.adj < 0.05)
   
   p <- ggplot(plot_data %>% filter(cell_type == ct), 
               aes(x = subtype, y = proportion, fill = subtype)) +
     geom_boxplot(alpha = 0.7) +
-    # Add pairwise Wilcoxon tests (uncomment one option below)
-    # Option A: Show all pairwise comparisons
-    # stat_compare_means(comparisons = all_comparisons, 
-    #                    method = "wilcox.test",
-    #                    p.adjust.method = "BH",
-    #                    label = "p.signif",
-    #                    hide.ns = TRUE) +
-    # Option B: Show only significant comparisons with exact p-values
-    stat_compare_means(comparisons = all_comparisons,
-                       method = "wilcox.test",
-                       p.adjust.method = "BH",
-                       label = "p.signif",
-                       hide.ns = TRUE,
-                       size = 3) +
     labs(x = "Subtype", y = "Proportion", title = cell_type_labels[[ct]]) +
+    scale_x_discrete(labels = subtype_labels) +
     theme_minimal() +
     theme(legend.position = "none")
+  
+  if (nrow(ct_pairwise_stats) > 0) {
+    p <- p +
+      stat_pvalue_manual(ct_pairwise_stats,
+                         label = "p.adj.signif",
+                         xmin = "group1",
+                         xmax = "group2",
+                         y.position = "y.position",
+                         tip.length = 0.01,
+                         size = 3)
+  }
   
   plot_list[[ct]] <- p
 }
@@ -130,19 +186,9 @@ for (ct in cell_types) {
   # Kruskal-Wallis test
   kw_test <- kruskal.test(proportion ~ subtype, data = ct_data)
   
-  # Pairwise Wilcoxon tests with BH correction
-  pw_test <- pairwise.wilcox.test(ct_data$proportion, 
-                                  ct_data$subtype, 
-                                  p.adjust.method = "BH")
-  
-  # Extract pairwise p-values
-  pw_pvals <- as.data.frame(as.table(pw_test$p.value))
-  pw_pvals <- pw_pvals %>% 
-    filter(!is.na(Freq)) %>%
-    mutate(comparison = paste(Var1, "vs", Var2),
-           cell_type = ct,
-           p_adjusted = Freq) %>%
-    select(cell_type, comparison, p_adjusted)
+  pw_pvals <- pairwise_stats %>%
+    filter(cell_type == ct) %>%
+    transmute(cell_type, comparison, p_adjusted = p.adj)
   
   # Add KW result
   kw_row <- data.frame(
@@ -156,12 +202,7 @@ for (ct in cell_types) {
 
 # Add significance stars
 stats_table <- stats_table %>%
-  mutate(significance = case_when(
-    p_adjusted < 0.001 ~ "***",
-    p_adjusted < 0.01 ~ "**",
-    p_adjusted < 0.05 ~ "*",
-    TRUE ~ "ns"
-  ))
+  mutate(significance = p_to_stars(p_adjusted))
 
 # Save statistics
 write.csv(stats_table, "statistical_tests_results.csv", row.names = FALSE)
@@ -214,4 +255,3 @@ ggpubr_stats <- compare_means(proportion ~ subtype,
                               method = "wilcox.test",
                               p.adjust.method = "BH")
 print(as.data.frame(ggpubr_stats))
-
