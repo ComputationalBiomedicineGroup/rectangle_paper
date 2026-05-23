@@ -128,6 +128,157 @@ for (sel_cell_type in cell_types) {
 
 dev.off()
 
+## ------------------------------
+## Day 13 top-10 gene heatmaps
+## ------------------------------
+
+top10_error <- read_csv("braino_day013_top10_mean_error_by_protocol_cellline.csv",
+                        show_col_types = FALSE)
+
+top10_genes <- unique(top10_error$gene)
+
+top10_protocol_order <- top10_error %>%
+  group_by(protocol) %>%
+  summarise(protocol_hits = n_distinct(gene), .groups = "drop") %>%
+  arrange(desc(protocol_hits), protocol) %>%
+  pull(protocol)
+
+top10_cell_line_order <- top10_error %>%
+  group_by(protocol, cell_line) %>%
+  summarise(cell_line_hits = n_distinct(gene), .groups = "drop") %>%
+  arrange(factor(protocol, levels = top10_protocol_order),
+          desc(cell_line_hits), cell_line)
+
+top10_column_levels <- top10_cell_line_order %>%
+  mutate(protocol_cell_line = paste(protocol, cell_line, sep = "__")) %>%
+  pull(protocol_cell_line)
+
+top10_gene_order <- top10_error %>%
+  count(gene, name = "gene_hits") %>%
+  arrange(desc(gene_hits), gene) %>%
+  pull(gene)
+
+top10_grid <- expand_grid(
+  gene = top10_genes,
+  protocol_cell_line = top10_column_levels
+) %>%
+  separate(protocol_cell_line, into = c("protocol", "cell_line"),
+           sep = "__", remove = FALSE) %>%
+  left_join(
+    top10_error %>%
+      mutate(protocol_cell_line = paste(protocol, cell_line, sep = "__"),
+             present = 1L) %>%
+      select(protocol_cell_line, gene, present, mean_error),
+    by = c("protocol_cell_line", "gene")
+  ) %>%
+  mutate(
+    present = replace_na(present, 0L),
+    protocol = factor(protocol, levels = top10_protocol_order),
+    protocol_cell_line = factor(protocol_cell_line, levels = top10_column_levels),
+    cell_line = factor(cell_line, levels = unique(top10_cell_line_order$cell_line)),
+    gene = factor(gene, levels = rev(top10_gene_order))
+  )
+
+heatmap_theme <- theme_minimal(base_size = 9) +
+  theme(
+    panel.grid = element_blank(),
+    axis.title = element_blank(),
+    axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),
+    axis.text.y = element_text(size = 6),
+    strip.text.x = element_text(face = "bold", size = 10),
+    legend.position = "bottom",
+    plot.title = element_text(face = "bold", hjust = 0.5)
+  )
+
+p_top10_presence <- ggplot(top10_grid,
+                           aes(x = protocol_cell_line, y = gene,
+                               fill = factor(present))) +
+  geom_tile(color = "white", linewidth = 0.2) +
+  facet_grid(. ~ protocol, scales = "free_x", space = "free_x") +
+  scale_x_discrete(labels = function(x) sub(".*__", "", x), expand = c(0, 0)) +
+  scale_y_discrete(expand = c(0, 0)) +
+  scale_fill_manual(
+    values = c("0" = "#f0f0f0", "1" = "#2b8cbe"),
+    breaks = c("0", "1"),
+    labels = c("Absent", "Present"),
+    name = "Top-10"
+  ) +
+  labs(title = "Day 13 top-10 gene presence") +
+  heatmap_theme
+
+ggsave("braino_day013_top10_gene_presence_heatmap.pdf",
+       p_top10_presence, width = 11, height = 8)
+
+p_top10_mean_error <- ggplot(top10_grid,
+                             aes(x = protocol_cell_line, y = gene,
+                                 fill = mean_error)) +
+  geom_tile(color = "white", linewidth = 0.2) +
+  facet_grid(. ~ protocol, scales = "free_x", space = "free_x") +
+  scale_x_discrete(labels = function(x) sub(".*__", "", x), expand = c(0, 0)) +
+  scale_y_discrete(expand = c(0, 0)) +
+  scale_fill_gradient(
+    low = "#f7fbff", high = "#08306b",
+    na.value = "#d9d9d9",
+    name = "Mean error"
+  ) +
+  labs(title = "Day 13 top-10 gene mean error") +
+  heatmap_theme
+
+ggsave("braino_day013_top10_gene_mean_error_heatmap.pdf",
+       p_top10_mean_error, width = 11, height = 8)
+
+err_day13 <- read_csv("braino_rectangle_err.csv",
+                      col_select = c(1, all_of(top10_genes)),
+                      show_col_types = FALSE)
+
+err_ids <- err_day13[[1]]
+err_split_info <- strsplit(err_ids, "-")
+err_metadata <- data.frame(
+  replicate = paste0("R", sapply(err_split_info, `[`, 1)),
+  cell_line = sapply(err_split_info, `[`, 2),
+  protocol = sapply(err_split_info, `[`, 3),
+  day = as.numeric(gsub("day", "", sapply(err_split_info, `[`, 4)))
+)
+
+err_all_mean <- cbind(err_metadata, err_day13[, top10_genes]) %>%
+  as.data.frame() %>%
+  filter(protocol != "pluripotent", day == 13) %>%
+  pivot_longer(cols = all_of(top10_genes),
+               names_to = "gene",
+               values_to = "mean_error") %>%
+  group_by(protocol, cell_line, gene) %>%
+  summarise(mean_error = mean(mean_error, na.rm = TRUE), .groups = "drop") %>%
+  mutate(protocol_cell_line = paste(protocol, cell_line, sep = "__"))
+
+all_error_grid <- top10_grid %>%
+  select(protocol, cell_line, protocol_cell_line, gene) %>%
+  left_join(err_all_mean,
+            by = c("protocol", "cell_line", "protocol_cell_line", "gene")) %>%
+  mutate(
+    protocol = factor(protocol, levels = top10_protocol_order),
+    protocol_cell_line = factor(protocol_cell_line, levels = top10_column_levels),
+    cell_line = factor(cell_line, levels = unique(top10_cell_line_order$cell_line)),
+    gene = factor(gene, levels = rev(top10_gene_order))
+  )
+
+p_all_mean_error <- ggplot(all_error_grid,
+                           aes(x = protocol_cell_line, y = gene,
+                               fill = mean_error)) +
+  geom_tile(color = "white", linewidth = 0.2) +
+  facet_grid(. ~ protocol, scales = "free_x", space = "free_x") +
+  scale_x_discrete(labels = function(x) sub(".*__", "", x), expand = c(0, 0)) +
+  scale_y_discrete(expand = c(0, 0)) +
+  scale_fill_gradient2(
+    low = "#2166ac", mid = "white", high = "#b2182b",
+    midpoint = 0,
+    name = "Mean error"
+  ) +
+  labs(title = "Day 13 mean error for top-10 gene union") +
+  heatmap_theme
+
+ggsave("braino_day013_top10_gene_all_mean_error_heatmap.pdf",
+       p_all_mean_error, width = 11, height = 8)
+
 # By protocol
 pdf("rectangle_by_protocol.pdf", width = 16, height = 13)
 
@@ -448,37 +599,48 @@ grid.arrange(
 dev.off()
 
 # Dorsal protocol only, H9 and 176 cell lines - selected cell types
-pdf("rectangle_dorsal_H9_176_selected_celltypes.pdf", width = 15, height = 9)
 
 sel_protocol <- "dorsal"
 sel_cell_lines <- c("H9", "176")
 sel_cell_types_requested <- c(
-  "Unknown",
-  "dorsal.forebrain",
-  "dorsal.forebrain.prog.",
-  "hindbrain.prog."
+  "dorsal forebrain",
+  "dorsal forebrain prog.",
+  "hindbrain prog.",
+  "Unknown"
+)
+sel_cell_type_labels <- c(
+  "Dorsal forebrain (%)",
+  "Dorsal forebrain progenitors (%)",
+  "Hindbrain progenitors (%)",
+  "Unknown (%)"
 )
 
 normalize_cell_type <- function(x) {
-  tolower(gsub("\\.", " ", trimws(x)))
+  tolower(trimws(gsub("\\.", " ", trimws(x))))
 }
 
-matched_cell_types <- cell_types[
-  normalize_cell_type(cell_types) %in% normalize_cell_type(sel_cell_types_requested)
-]
+matched_cell_types <- sapply(
+  normalize_cell_type(sel_cell_types_requested),
+  function(sel_cell_type) {
+    match_idx <- match(sel_cell_type, normalize_cell_type(cell_types))
+    if (is.na(match_idx)) NA_character_ else cell_types[match_idx]
+  },
+  USE.NAMES = FALSE
+)
 
-if (length(matched_cell_types) == 0) {
+if (all(is.na(matched_cell_types))) {
   stop("None of the requested selected cell types were found in the data")
 }
 
-missing_cell_types <- setdiff(
-  normalize_cell_type(sel_cell_types_requested),
-  normalize_cell_type(matched_cell_types)
-)
+missing_cell_types <- sel_cell_types_requested[is.na(matched_cell_types)]
 if (length(missing_cell_types) > 0) {
-  message("Requested cell types not found (normalized): ",
+  message("Requested cell types not found: ",
           paste(missing_cell_types, collapse = ", "))
 }
+
+sel_cell_type_labels <- sel_cell_type_labels[!is.na(matched_cell_types)]
+matched_cell_types <- matched_cell_types[!is.na(matched_cell_types)]
+names(sel_cell_type_labels) <- matched_cell_types
 
 plot_list <- list()
 
@@ -493,11 +655,13 @@ for (sel_cell_type in matched_cell_types) {
     geom_line() +
     geom_point() +
     scale_color_manual(values = cell_line_palette[sel_cell_lines]) +
-    labs(x = "Day", y = "Proportion", title = sel_cell_type) +
-    ylim(0, 1) +
+    scale_y_continuous(limits = c(0, 0.8),
+                       labels = function(x) x * 100) +
+    labs(x = "Day", y = sel_cell_type_labels[[sel_cell_type]]) +
     theme_minimal() +
     theme(
       legend.position = "none",
+      plot.title = element_blank(),
       plot.margin = margin(5.5, 18, 5.5, 5.5)
     )
 
@@ -513,17 +677,17 @@ legend_plot <- ggplot(metadata %>% filter(cell_line %in% sel_cell_lines),
         legend.title = element_text(face = "bold"))
 shared_legend <- get_legend(legend_plot)
 
-grid.arrange(
+selected_celltypes_grob <- arrangeGrob(
   shared_legend,
   arrangeGrob(grobs = plot_list,
               ncol = 4,
-              nrow = ceiling(length(plot_list) / 3)),
+              nrow = ceiling(length(plot_list) / 4)),
   ncol = 1,
-  heights = c(1, 10),
-  top = paste0(sel_protocol, " - selected cell types")
+  heights = c(1, 10)
 )
 
-dev.off()
+ggsave("rectangle_dorsal_H9_176_selected_celltypes.pdf",
+       selected_celltypes_grob, width = 10, height = 3)
 
 # Plot with bundles
 
@@ -590,62 +754,86 @@ for (sel_protocol in protocols) {
 
 dev.off()
 
-# Unknown only: by protocol with shaded ribbon for SD
+# Unknown only: all protocols side by side with shaded ribbon for SD
 if (!"Unknown" %in% cell_types) {
   stop("Column 'Unknown' not found in braino_rectangle_estimations.csv")
 }
 
-pdf("rectangle_unknown_by_protocol_mean_ribbon.pdf", width = 12, height = 8)
+unknown_summary <- metadata %>%
+  mutate(y_value = data[rownames(metadata), "Unknown"]) %>%
+  group_by(protocol, cell_line, day) %>%
+  summarise(
+    mean_value = mean(y_value, na.rm = TRUE),
+    sd_value = sd(y_value, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    sd_value = replace_na(sd_value, 0),
+    ribbon_min = pmax(mean_value - sd_value, 0),
+    ribbon_max = mean_value + sd_value
+  )
+
+unknown_y_max <- max(unknown_summary$ribbon_max, na.rm = TRUE)
+unknown_y_limit <- min(1, unknown_y_max * 1.08)
+
+unknown_plot_list <- list()
 
 for (sel_protocol in protocols) {
 
-  summary_data <- metadata %>%
-    mutate(y_value = data[rownames(metadata), "Unknown"]) %>%
-    group_by(protocol, cell_line, day) %>%
-    summarise(
-      mean_value = mean(y_value, na.rm = TRUE),
-      sd_value = sd(y_value, na.rm = TRUE),
-      .groups = "drop"
-    ) %>%
-    mutate(sd_value = replace_na(sd_value, 0))
-
-  y_min <- min(summary_data$mean_value - summary_data$sd_value, na.rm = TRUE)
-  y_max <- max(summary_data$mean_value + summary_data$sd_value, na.rm = TRUE)
-
-  plot_data <- summary_data %>%
+  plot_data <- unknown_summary %>%
     filter(protocol == sel_protocol)
+
+  protocol_label <- tools::toTitleCase(sel_protocol)
 
   p <- ggplot(plot_data, aes(x = day, y = mean_value, color = cell_line,
                              fill = cell_line, group = cell_line)) +
-    geom_ribbon(aes(ymin = mean_value - sd_value,
-                    ymax = mean_value + sd_value),
-                alpha = 0.2, color = NA) +
-    geom_line(linewidth = 0.8) +
-    geom_point(size = 1.5) +
+    geom_ribbon(aes(ymin = ribbon_min, ymax = ribbon_max),
+                alpha = 0.18, color = NA) +
+    geom_line(linewidth = 0.9) +
+    geom_point(size = 1.7, stroke = 0) +
     scale_color_manual(values = cell_line_palette) +
     scale_fill_manual(values = cell_line_palette) +
-    labs(x = "Day", y = "Proportion", title = "Unknown") +
-    ylim(y_min, y_max) +
-    theme_minimal() +
-    theme(legend.position = "none")
+    scale_y_continuous(labels = function(x) x * 100,
+                       expand = expansion(mult = c(0.02, 0.06))) +
+    scale_x_continuous(breaks = sort(unique(plot_data$day))) +
+    coord_cartesian(ylim = c(0, unknown_y_limit)) +
+    labs(x = "Day", y = paste0(protocol_label, " unknown content (%)")) +
+    theme_minimal(base_size = 11) +
+    theme(
+      legend.position = "none",
+      panel.grid.minor = element_blank(),
+      panel.grid.major.x = element_blank(),
+      axis.title.x = element_text(margin = margin(t = 6)),
+      axis.title.y = element_text(margin = margin(r = 6)),
+      plot.margin = margin(7, 8, 7, 8)
+    )
 
-  legend_plot <- ggplot(metadata, aes(x = day, y = 1, color = cell_line, fill = cell_line)) +
-    geom_point() +
-    scale_color_manual(values = cell_line_palette, name = "Cell Line") +
-    scale_fill_manual(values = cell_line_palette, name = "Cell Line") +
-    theme_minimal() +
-    theme(legend.position = "top",
-          legend.title = element_text(face = "bold"))
-  shared_legend <- get_legend(legend_plot)
-
-  grid.arrange(
-    shared_legend,
-    p,
-    ncol = 1,
-    heights = c(1, 8),
-    top = sel_protocol
-  )
+  unknown_plot_list[[sel_protocol]] <- p
 }
 
-dev.off()
+legend_plot <- ggplot(unknown_summary,
+                      aes(x = day, y = mean_value, color = cell_line,
+                          fill = cell_line, group = cell_line)) +
+  geom_ribbon(aes(ymin = ribbon_min, ymax = ribbon_max),
+              alpha = 0.18, color = NA) +
+  geom_line(linewidth = 0.9) +
+  geom_point(size = 1.7, stroke = 0) +
+  scale_color_manual(values = cell_line_palette, name = "Cell line") +
+  scale_fill_manual(values = cell_line_palette, name = "Cell line") +
+  theme_minimal(base_size = 11) +
+  theme(legend.position = "bottom",
+        legend.title = element_text(face = "bold")) +
+  guides(color = guide_legend(nrow = 1),
+         fill = guide_legend(nrow = 1))
+shared_legend <- get_legend(legend_plot)
 
+pdf("rectangle_unknown_by_protocol_mean_ribbon.pdf", width = 10, height = 3)
+
+grid.arrange(
+  arrangeGrob(grobs = unknown_plot_list, ncol = length(unknown_plot_list)),
+  shared_legend,
+  ncol = 1,
+  heights = c(8, 1.15)
+)
+
+dev.off()
