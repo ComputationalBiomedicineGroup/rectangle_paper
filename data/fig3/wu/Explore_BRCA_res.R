@@ -48,10 +48,10 @@ data <- data %>% filter(!is.na(subtype))
 # Set subtype order
 data$subtype <- factor(data$subtype, levels = c("D", "F", "IE/F", "IE"))
 subtype_labels <- c(
-  "D" = "Desert",
-  "F" = "Fibrotic",
-  "IE/F" = "Fibrotic /\nInflamed",
-  "IE" = "Inflamed"
+  "D" = "D",
+  "F" = "F",
+  "IE/F" = "IE/F",
+  "IE" = "IE"
 )
 
 # Get cell type columns to plot, ordered as requested
@@ -146,10 +146,10 @@ for (ct in cell_types) {
     theme_minimal(base_size = 12) +
     theme(
       legend.position = "none",
-      plot.title = element_text(size = 10),
-      axis.title = element_text(size = 9, face = "plain"),
-      axis.text.y = element_text(size = 9),
-      axis.text.x = element_text(size = 9)
+      plot.title = element_text(size = 11),
+      axis.title = element_text(size = 10, face = "plain"),
+      axis.text.y = element_text(size = 10),
+      axis.text.x = element_text(size = 10)
     )
   
   if (nrow(ct_pairwise_stats) > 0) {
@@ -160,14 +160,14 @@ for (ct in cell_types) {
                          xmax = "group2",
                          y.position = "y.position",
                          tip.length = 0.01,
-                         size = 3.5)
+                         size = 4.5)
   }
   
   plot_list[[ct]] <- p
 }
 
 # Save to PDF
-pdf("boxplots_by_celltype.pdf", width = 9, height = 6)
+pdf("boxplots_by_celltype.pdf", width = 10, height = 4)
 n_per_page <- 6
 n_pages <- ceiling(length(plot_list) / n_per_page)
 
@@ -176,7 +176,7 @@ for (i in seq_len(n_pages)) {
   end_idx <- min(i * n_per_page, length(plot_list))
   
   grid.arrange(grobs = plot_list[start_idx:end_idx], 
-               ncol = 3, nrow = 2)
+               ncol = 6, nrow = 1)
 }
 dev.off()
 
