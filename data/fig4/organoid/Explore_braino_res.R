@@ -609,10 +609,10 @@ sel_cell_types_requested <- c(
   "Unknown"
 )
 sel_cell_type_labels <- c(
-  "Dorsal forebrain (%)",
-  "Dorsal forebrain progenitors (%)",
-  "Hindbrain progenitors (%)",
-  "Unknown (%)"
+  "Dorsal forebrain",
+  "Dorsal forebrain progenitors",
+  "Hindbrain progenitors",
+  "Unknown"
 )
 
 normalize_cell_type <- function(x) {
@@ -657,11 +657,12 @@ for (sel_cell_type in matched_cell_types) {
     scale_color_manual(values = cell_line_palette[sel_cell_lines]) +
     scale_y_continuous(limits = c(0, 0.8),
                        labels = function(x) x * 100) +
-    labs(x = "Day", y = sel_cell_type_labels[[sel_cell_type]]) +
+    labs(x = "Day", y = "Unknown content (%)",
+         title = sel_cell_type_labels[[sel_cell_type]]) +
     theme_minimal() +
     theme(
       legend.position = "none",
-      plot.title = element_blank(),
+      plot.title = element_text(size = 10, face = "bold", hjust = 0.5),
       plot.margin = margin(5.5, 18, 5.5, 5.5)
     )
 
@@ -878,11 +879,10 @@ for (sel_protocol in protocols) {
                        expand = expansion(mult = c(0.02, 0.06))) +
     scale_x_continuous(breaks = sort(unique(plot_data$day))) +
     coord_cartesian(ylim = c(0, unknown_y_limit)) +
-    labs(x = "Day", y = "Unknown content (%)", title = protocol_label) +
+    labs(x = "Day", y = paste0(protocol_label, " unknown content (%)")) +
     theme_minimal(base_size = 11) +
     theme(
       legend.position = "none",
-      plot.title = element_text(size = 10, face = "bold", hjust = 0.5),
       panel.grid.minor = element_blank(),
       panel.grid.major.x = element_blank(),
       axis.title.x = element_text(margin = margin(t = 6)),
