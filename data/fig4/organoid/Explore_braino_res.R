@@ -689,6 +689,87 @@ selected_celltypes_grob <- arrangeGrob(
 ggsave("rectangle_dorsal_H9_176_selected_celltypes.pdf",
        selected_celltypes_grob, width = 10, height = 3)
 
+## ------------------------------
+## Manuscript min-max values
+## ------------------------------
+
+format_pct <- function(x, digits = 1) {
+  sprintf(paste0("%.", digits, "f"), 100 * x)
+}
+
+format_pct_range <- function(x, digits = 1) {
+  range_values <- range(x, na.rm = TRUE)
+  paste0(format_pct(range_values[1], digits), "-", format_pct(range_values[2], digits), "%")
+}
+
+print_range <- function(label, values) {
+  cat(sprintf("%-75s %s\n", label, format_pct_range(values)))
+}
+
+find_cell_type <- function(requested_cell_type) {
+  match_idx <- match(normalize_cell_type(requested_cell_type),
+                     normalize_cell_type(cell_types))
+  if (is.na(match_idx)) {
+    stop(sprintf("Column '%s' not found in braino_rectangle_estimations.csv",
+                 requested_cell_type))
+  }
+  cell_types[match_idx]
+}
+
+dorsal_forebrain_col <- find_cell_type("dorsal forebrain")
+dorsal_forebrain_prog_col <- find_cell_type("dorsal forebrain prog.")
+hindbrain_col <- find_cell_type("hindbrain")
+hindbrain_prog_col <- find_cell_type("hindbrain prog.")
+unknown_col <- find_cell_type("Unknown")
+
+manuscript_data <- cbind(metadata, data[rownames(metadata), ]) %>%
+  as.data.frame() %>%
+  filter(protocol == "dorsal", cell_line %in% c("H9", "176")) %>%
+  mutate(
+    dorsal_forebrain_total = .data[[dorsal_forebrain_col]] +
+      .data[[dorsal_forebrain_prog_col]],
+    hindbrain_total = .data[[hindbrain_col]] + .data[[hindbrain_prog_col]]
+  )
+
+first_day <- min(manuscript_data$day, na.rm = TRUE)
+final_day <- max(manuscript_data$day, na.rm = TRUE)
+
+cat("\nManuscript MIN-MAX values (dorsal protocol; replicate-level Rectangle fractions)\n")
+cat(sprintf("First time point: day %s\n", first_day))
+cat(sprintf("Final time point: day %s\n", final_day))
+
+print_range(
+  sprintf("176 Unknown, day %s", first_day),
+  manuscript_data %>%
+    filter(cell_line == "176", day == first_day) %>%
+    pull(all_of(unknown_col))
+)
+print_range(
+  sprintf("H9 Unknown, day %s", first_day),
+  manuscript_data %>%
+    filter(cell_line == "H9", day == first_day) %>%
+    pull(all_of(unknown_col))
+)
+print_range(
+  sprintf("H9 dorsal forebrain + dorsal forebrain prog., day %s", final_day),
+  manuscript_data %>%
+    filter(cell_line == "H9", day == final_day) %>%
+    pull(dorsal_forebrain_total)
+)
+print_range(
+  "H9 dorsal forebrain + dorsal forebrain prog., day 80",
+  manuscript_data %>%
+    filter(cell_line == "H9", day == 80) %>%
+    pull(dorsal_forebrain_total)
+)
+print_range(
+  sprintf("176 hindbrain + hindbrain prog., day %s", final_day),
+  manuscript_data %>%
+    filter(cell_line == "176", day == final_day) %>%
+    pull(hindbrain_total)
+)
+cat("\n")
+
 # Plot with bundles
 
 # By protocol with shaded ribbon for SD
@@ -797,10 +878,11 @@ for (sel_protocol in protocols) {
                        expand = expansion(mult = c(0.02, 0.06))) +
     scale_x_continuous(breaks = sort(unique(plot_data$day))) +
     coord_cartesian(ylim = c(0, unknown_y_limit)) +
-    labs(x = "Day", y = paste0(protocol_label, " unknown content (%)")) +
+    labs(x = "Day", y = "Unknown content (%)", title = protocol_label) +
     theme_minimal(base_size = 11) +
     theme(
       legend.position = "none",
+      plot.title = element_text(size = 10, face = "bold", hjust = 0.5),
       panel.grid.minor = element_blank(),
       panel.grid.major.x = element_blank(),
       axis.title.x = element_text(margin = margin(t = 6)),
