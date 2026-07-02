@@ -260,20 +260,38 @@ def _sort_by_overall(raw, metric_scores, category_scores):
 def _metric_display_name(metric):
     replacements = {
         "accuracy_rmse_": "RMSE ",
-        "accuracy_corr_": "Corr ",
+        "accuracy_corr_": "Correlation ",
         "runtime_hao_20k_s": "Runtime Hao 20k",
         "memory_hao_20k_mib": "Memory Hao 20k",
         "spillover_pct_": "Spillover ",
-        "resolution_rmse_": "Fine RMSE ",
-        "unknown_rmse_all": "Unknown RMSE",
-        "unknown_corr_all": "Unknown corr",
+        "resolution_rmse_": "RMSE ",
+        "unknown_rmse_all": "Cumulative RMSE",
+        "unknown_corr_all": "Cumulative correlation",
     }
     label = metric
     for old, new in replacements.items():
         label = label.replace(old, new)
     for key, value in DATASET_LABELS.items():
         label = label.replace(key, value)
-    return label.replace("_", " ").title().replace("Rmse", "RMSE").replace("Corr", "corr")
+    return (
+        label.replace("_", " ")
+        .title()
+        .replace("Rmse", "RMSE")
+        .replace("Cumulative Correlation", "Cumulative correlation")
+    )
+
+
+def _rank_scaled(values):
+    valid = pd.to_numeric(values, errors="coerce").dropna()
+    ranks = pd.Series(np.nan, index=values.index, dtype=float)
+    if valid.empty:
+        return ranks
+    if len(valid) == 1:
+        ranks.loc[valid.index] = 1.0
+        return ranks
+    raw_ranks = valid.rank(method="first", ascending=False)
+    ranks.loc[valid.index] = 1.0 - (raw_ranks - 1.0) / (len(valid) - 1.0)
+    return ranks
 
 
 def _group_palette():
@@ -283,15 +301,19 @@ def _group_palette():
         "Efficiency": "#94B6CE",
         "Spillover": "#EBA0A2",
         "Resolution": "#DD6AA8",
-        "Unknown": "#E99BC5",
+        "Unknown": "#E4A247",
     }
 
 
-def _score_cmap():
-    return LinearSegmentedColormap.from_list(
-        "fig0_score",
-        ["#eef1c7", "#b8d5cf", "#47b9c7", "#33499d", "#4b197f"],
-    )
+def _score_cmaps():
+    return {
+        "Accuracy": LinearSegmentedColormap.from_list("fig0_accuracy", ["#f5f3fb", "#b5bce0", "#5964ad"]),
+        "Efficiency": LinearSegmentedColormap.from_list("fig0_efficiency", ["#eff7f8", "#b4d5df", "#3f8faa"]),
+        "Spillover": LinearSegmentedColormap.from_list("fig0_spillover", ["#fff1ec", "#f1aaa3", "#c74755"]),
+        "Resolution": LinearSegmentedColormap.from_list("fig0_resolution", ["#fff0f6", "#e894bf", "#b22e80"]),
+        "Unknown": LinearSegmentedColormap.from_list("fig0_unknown", ["#fff4df", "#e7b66f", "#aa601a"]),
+        "Overall": LinearSegmentedColormap.from_list("fig0_overall", ["#eef8f9", "#8dd3da", "#198998"]),
+    }
 
 
 def _draw_header(ax, left, right, label, color, fontsize=9):
@@ -320,6 +342,136 @@ def _draw_header(ax, left, right, label, color, fontsize=9):
     )
 
 
+def _draw_score_legend(ax, score_cmaps):
+    x0 = 1.10
+    y0 = 0.72
+    scores = [0.0, 0.25, 0.5, 0.75, 1.0]
+    rank_count = len(METHOD_ORDER)
+    groups = [*METRIC_GROUPS.keys(), "Overall"]
+    group_abbreviations = {
+        "Accuracy": "Acc",
+        "Efficiency": "Eff",
+        "Spillover": "Spi",
+        "Resolution": "Res",
+        "Unknown": "Unk",
+        "Overall": "All",
+    }
+
+    ax.text(
+        x0,
+        y0 + rank_count * 0.014 + 0.028,
+        "Rank color",
+        transform=ax.transAxes,
+        ha="left",
+        va="bottom",
+        fontsize=9,
+        color="#111111",
+        clip_on=False,
+    )
+    rect_width = 0.017
+    rect_height = 0.014
+    column_gap = 0.007
+    for group_idx, group in enumerate(groups):
+        x = x0 + group_idx * (rect_width + column_gap)
+        for rank_idx in range(rank_count):
+            rank_value = rank_idx / (rank_count - 1)
+            ax.add_patch(
+                Rectangle(
+                    (x, y0 + rank_idx * rect_height),
+                    rect_width,
+                    rect_height,
+                    transform=ax.transAxes,
+                    facecolor=score_cmaps[group](rank_value),
+                    edgecolor="#222222",
+                    linewidth=0.25,
+                    clip_on=False,
+                    zorder=8,
+                )
+            )
+        ax.text(
+            x + rect_width / 2,
+            y0 - 0.014,
+            group_abbreviations[group],
+            transform=ax.transAxes,
+            ha="center",
+            va="top",
+            fontsize=5.8,
+            color="#111111",
+            clip_on=False,
+        )
+    arrow_x = x0 + len(groups) * (rect_width + column_gap) + 0.01
+    ax.annotate(
+        "",
+        xy=(arrow_x, y0 + rank_count * rect_height),
+        xytext=(arrow_x, y0),
+        xycoords=ax.transAxes,
+        textcoords=ax.transAxes,
+        arrowprops={"arrowstyle": "->", "linewidth": 0.8, "color": "#111111"},
+        annotation_clip=False,
+    )
+    ax.text(
+        arrow_x + 0.008,
+        y0 + rank_count * rect_height,
+        "Rank 1",
+        transform=ax.transAxes,
+        ha="left",
+        va="center",
+        fontsize=7.2,
+        clip_on=False,
+    )
+    ax.text(arrow_x + 0.008, y0, "Rank 9", transform=ax.transAxes, ha="left", va="center", fontsize=7.2, clip_on=False)
+
+    size_y = 0.44
+    ax.text(
+        x0,
+        size_y + 0.10,
+        "Score size",
+        transform=ax.transAxes,
+        ha="left",
+        va="bottom",
+        fontsize=9,
+        color="#111111",
+        clip_on=False,
+    )
+    for score_idx, score in enumerate(scores):
+        x = x0 + 0.018 + score_idx * 0.033
+        ax.scatter(
+            x,
+            size_y + 0.035,
+            s=8 + score * 265,
+            facecolors="white",
+            edgecolors="#777777",
+            linewidths=0.75,
+            transform=ax.transAxes,
+            clip_on=False,
+            zorder=8,
+        )
+        ax.text(
+            x,
+            size_y - 0.02,
+            f"{score:g}",
+            transform=ax.transAxes,
+            ha="center",
+            va="top",
+            fontsize=6.8,
+            clip_on=False,
+        )
+
+    na_y = size_y - 0.09
+    ax.text(x0, na_y, "NA", transform=ax.transAxes, ha="left", va="center", fontsize=7.2, color="#111111", clip_on=False)
+    ax.scatter(
+        x0 + 0.035,
+        na_y,
+        marker="x",
+        s=24,
+        color="#b8b8b8",
+        linewidths=0.9,
+        transform=ax.transAxes,
+        clip_on=False,
+        zorder=8,
+    )
+
+
 def plot_funky_heatmap(raw, metric_scores, category_scores, save_path=FIGURE_PATH):
     methods = raw.index.tolist()
     column_specs = []
@@ -339,8 +491,13 @@ def plot_funky_heatmap(raw, metric_scores, category_scores, save_path=FIGURE_PAT
     ax.set_facecolor("white")
     fig.patch.set_facecolor("white")
 
-    cmap = _score_cmap()
+    score_cmaps = _score_cmaps()
     group_palette = _group_palette()
+    method_column_left = -2.75
+    row_right = total_width + 0.8
+    metric_ranks = metric_scores.apply(_rank_scaled)
+    category_rank_columns = [*CATEGORY_SCORE_COLUMNS.values(), "overall_score_scaled"]
+    category_ranks = category_scores[category_rank_columns].apply(_rank_scaled)
 
     y_positions = np.arange(len(methods))
 
@@ -348,13 +505,24 @@ def plot_funky_heatmap(raw, metric_scores, category_scores, save_path=FIGURE_PAT
         row_color = "#f2f2f2" if y_idx % 2 == 0 else "#ffffff"
         ax.add_patch(
             Rectangle(
-                (-0.5, y_idx - 0.5),
-                total_width,
+                (method_column_left, y_idx - 0.5),
+                row_right - method_column_left,
                 1.0,
                 facecolor=row_color,
                 edgecolor="none",
                 zorder=0,
             )
+        )
+        ax.text(
+            method_column_left + 0.15,
+            y_idx,
+            method,
+            ha="left",
+            va="center",
+            fontsize=10,
+            fontweight="bold" if method == "Rectangle" else "normal",
+            color="#111111",
+            zorder=6,
         )
 
     for y_idx, method in enumerate(methods):
@@ -362,17 +530,19 @@ def plot_funky_heatmap(raw, metric_scores, category_scores, save_path=FIGURE_PAT
             x_center = column_centers[x_idx]
             kind = spec["kind"]
             column = spec["column"]
+            cmap = score_cmaps[spec["group"]]
             if kind == "metric":
                 score = metric_scores.loc[method, column]
                 if pd.isna(score):
                     ax.scatter(x_center, y_idx, marker="x", s=24, color="#b8b8b8", linewidths=0.9, zorder=5)
                     continue
+                rank = metric_ranks.loc[method, column]
                 size = 8 + float(score) * 265
                 ax.scatter(
                     x_center,
                     y_idx,
                     s=size,
-                    c=[cmap(float(score))],
+                    c=[cmap(float(rank))],
                     edgecolors="#202020",
                     linewidths=0.45,
                     zorder=5,
@@ -383,6 +553,8 @@ def plot_funky_heatmap(raw, metric_scores, category_scores, save_path=FIGURE_PAT
                     ax.scatter(x_center, y_idx, marker="x", s=30, color="#b8b8b8", linewidths=1.0, zorder=5)
                     continue
                 if kind == "overall":
+                    cmap = score_cmaps["Overall"]
+                    rank = category_ranks.loc[method, "overall_score_scaled"]
                     bar_left = column_lefts[x_idx] + 0.28
                     bar_max_width = column_widths[x_idx] - 0.78
                     bar_width = bar_max_width * float(score)
@@ -391,32 +563,57 @@ def plot_funky_heatmap(raw, metric_scores, category_scores, save_path=FIGURE_PAT
                             (bar_left, y_idx - 0.33),
                             bar_width,
                             0.66,
-                            facecolor=cmap(float(score)),
+                            facecolor=cmap(float(rank)),
                             edgecolor="#222222",
                             linewidth=0.55,
                             zorder=4,
                         )
                     )
                     ax.text(
-                        column_lefts[x_idx] + column_widths[x_idx] - 0.08,
+                        column_lefts[x_idx] + column_widths[x_idx] + 0.10,
                         y_idx,
                         f"{category_scores.loc[method, 'overall_score']:.1f}",
                         ha="right",
                         va="center",
                         fontsize=8.0,
+                        fontweight="bold",
                         color="#111111",
                         zorder=6,
                     )
                 else:
+                    rank = category_ranks.loc[method, column]
+                    bar_left = x_center - 0.36
+                    bar_max_width = 0.72
                     ax.add_patch(
                         Rectangle(
-                            (x_center - 0.36, y_idx - 0.36),
-                            0.72,
-                            0.72,
-                            facecolor=cmap(float(score)),
+                            (bar_left, y_idx - 0.23),
+                            bar_max_width,
+                            0.46,
+                            facecolor="#e4e4e4",
+                            edgecolor="none",
+                            zorder=3,
+                        )
+                    )
+                    ax.add_patch(
+                        Rectangle(
+                            (bar_left, y_idx - 0.23),
+                            bar_max_width * float(score),
+                            0.46,
+                            facecolor=cmap(float(rank)),
                             edgecolor="#222222",
-                            linewidth=0.55,
+                            linewidth=0.5,
                             zorder=4,
+                        )
+                    )
+                    ax.add_patch(
+                        Rectangle(
+                            (bar_left, y_idx - 0.23),
+                            bar_max_width,
+                            0.46,
+                            facecolor="none",
+                            edgecolor="#cfcfcf",
+                            linewidth=0.4,
+                            zorder=5,
                         )
                     )
 
@@ -430,7 +627,6 @@ def plot_funky_heatmap(raw, metric_scores, category_scores, save_path=FIGURE_PAT
             group,
             group_palette[group],
         )
-        ax.axvline(column_lefts[group_end + 1], color="#222222", linewidth=0.9, alpha=0.7, zorder=3)
         group_start = group_end + 1
     _draw_header(
         ax,
@@ -441,7 +637,7 @@ def plot_funky_heatmap(raw, metric_scores, category_scores, save_path=FIGURE_PAT
         fontsize=8.5,
     )
 
-    ax.set_xlim(-0.5, total_width + 0.45)
+    ax.set_xlim(method_column_left, row_right)
     ax.set_ylim(len(methods) - 0.5, -1.75)
     ax.set_xticks(column_centers)
     x_labels = []
@@ -449,39 +645,23 @@ def plot_funky_heatmap(raw, metric_scores, category_scores, save_path=FIGURE_PAT
         if spec["kind"] == "metric":
             x_labels.append(_metric_display_name(spec["column"]))
         elif spec["kind"] == "category":
-            x_labels.append("Weighted\ncategory")
+            x_labels.append(f"Overall\n{spec['group'].lower()}")
         else:
             x_labels.append("Overall\nscore")
     ax.set_xticklabels(x_labels, rotation=90, ha="center", fontsize=8)
-    ax.set_yticks(y_positions)
-    ax.set_yticklabels(methods, fontsize=10)
-
-    for label in ax.get_yticklabels():
-        if label.get_text() == "Rectangle":
+    for label, spec in zip(ax.get_xticklabels(), column_specs):
+        if spec["kind"] in {"category", "overall"}:
             label.set_fontweight("bold")
-            label.set_color("#6b4f00")
+    ax.set_yticks([])
 
-    ax.tick_params(axis="both", length=0)
-    ax.set_xticks(np.r_[column_lefts - 0.5, total_width - 0.5], minor=True)
-    ax.set_yticks(np.arange(-0.5, len(methods), 1), minor=True)
-    ax.grid(which="minor", color="#ffffff", linewidth=0.7, zorder=1)
+    ax.tick_params(axis="both", which="both", length=0)
+    for y_boundary in np.arange(-0.5, len(methods), 1):
+        ax.axhline(y_boundary, color="#ffffff", linewidth=0.7, zorder=1)
     for spine in ax.spines.values():
         spine.set_visible(False)
 
-    sm = plt.cm.ScalarMappable(cmap=cmap, norm=plt.Normalize(0, 1))
-    sm.set_array([])
-    cbar = fig.colorbar(sm, ax=ax, fraction=0.022, pad=0.03)
-    cbar.set_label("Score", rotation=90)
+    _draw_score_legend(ax, score_cmaps)
 
-    legend_scores = [0.25, 0.5, 0.75, 1.0]
-    handles = [
-        ax.scatter([], [], s=8 + score * 265, color=cmap(score), edgecolors="#202020", linewidths=0.45, label=f"{score:.2g}")
-        for score in legend_scores
-    ]
-    handles.append(ax.scatter([], [], marker="x", s=24, color="#b8b8b8", linewidths=0.9, label="NA"))
-    ax.legend(handles=handles, title="Metric score", frameon=False, bbox_to_anchor=(1.14, 0.52), loc="center left")
-
-    ax.set_title("Funky heatmap prototype: weighted deconvolution performance", loc="left", fontsize=13, fontweight="bold", pad=24)
     plt.tight_layout()
     fig.savefig(save_path, bbox_inches="tight")
     return fig, ax
