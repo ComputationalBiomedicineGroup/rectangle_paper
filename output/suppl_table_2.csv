@@ -1,0 +1,12 @@
+Cell type,Finotello Correlation,Finotello RMSE,Petitprez Correlation,Petitprez RMSE,Chen Correlation,Chen RMSE,Hoek Correlation,Hoek RMSE,Morandini Correlation,Morandini RMSE,Dietrich Correlation,Dietrich RMSE
+All cell types,0.906,0.056,0.863,0.144,0.836,0.115,0.941,0.071,0.831,0.138,0.45,0.129
+B cells,0.293,0.024,0.95,0.128,0.703,0.173,0.297,0.033,0.81,0.035,0.693,0.056
+mDC,-0.228,0.024,,,,,-0.017,0.007,,,-0.037,0.031
+Monocytes,0.866,0.084,,,,,0.929,0.136,0.7,0.188,0.605,0.234
+NK cells,0.817,0.026,0.965,0.017,,,0.984,0.021,0.51,0.1,0.651,0.039
+T cells CD8,0.867,0.083,0.837,0.028,0.895,0.077,,,0.379,0.106,0.685,0.089
+Tregs,0.3,0.008,0.703,0.013,,,,,,,,
+Macrophages,,,0.901,0.294,,,,,,,,
+T cells,,,,,,,0.982,0.072,0.577,0.185,,
+Lymphocytes,,,,,,,,,0.696,0.184,,
+T cells CD4,0.878,0.079,,,0.894,0.061,,,0.476,0.087,0.452,0.179
