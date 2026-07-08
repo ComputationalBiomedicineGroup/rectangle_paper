@@ -25,7 +25,8 @@ RAW_TABLE_PATH = DATA_DIR / "funky_heatmap_raw_metrics.csv"
 SCORE_TABLE_PATH = DATA_DIR / "funky_heatmap_scores.csv"
 CATEGORY_SCORE_TABLE_PATH = DATA_DIR / "funky_heatmap_category_scores.csv"
 LONG_TABLE_PATH = DATA_DIR / "funky_heatmap_long_metrics.csv"
-FIGURE_PATH = FIGURE_DIR / "fig0_funky_heatmap_prototype.pdf"
+FIGURE_PATH = FIGURE_DIR / "fig6.pdf"
+FIGURE_PNG_PATH = FIGURE_PATH.with_suffix(".png")
 
 METHOD_LABELS = {
     "autogenes": "AutoGeneS",
@@ -79,6 +80,7 @@ CATEGORY_SCORE_COLUMNS = {
 }
 
 LOWER_IS_BETTER_PATTERNS = ("rmse", "runtime", "memory", "spillover")
+UNKNOWN_CONTENT_FRACTIONS = [0.0, 0.1, 0.2, 0.3, 0.5, 0.7, 0.9]
 
 
 def _canonical_method(value):
@@ -154,24 +156,58 @@ def _add_resolution_metrics(raw):
             raw.loc[method, column] = values.loc[method]
 
 
+def _rmse(values):
+    true_values = pd.to_numeric(values["true_value"], errors="coerce")
+    predicted_values = pd.to_numeric(values["predicted_value"], errors="coerce")
+    valid = true_values.notna() & predicted_values.notna()
+    if not valid.any():
+        return np.nan
+    return float(np.sqrt(np.mean((predicted_values[valid] - true_values[valid]) ** 2)))
+
+
+def _correlation(values):
+    true_values = pd.to_numeric(values["true_value"], errors="coerce")
+    predicted_values = pd.to_numeric(values["predicted_value"], errors="coerce")
+    valid = true_values.notna() & predicted_values.notna()
+    if valid.sum() < 2:
+        return np.nan
+    true_values = true_values[valid]
+    predicted_values = predicted_values[valid]
+    if np.isclose(true_values.std(ddof=0), 0) or np.isclose(predicted_values.std(ddof=0), 0):
+        return np.nan
+    return float(np.corrcoef(true_values, predicted_values)[0, 1])
+
+
+def _unknown_summary_all(unknown, value_column, value_function):
+    group_columns = ["method", "replicate", "dataset", "unknown_fraction"]
+    replicate_values = (
+        unknown.groupby(group_columns, observed=True)
+        .apply(value_function, include_groups=False)
+        .rename(value_column)
+        .reset_index()
+    )
+    return (
+        replicate_values.groupby(["method", "dataset", "unknown_fraction"], observed=True)[value_column]
+        .mean()
+        .reset_index()
+    )
+
+
 def _add_unknown_metrics(raw):
     unknown = pd.read_csv(ROOT / "data" / "fig4" / "unknown_content_results.csv")
-    unknown = unknown[unknown["unknown_fraction"].isin([0.0, 0.1, 0.2, 0.3, 0.5, 0.7, 0.9])].copy()
+    unknown = unknown[unknown["unknown_fraction"].isin(UNKNOWN_CONTENT_FRACTIONS)].copy()
     unknown["method"] = unknown["method"].map(_canonical_method)
     unknown = unknown[unknown["method"].isin(raw.index)]
 
-    rows = []
-    for method, method_df in unknown.groupby("method", observed=True):
-        true_values = method_df["true_value"].astype(float)
-        predicted_values = method_df["predicted_value"].astype(float)
-        rows.append(
-            {
-                "method": method,
-                "unknown_rmse_all": float(np.sqrt(np.mean((predicted_values - true_values) ** 2))),
-                "unknown_corr_all": float(np.corrcoef(true_values, predicted_values)[0, 1]),
-            }
-        )
-    unknown_summary = pd.DataFrame(rows).set_index("method")
+    # Match the Figure 4C "all-cells" panels: compute all-cell metrics within
+    # each method/replicate/dataset/unknown-fraction group, average replicates,
+    # then average those plotted all-cell summary values for the heatmap.
+    rmse_summary_all = _unknown_summary_all(unknown, "rmse", _rmse)
+    correlation_summary_all = _unknown_summary_all(unknown, "corr", _correlation)
+    unknown_summary = pd.DataFrame(index=raw.index)
+    unknown_summary["unknown_rmse_all"] = rmse_summary_all.groupby("method", observed=True)["rmse"].mean()
+    unknown_summary["unknown_corr_all"] = correlation_summary_all.groupby("method", observed=True)["corr"].mean()
+
     for method in raw.index.intersection(unknown_summary.index):
         raw.loc[method, "unknown_rmse_all"] = unknown_summary.loc[method, "unknown_rmse_all"]
         raw.loc[method, "unknown_corr_all"] = unknown_summary.loc[method, "unknown_corr_all"]
@@ -265,8 +301,8 @@ def _metric_display_name(metric):
         "memory_hao_20k_mib": "Memory Hao 20k",
         "spillover_pct_": "Spillover ",
         "resolution_rmse_": "RMSE ",
-        "unknown_rmse_all": "Cumulative RMSE",
-        "unknown_corr_all": "Cumulative correlation",
+        "unknown_rmse_all": "All-cells RMSE",
+        "unknown_corr_all": "All-cells correlation",
     }
     label = metric
     for old, new in replacements.items():
@@ -343,7 +379,7 @@ def _draw_header(ax, left, right, label, color, fontsize=9):
 
 
 def _draw_score_legend(ax, score_cmaps):
-    x0 = 1.10
+    x0 = 1.03
     y0 = 0.72
     scores = [0.0, 0.25, 0.5, 0.75, 1.0]
     rank_count = len(METHOD_ORDER)
@@ -370,7 +406,7 @@ def _draw_score_legend(ax, score_cmaps):
     )
     rect_width = 0.017
     rect_height = 0.014
-    column_gap = 0.007
+    column_gap = 0.0015
     for group_idx, group in enumerate(groups):
         x = x0 + group_idx * (rect_width + column_gap)
         for rank_idx in range(rank_count):
@@ -421,7 +457,7 @@ def _draw_score_legend(ax, score_cmaps):
     )
     ax.text(arrow_x + 0.008, y0, "Rank 9", transform=ax.transAxes, ha="left", va="center", fontsize=7.2, clip_on=False)
 
-    size_y = 0.44
+    size_y = 0.51
     ax.text(
         x0,
         size_y + 0.10,
@@ -434,7 +470,7 @@ def _draw_score_legend(ax, score_cmaps):
         clip_on=False,
     )
     for score_idx, score in enumerate(scores):
-        x = x0 + 0.018 + score_idx * 0.033
+        x = x0 + 0.018 + score_idx * 0.022
         ax.scatter(
             x,
             size_y + 0.035,
@@ -500,6 +536,7 @@ def plot_funky_heatmap(raw, metric_scores, category_scores, save_path=FIGURE_PAT
     category_ranks = category_scores[category_rank_columns].apply(_rank_scaled)
 
     y_positions = np.arange(len(methods))
+    category_overall_indices = [idx for idx, spec in enumerate(column_specs) if spec["kind"] == "category"]
 
     for y_idx, method in enumerate(methods):
         row_color = "#f2f2f2" if y_idx % 2 == 0 else "#ffffff"
@@ -524,6 +561,24 @@ def plot_funky_heatmap(raw, metric_scores, category_scores, save_path=FIGURE_PAT
             color="#111111",
             zorder=6,
         )
+
+    for category_idx in category_overall_indices:
+        group_color = group_palette[column_specs[category_idx]["group"]]
+        overall_left = column_centers[category_idx] - 0.44
+        overall_right = column_centers[category_idx] + 0.44
+        ax.add_patch(
+            Rectangle(
+                (overall_left, -0.5),
+                overall_right - overall_left,
+                len(methods),
+                facecolor=group_color,
+                edgecolor="none",
+                alpha=0.16,
+                zorder=0.5,
+            )
+        )
+        ax.plot([overall_left, overall_left], [-0.5, len(methods) - 0.5], color=group_color, linewidth=0.7, alpha=0.45, zorder=2)
+        ax.plot([overall_right, overall_right], [-0.5, len(methods) - 0.5], color=group_color, linewidth=0.7, alpha=0.45, zorder=2)
 
     for y_idx, method in enumerate(methods):
         for x_idx, spec in enumerate(column_specs):
@@ -582,8 +637,8 @@ def plot_funky_heatmap(raw, metric_scores, category_scores, save_path=FIGURE_PAT
                     )
                 else:
                     rank = category_ranks.loc[method, column]
-                    bar_left = x_center - 0.36
                     bar_max_width = 0.72
+                    bar_left = x_center - bar_max_width / 2
                     ax.add_patch(
                         Rectangle(
                             (bar_left, y_idx - 0.23),
@@ -664,6 +719,7 @@ def plot_funky_heatmap(raw, metric_scores, category_scores, save_path=FIGURE_PAT
 
     plt.tight_layout()
     fig.savefig(save_path, bbox_inches="tight")
+    fig.savefig(Path(save_path).with_suffix(".png"), dpi=300, bbox_inches="tight")
     return fig, ax
 
 
@@ -692,6 +748,7 @@ if __name__ == "__main__":
     print(f"Wrote {CATEGORY_SCORE_TABLE_PATH.relative_to(ROOT)}")
     print(f"Wrote {LONG_TABLE_PATH.relative_to(ROOT)}")
     print(f"Wrote {FIGURE_PATH.relative_to(ROOT)}")
+    print(f"Wrote {FIGURE_PNG_PATH.relative_to(ROOT)}")
     print(f"Raw table shape: {raw_metrics.shape}")
     print(f"Score table shape: {score_metrics.shape}")
     print(f"Category score table shape: {category_scores.shape}")
