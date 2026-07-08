@@ -214,6 +214,37 @@ stats_table <- stats_table %>%
 # Save statistics
 write.csv(stats_table, "statistical_tests_results.csv", row.names = FALSE)
 
+## ------------------------------
+## Export median cell fraction table
+## ------------------------------
+caf_median_table <- plot_data %>%
+  filter(cell_type %in% c("CAFs.myCAF.like", "CAFs.MSC.iCAF.like", "CAFs")) %>%
+  group_by(cell_type, subtype) %>%
+  summarise(
+    n = n(),
+    median_fraction = median(proportion, na.rm = TRUE),
+    median_percent = median_fraction * 100,
+    .groups = "drop"
+  ) %>%
+  mutate(cell_type_label = cell_type_labels[cell_type]) %>%
+  select(cell_type, cell_type_label, subtype, n, median_fraction, median_percent)
+
+write.csv(caf_median_table, "caf_median_cell_fractions_by_subtype.csv", row.names = FALSE)
+
+caf_mean_table <- plot_data %>%
+  filter(cell_type %in% c("CAFs.myCAF.like", "CAFs.MSC.iCAF.like", "CAFs")) %>%
+  group_by(cell_type, subtype) %>%
+  summarise(
+    n = n(),
+    mean_fraction = mean(proportion, na.rm = TRUE),
+    mean_percent = mean_fraction * 100,
+    .groups = "drop"
+  ) %>%
+  mutate(cell_type_label = cell_type_labels[cell_type]) %>%
+  select(cell_type, cell_type_label, subtype, n, mean_fraction, mean_percent)
+
+write.csv(caf_mean_table, "caf_mean_cell_fractions_by_subtype.csv", row.names = FALSE)
+
 # Print summary for CAF subtypes
 cat("\n=== CAF subtype statistics ===\n")
 stats_table %>% 
