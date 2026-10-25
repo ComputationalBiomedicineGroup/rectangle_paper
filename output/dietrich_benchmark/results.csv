@@ -1,0 +1,5 @@
+method,run,status,runtime_s,peak_memory_mib,wall_s,environment,memory_source,n_cells,n_bulks,finished
+rectangle,1,ok,40.73449466703459,4204.5,43.66278175008483,native,process tree RSS,14744.0,59.0,2026-10-25T06:46:48
+rectangle,2,ok,41.33352774986997,4228.8125,44.22659195889719,native,process tree RSS,14744.0,59.0,2026-10-25T06:47:33
+rectangle,3,ok,41.47700783307664,4188.171875,44.231216999934986,native,process tree RSS,14744.0,59.0,2026-10-25T06:48:17
+autogenes,1,ok,11854.945559750078,1702.0625,11859.275596250081,native,process tree RSS,14744.0,59.0,2026-10-25T10:05:56
