@@ -1,4 +1,5 @@
 import os
+import sys
 from pathlib import Path
 
 import numpy as np
@@ -39,6 +40,7 @@ METHOD_LABELS = {
     "rectangle": "Rectangle",
     "scaden": "Scaden",
     "scdc": "SCDC",
+    "secret": "SECRET",
 }
 
 METHOD_ORDER = [
@@ -51,18 +53,19 @@ METHOD_ORDER = [
     "Bisque",
     "DWLS",
     "CIBERSORTx",
+    "SECRET",
 ]
 
 DATASET_LABELS = {
     "chen": "Chen",
-    "finotello": "Finotello",
     "hoek": "Hoek",
     "morandini": "Morandini",
     "petitprez": "Petitprez",
     "dietrich": "Dietrich",
 }
 
-FIG2_DATASETS = ["chen", "finotello", "hoek", "morandini", "petitprez", "dietrich"]
+# As Figure 2 (figure_2.ipynb), which leaves out Finotello
+FIG2_DATASETS = ["petitprez", "chen", "hoek", "morandini", "dietrich"]
 
 METRIC_GROUPS = {
     "Accuracy": [
@@ -71,7 +74,7 @@ METRIC_GROUPS = {
     ],
     "Efficiency": ["runtime_hao_20k_s", "memory_hao_20k_mib"],
     "Spillover": ["spillover_pct_hao", "spillover_pct_hoek", "spillover_pct_linsley"],
-    "Resolution": ["resolution_rmse_wu", "resolution_rmse_lambrechts"],
+    "Resolution": ["resolution_rank_wu", "resolution_rank_lambrechts"],
     "Unknown": ["unknown_rmse_all", "unknown_corr_all"],
 }
 
@@ -79,7 +82,7 @@ CATEGORY_SCORE_COLUMNS = {
     group: f"score_{group.lower()}" for group in METRIC_GROUPS
 }
 
-LOWER_IS_BETTER_PATTERNS = ("rmse", "runtime", "memory", "spillover")
+LOWER_IS_BETTER_PATTERNS = ("rmse", "rank", "runtime", "memory", "spillover")
 UNKNOWN_CONTENT_FRACTIONS = [0.0, 0.1, 0.2, 0.3, 0.5, 0.7, 0.9]
 
 
@@ -94,8 +97,23 @@ def _empty_raw_table():
     return pd.DataFrame(index=methods, columns=columns, dtype=float)
 
 
-def _add_accuracy_metrics(raw):
+def _figure2_cell_type_metrics():
+    # The per-cell-type scores Figure 2 plots (figure_2.ipynb, suppl. RMSE/correlation figure): the saved table,
+    # with the other methods' Morandini scores from results_main_morandini_ncbi and SECRET scored from its saved
+    # predictions, as Rectangle
+    sys.path.insert(0, str(ROOT / "notebooks"))
+    import figure2_metrics
+
     metrics = pd.read_csv(ROOT / "data" / "fig2" / "cell_type_level_performance_metrics.csv")
+    metrics["method"] = metrics["method"].str.lower()
+    metrics["bulk_ds"] = metrics["bulk_ds"].str.lower()
+    metrics = metrics[~((metrics["bulk_ds"] == "morandini") & (metrics["method"] != "rectangle"))]
+    secret_cells, _ = figure2_metrics.current_method_metrics(ROOT, "secret", figure2_metrics.SECRET_PREDICTIONS)
+    return pd.concat([metrics, figure2_metrics.morandini_comparator_metrics(ROOT), secret_cells], ignore_index=True)
+
+
+def _add_accuracy_metrics(raw):
+    metrics = _figure2_cell_type_metrics()
     metrics["method"] = metrics["method"].map(_canonical_method)
     metrics["bulk_ds"] = metrics["bulk_ds"].astype(str).str.lower()
     metrics = metrics[
@@ -118,40 +136,47 @@ def _add_accuracy_metrics(raw):
 
 
 def _add_efficiency_metrics(raw):
-    benchmark = pd.read_csv(ROOT / "output" / "benchmark_table_20k_ref.csv")
+    # Figure 2B/C values, written by figure_2.ipynb
+    benchmark = pd.read_csv(ROOT / "data" / "fig2" / "runtimes" / "benchmark_20k_summary.csv")
     benchmark["method"] = benchmark["Method"].map(_canonical_method)
     benchmark = benchmark.set_index("method")
     for method in raw.index.intersection(benchmark.index):
-        raw.loc[method, "runtime_hao_20k_s"] = benchmark.loc[method, "Runtime mean (s)"]
-        raw.loc[method, "memory_hao_20k_mib"] = benchmark.loc[method, "Memory mean (MiB)"]
+        raw.loc[method, "runtime_hao_20k_s"] = benchmark.loc[method, "Time_Mean"]
+        raw.loc[method, "memory_hao_20k_mib"] = benchmark.loc[method, "Memory_Mean"]
 
 
 def _add_spillover_metrics(raw):
-    spillover = pd.read_csv(ROOT / "data" / "fig3" / "spillover_total.csv")
+    # As the Figure 3A plot (figure_3.ipynb): other methods from spillover_total.csv, Rectangle and SECRET as
+    # computed in figure_3.ipynb
+    spillover = pd.concat([
+        pd.read_csv(ROOT / "data" / "fig3" / "spillover_total.csv"),
+        pd.read_csv(ROOT / "data" / "fig3" / "spillover_rectangle_secret.csv"),
+    ])
     spillover["method"] = spillover["Method"].map(_canonical_method)
-    spillover = spillover.set_index("method")
+    spillover = spillover.drop_duplicates("method", keep="last").set_index("method")
     for method in raw.index.intersection(spillover.index):
         raw.loc[method, "spillover_pct_hao"] = spillover.loc[method, "Hao"] * 100
         raw.loc[method, "spillover_pct_hoek"] = spillover.loc[method, "Hoek"] * 100
         raw.loc[method, "spillover_pct_linsley"] = spillover.loc[method, "Linsley"] * 100
 
 
-def _resolution_sum(path):
-    df = pd.read_csv(path)
-    df = df.rename(columns={df.columns[0]: "method"})
-    df["method"] = df["method"].map(_canonical_method)
-    numeric = df.drop(columns=["method"]).apply(pd.to_numeric, errors="coerce")
-    values = numeric.sum(axis=1, min_count=1)
-    return pd.Series(values.to_numpy(), index=df["method"])
+def _resolution_mean_rank(path, methods):
+    rmse = pd.read_csv(path, index_col=0)
+    rmse.index = rmse.index.map(_canonical_method)
+    rmse = rmse[rmse.index.isin(methods)].apply(pd.to_numeric, errors="coerce")
+    # Rank the heatmap's methods on each fine cell type (1 = lowest RMSE), then average over the cell types. A method
+    # without an estimate for a type is ranked on the others only (MuSiC and CIBERSORTx miss one type each)
+    return rmse.rank(axis=0, method="average").mean(axis=1)
 
 
 def _add_resolution_metrics(raw):
+    # Fine-cell-type RMSE ranks, as in the Figure 3 bump charts (figure_3.ipynb); every cell type counts equally
     resolution_sources = {
-        "resolution_rmse_wu": ROOT / "data" / "fig3" / "wu_fine_method_rmse_all.csv",
-        "resolution_rmse_lambrechts": ROOT / "data" / "fig3" / "lambrechts_fine_method_rmse_all.csv",
+        "resolution_rank_wu": ROOT / "data" / "fig3" / "wu_fine_method_rmse_all.csv",
+        "resolution_rank_lambrechts": ROOT / "data" / "fig3" / "lambrechts_fine_method_rmse_all.csv",
     }
     for column, path in resolution_sources.items():
-        values = _resolution_sum(path)
+        values = _resolution_mean_rank(path, raw.index)
         for method in raw.index.intersection(values.index):
             raw.loc[method, column] = values.loc[method]
 
@@ -194,8 +219,10 @@ def _unknown_summary_all(unknown, value_column, value_function):
 
 
 def _add_unknown_metrics(raw):
-    unknown = pd.read_csv(ROOT / "data" / "fig4" / "unknown_content_results.csv")
-    unknown = unknown[unknown["unknown_fraction"].isin(UNKNOWN_CONTENT_FRACTIONS)].copy()
+    # Figure 4C (figure_4.ipynb): the run with the reference split by cell, scored on the four known cell types
+    # (Rectangle's and SECRET's 'Unknown' rows left out)
+    unknown = pd.read_csv(ROOT / "data" / "fig4" / "unknown_content_cellsplit" / "unknown_content_results.csv")
+    unknown = unknown[unknown["unknown_fraction"].isin(UNKNOWN_CONTENT_FRACTIONS) & (unknown["celltype"] != "Unknown")].copy()
     unknown["method"] = unknown["method"].map(_canonical_method)
     unknown = unknown[unknown["method"].isin(raw.index)]
 
@@ -300,7 +327,7 @@ def _metric_display_name(metric):
         "runtime_hao_20k_s": "Runtime Hao 20k",
         "memory_hao_20k_mib": "Memory Hao 20k",
         "spillover_pct_": "Spillover ",
-        "resolution_rmse_": "RMSE ",
+        "resolution_rank_": "RMSE rank ",  # mean over the fine cell types
         "unknown_rmse_all": "All-cells RMSE",
         "unknown_corr_all": "All-cells correlation",
     }
@@ -455,7 +482,7 @@ def _draw_score_legend(ax, score_cmaps):
         fontsize=7.2,
         clip_on=False,
     )
-    ax.text(arrow_x + 0.008, y0, "Rank 9", transform=ax.transAxes, ha="left", va="center", fontsize=7.2, clip_on=False)
+    ax.text(arrow_x + 0.008, y0, f"Rank {rank_count}", transform=ax.transAxes, ha="left", va="center", fontsize=7.2, clip_on=False)
 
     size_y = 0.51
     ax.text(
