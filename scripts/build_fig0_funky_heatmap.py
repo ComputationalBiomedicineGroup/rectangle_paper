@@ -72,7 +72,7 @@ METRIC_GROUPS = {
         *(f"accuracy_rmse_{dataset}" for dataset in FIG2_DATASETS),
         *(f"accuracy_corr_{dataset}" for dataset in FIG2_DATASETS),
     ],
-    "Efficiency": ["runtime_hao_20k_s", "memory_hao_20k_mib"],
+    "Efficiency": ["runtime_hoek_s", "runtime_morandini_s", "memory_hoek_mib", "memory_morandini_mib"],
     "Spillover": ["spillover_pct_hao", "spillover_pct_hoek", "spillover_pct_linsley"],
     "Resolution": ["resolution_rank_wu", "resolution_rank_lambrechts"],
     "Unknown": ["unknown_rmse_all", "unknown_corr_all"],
@@ -136,13 +136,16 @@ def _add_accuracy_metrics(raw):
 
 
 def _add_efficiency_metrics(raw):
-    # Figure 2B/C values, written by figure_2.ipynb
-    benchmark = pd.read_csv(ROOT / "data" / "fig2" / "runtimes" / "benchmark_20k_summary.csv")
-    benchmark["method"] = benchmark["Method"].map(_canonical_method)
-    benchmark = benchmark.set_index("method")
-    for method in raw.index.intersection(benchmark.index):
-        raw.loc[method, "runtime_hao_20k_s"] = benchmark.loc[method, "Time_Mean"]
-        raw.loc[method, "memory_hao_20k_mib"] = benchmark.loc[method, "Memory_Mean"]
+    # HaoSub reference with the 8 Hoek and the 159 Morandini bulks (scripts/wu20k_benchmark.py, as the supplementary
+    # scalability figure), mean over the successful runs. A method without one (6 h timeout, out of memory) stays NaN
+    for dataset in ["hoek", "morandini"]:
+        runs = pd.read_csv(ROOT / "output" / f"{dataset}_benchmark" / "results.csv")
+        runs = runs[runs["status"] == "ok"]
+        runs["method"] = runs["method"].map(_canonical_method)
+        means = runs.groupby("method")[["runtime_s", "peak_memory_mib"]].mean()
+        for method in raw.index.intersection(means.index):
+            raw.loc[method, f"runtime_{dataset}_s"] = means.loc[method, "runtime_s"]
+            raw.loc[method, f"memory_{dataset}_mib"] = means.loc[method, "peak_memory_mib"]
 
 
 def _add_spillover_metrics(raw):
@@ -324,8 +327,10 @@ def _metric_display_name(metric):
     replacements = {
         "accuracy_rmse_": "RMSE ",
         "accuracy_corr_": "Correlation ",
-        "runtime_hao_20k_s": "Runtime Hao 20k",
-        "memory_hao_20k_mib": "Memory Hao 20k",
+        "runtime_hoek_s": "Runtime Hoek",
+        "memory_hoek_mib": "Memory Hoek",
+        "runtime_morandini_s": "Runtime Morandini",
+        "memory_morandini_mib": "Memory Morandini",
         "spillover_pct_": "Spillover ",
         "resolution_rank_": "RMSE rank ",  # mean over the fine cell types
         "unknown_rmse_all": "All-cells RMSE",
