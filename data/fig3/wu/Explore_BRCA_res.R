@@ -23,14 +23,18 @@ p_to_stars <- function(p) {
 ## Data loading and preprocessing
 ## ------------------------------
 # Load data
-data <- data.frame(read_csv("wu_estimations.csv"),
+# Rectangle, data/fig4/tcga_brca run (written by notebooks/figure_3.ipynb); cancer cells are in Unknown
+data <- data.frame(read_csv("rectangle_tcga_brca_estimations.csv"),
                    row.names = 1)
 
 # Add aggregated data
 cellmap <- data.frame(read_delim("Cell_type_map.csv"))
-for (celltype in cellmap$celltype_major) {
-  sel_types <- make.names(cellmap$celltype_minor[cellmap$celltype_major == celltype])
-  data[, celltype] <- apply(data[, sel_types], 1, sum)
+for (celltype in unique(cellmap$celltype_major)) {
+  # the reference has no cancer cells (Tumor)
+  sel_types <- intersect(make.names(cellmap$celltype_minor[cellmap$celltype_major == celltype]), colnames(data))
+  if (length(sel_types) > 0) {
+    data[, celltype] <- rowSums(data[, sel_types, drop = FALSE])
+  }
 }
 
 # Add tumor immune subtypes
